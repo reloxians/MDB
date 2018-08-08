@@ -149,6 +149,7 @@ A recurrent annual payment for this plan
 		<input name="item" type="hidden" value="Pro Business" />
 		<input name="price" type="hidden" value="75000" />
 		<input name="billing" type="hidden" value="Yearly" />
+		<input name="type" type="hidden"value="website" />
 
 		<button type="submit" name="submit" class="purple_btn">Order Now <i class="fa fa-cart-plus"></i></button>
 
@@ -267,6 +268,7 @@ A recurrent annual payment for this plan
 		
 		<form method="post" action="/checkout/">	
 		<input name="item" type="hidden" value="Basic Business" />
+		<input name="type" type="hidden"value="website" />
 		<input name="price" type="hidden" value="55500" />
 		<input name="billing" type="hidden" value="Yearly" />
 

@@ -15,6 +15,7 @@
 		$item = $_POST['item'];
 		$price = $_POST['price'];
 		$billing = $_POST['billing'];
+		$type = $_POST['type'];
 	
 	//ref
 		$rand = grs();
@@ -101,7 +102,12 @@
 </div>
 
 <div class="service_desc_container">
-<b>Charge Fee</b>:  <span class="service_fee"> ₦<? echo   $price ?>  NGN
+<b>Type</b>: <?php echo $type ?> 
+</div>
+
+
+<div class="service_desc_container">
+<b>Charge Fee</b>:  <span class="service_fee"> ₦<? echo  number_format( $price ) ?>  NGN
 </span>
 
 </div>
@@ -157,6 +163,8 @@
 		<input type="hidden" value="<? echo $me ?>" name="username" />
 		
 		<input type="hidden" value="<? echo $item ?>" name="item" />
+		
+		<input type="hidden" value="<? echo $type ?>" name="type" />
 		
 		<input type="hidden" value="<? echo $billing ?>" name="billing" />
 		

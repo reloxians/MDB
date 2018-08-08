@@ -6,6 +6,7 @@
 		
 		$ref = $_POST['ref'];
 		$item = $_POST['item'];
+		$type = $_POST['type'];
 		$price = $_POST['price'];
 		$billing = $_POST['billing'];
 		$username = $_POST['username'];
@@ -29,7 +30,7 @@
 		
 		//create record
 		
-		$ins = "insert into cart_order(username, firstname, lastname, email, phone, item, price, billing, ref, created ) values ('$username', '$firstname', '$lastname', '$email', '$phone', '$item', '$price', '$billing', '$ref', '$created')";
+		$ins = "insert into cart_order(username, firstname, lastname, email, phone, item, type, price, billing, ref, created ) values ('$username', '$firstname', '$lastname', '$email', '$phone', '$item', '$type', '$price', '$billing', '$ref', '$created')";
 
 		$cmd = mysqli_query($connect, $ins);
 		

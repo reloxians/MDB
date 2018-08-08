@@ -198,6 +198,7 @@ A recurrent annual payment is required for this plan
 
 	<form method="post" action="/checkout/">	
 		<input name="item" type="hidden" value="Standard Q&A" />
+		<input name="type" type="hidden"value="website" />
 		<input name="price" type="hidden" value="225000" />
 		<input name="billing" type="hidden" value="Yearly" />
 
@@ -338,6 +339,7 @@ A recurrent annual payment is required for this plan
 		
 		<form method="post" action="/checkout/">	
 		<input name="item" type="hidden" value="Basic forum" />
+		<input name="type" type="hidden"value="website" />
 		<input name="price" type="hidden" value="120500" />
 		<input name="billing" type="hidden" value="Yearly" />
 
