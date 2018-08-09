@@ -36,7 +36,7 @@
 	<?php
 	$me = $_SESSION['username'] ;
 	
-	$sel = "select * from cart_order  where username= '$me' and type= 'website' OR type= 'wordpress' ORDER BY ID desc";
+	$sel = "select * from active_service  where username= '$me' and type= 'website' ORDER BY ID desc";
 	
 	$cmd = mysqli_query($connect, $sel) ;
 	
@@ -93,17 +93,29 @@ WordPress
 <td bgcolor="" align="left" valign="top" width="70%">
 <div class="service_desc_container">
 
-<a href="#"><? echo $res['item'] ?> <i class="fa fa-external-link"></i> </a>
+<a href="https://<? echo $res['service_name'] ?>"><? echo $res['service_name'] ?> <i class="fa fa-external-link"></i> </a>
 
 </div>
 
 <div class="service_desc_container">
-Ordered <? echo now ($res['created']) ?>
+Started <? echo now ($res['created']) ?>
 
 </div>
 
 <div class="service_desc_container">
-Price  <span class="service_fee">₦<?php echo number_format( $res['price'] ) ?>  
+Expiration Date is <b><? echo  ($res['expiration']) ?></b>
+
+</div>
+
+<div class="service_desc_container">
+Time Left is <b><? echo time_up ($res['expiration']) ?></b>
+
+</div>
+
+
+
+<div class="service_desc_container">
+Renewal Fee  <span class="service_fee">₦<?php echo number_format( $res['renewal_fee'] ) ?>  
 </span>
 </div>
 

@@ -1,51 +1,18 @@
 <?php
 
-date_default_timezone_set('Africa/Lagos');
+function time_up($datetime) {
+	
+$now = new DateTime(); 
+$future_date = new DateTime($datetime); 
+$interval = $future_date->diff($now); 
+
+return $interval->format("%y years, %m months, %d days %h hours, %i minutes, %s seconds");
+
+}
 
 
 
-
-function time_left($datetime, $full = false) { 
-$now = new DateTime; 
-$ago = new DateTime($datetime); 
-$diff = $now->diff($ago); 
-$diff->w = floor($diff->d / 7); 
-$diff->d -= $diff->w * 7; 
-$string = array( 
-			'y' => 
-			'year', 
-			'm' => 
-			'month', 
-			'w' => 
-			'week', 
-			'd' => 
-			'day', 
-			'h' => 
-			'hour', 
-			'i' => 
-			'minute', 
-			's' => 
-			'second',
-			 ); 
-			 
-			foreach ($string as $k => &$v) { 
-					if ($diff->$k) { 
-							$v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : ''); 
-							} else { 
-						
-						unset($string[$k]); 
-						
-						} 
-						
-					} 
-					
-				if (!$full) $string = array_slice($string, 0, 1); 
-					return $string ? implode(', ', $string) . ' left' : 'just now'; 		
-				}
-				
-
-
-	function now($datetime, $full = false) { 
+function now($datetime, $full = false) { 
 $now = new DateTime; 
 $ago = new DateTime($datetime); 
 $diff = $now->diff($ago); 

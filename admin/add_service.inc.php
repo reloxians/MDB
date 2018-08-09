@@ -20,6 +20,20 @@
 			$fee = $_POST['fee'];
 			$activity_status = '1';
 			
+			//validate user
+			
+			$chk = "select * from users where username ='$username' ";
+			$chk_cmd = mysqli_query($connect, $chk);
+			$bal = mysqli_num_rows($chk_cmd);
+			
+			if($bal < 1 ){
+				
+				header("Location: add_service.php?No_user_found");
+				exit();
+				
+				}
+			
+			
 			//select user email
 			$sel = "select email from users where username= '$username' ";
 			$sel_cmd = mysqli_query($connect, $sel);
@@ -39,7 +53,7 @@
 		} elseif($_POST['service'] == 'website') {
 			//website starts
 			
-				//declair vars
+		//declair vars
 			$username = ucfirst($_POST['username']);
 		//	$email = $_POST['email'];
 			$service_name = $_POST['service_name'];
@@ -49,6 +63,20 @@
 			$expiration = $_POST['expiration'];
 			$fee = $_POST['fee'];
 			$activity_status = '1';
+			
+			
+			//validate user
+			
+			$chk = "select * from users where username ='$username' ";
+			$chk_cmd = mysqli_query($connect, $chk);
+			$bal = mysqli_num_rows($chk_cmd);
+			
+			if($bal < 1 ){
+				
+				header("Location: add_service.php?No_user_found");
+				exit();
+				
+				}
 			
 			
 			//select user email

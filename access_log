@@ -14659,3 +14659,433 @@
 ::1 - - [09/Aug/2018:04:05:43 +0100] "GET /media/css/style.css?2018-08-09%2004:05:42am HTTP/1.1" 200 26694
 ::1 - - [09/Aug/2018:04:05:45 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
 ::1 - - [09/Aug/2018:04:05:45 +0100] "GET /media/css/style.css?2018-08-09%2004:05:45am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:15:28 +0100] "GET /services/wordpress HTTP/1.1" 200 17671
+::1 - - [09/Aug/2018:04:15:28 +0100] "GET /media/css/style.css?2018-08-09%2004:15:28am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:15:32 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:15:32 +0100] "GET /media/css/style.css?2018-08-09%2004:15:32am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:16:10 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:04:16:10 +0100] "GET /admin/add_service.php?added HTTP/1.1" 301 253
+::1 - - [09/Aug/2018:04:16:10 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:16:11 +0100] "GET /media/css/style.css?2018-08-09%2004:16:10am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:22:10 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 200 7
+::1 - - [09/Aug/2018:04:22:13 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:22:13 +0100] "GET /media/css/style.css?2018-08-09%2004:22:13am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:24:01 +0100] "-" 408 -
+::1 - - [09/Aug/2018:04:24:01 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:04:24:01 +0100] "GET /admin/add_service.php?added HTTP/1.1" 301 253
+::1 - - [09/Aug/2018:04:24:01 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:24:01 +0100] "GET /media/css/style.css?2018-08-09%2004:24:01am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:24:58 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:24:58 +0100] "GET /media/css/style.css?2018-08-09%2004:24:58am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:25:01 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:04:25:01 +0100] "GET /admin/add_service.php?No_user_found HTTP/1.1" 301 261
+::1 - - [09/Aug/2018:04:25:01 +0100] "GET /admin/add_service?No_user_found HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:25:01 +0100] "GET /media/css/style.css?2018-08-09%2004:25:01am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:25:09 +0100] "GET /admin/add_service?No_user_found HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:25:10 +0100] "GET /media/css/style.css?2018-08-09%2004:25:10am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:25:10 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:27:32 +0100] "-" 408 -
+::1 - - [09/Aug/2018:04:27:32 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:04:27:32 +0100] "GET /admin/add_service.php?No_user_found HTTP/1.1" 301 261
+::1 - - [09/Aug/2018:04:27:32 +0100] "GET /admin/add_service?No_user_found HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:27:33 +0100] "GET /media/css/style.css?2018-08-09%2004:27:32am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:30:23 +0100] "GET /services/wordpress HTTP/1.1" 200 17671
+::1 - - [09/Aug/2018:04:30:24 +0100] "GET /media/css/style.css?2018-08-09%2004:30:23am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:30:27 +0100] "GET /admin/add_service?No_user_found HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:04:30:27 +0100] "GET /media/css/style.css?2018-08-09%2004:30:27am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:34:36 +0100] "GET /docs/logout HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:04:34:36 +0100] "GET / HTTP/1.1" 200 16296
+::1 - - [09/Aug/2018:04:34:36 +0100] "GET /media/css/style.css?2018-08-09%2004:34:36am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:34:40 +0100] "GET /docs/login HTTP/1.1" 200 12898
+::1 - - [09/Aug/2018:04:34:40 +0100] "GET /media/css/style.css?2018-08-09%2004:34:40am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:34:55 +0100] "POST /docs/login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:04:34:55 +0100] "GET /client/ HTTP/1.1" 200 14056
+::1 - - [09/Aug/2018:04:34:55 +0100] "GET /media/css/style.css?2018-08-09%2004:34:55am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:35:09 +0100] "GET /client/ HTTP/1.1" 200 14056
+::1 - - [09/Aug/2018:04:35:09 +0100] "GET /media/css/style.css?2018-08-09%2004:35:09am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:35:10 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:35:12 +0100] "GET /pending/ HTTP/1.1" 200 13105
+::1 - - [09/Aug/2018:04:35:12 +0100] "GET /media/css/style.css?2018-08-09%2004:35:12am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:35:14 +0100] "GET /pending/websites HTTP/1.1" 200 14150
+::1 - - [09/Aug/2018:04:35:14 +0100] "GET /media/css/style.css?2018-08-09%2004:35:14am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:35:18 +0100] "GET /pricing/ HTTP/1.1" 200 14882
+::1 - - [09/Aug/2018:04:35:18 +0100] "GET /media/css/style.css?2018-08-09%2004:35:18am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:35:19 +0100] "GET /client/ HTTP/1.1" 200 14056
+::1 - - [09/Aug/2018:04:35:20 +0100] "GET /media/css/style.css?2018-08-09%2004:35:19am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:37:05 +0100] "GET /client/ HTTP/1.1" 200 14677
+::1 - - [09/Aug/2018:04:37:06 +0100] "GET /media/css/style.css?2018-08-09%2004:37:05am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:37:06 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:39:23 +0100] "-" 408 -
+::1 - - [09/Aug/2018:04:39:23 +0100] "GET /client/ HTTP/1.1" 200 14716
+::1 - - [09/Aug/2018:04:39:23 +0100] "GET /media/css/style.css?2018-08-09%2004:39:23am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:39:23 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:40:51 +0100] "GET /client/ HTTP/1.1" 200 14752
+::1 - - [09/Aug/2018:04:40:51 +0100] "GET /media/css/style.css?2018-08-09%2004:40:51am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:40:51 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:40:53 +0100] "GET /client/ HTTP/1.1" 200 14752
+::1 - - [09/Aug/2018:04:40:54 +0100] "GET /media/css/style.css?2018-08-09%2004:40:54am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:43:12 +0100] "GET /client/ HTTP/1.1" 200 14776
+::1 - - [09/Aug/2018:04:43:12 +0100] "GET /media/css/style.css?2018-08-09%2004:43:12am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:43:12 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:43:33 +0100] "GET /client/ HTTP/1.1" 200 14776
+::1 - - [09/Aug/2018:04:43:33 +0100] "GET /media/css/style.css?2018-08-09%2004:43:33am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:43:35 +0100] "GET /client/ HTTP/1.1" 200 14776
+::1 - - [09/Aug/2018:04:43:35 +0100] "GET /media/css/style.css?2018-08-09%2004:43:35am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:43:36 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:44:54 +0100] "GET /client/ HTTP/1.1" 200 14786
+::1 - - [09/Aug/2018:04:44:54 +0100] "GET /media/css/style.css?2018-08-09%2004:44:54am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:44:55 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:45:18 +0100] "GET /client/ HTTP/1.1" 200 14786
+::1 - - [09/Aug/2018:04:45:18 +0100] "GET /media/css/style.css?2018-08-09%2004:45:18am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:45:18 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:45:22 +0100] "GET /client/ HTTP/1.1" 200 14786
+::1 - - [09/Aug/2018:04:45:22 +0100] "GET /media/css/style.css?2018-08-09%2004:45:22am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:45:23 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:45:27 +0100] "GET /client/ HTTP/1.1" 200 14786
+::1 - - [09/Aug/2018:04:45:27 +0100] "GET /media/css/style.css?2018-08-09%2004:45:27am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:45:28 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:46:03 +0100] "GET /client/ HTTP/1.1" 200 14786
+::1 - - [09/Aug/2018:04:46:03 +0100] "GET /media/css/style.css?2018-08-09%2004:46:03am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:46:04 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:46:10 +0100] "GET /client/ HTTP/1.1" 200 14782
+::1 - - [09/Aug/2018:04:46:10 +0100] "GET /media/css/style.css?2018-08-09%2004:46:10am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:46:10 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:48:02 +0100] "GET /client/ HTTP/1.1" 200 14998
+::1 - - [09/Aug/2018:04:48:02 +0100] "GET /media/css/style.css?2018-08-09%2004:48:02am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:48:02 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:48:57 +0100] "GET /client/ HTTP/1.1" 200 15016
+::1 - - [09/Aug/2018:04:48:57 +0100] "GET /media/css/style.css?2018-08-09%2004:48:57am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:48:57 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:49:29 +0100] "GET /client/ HTTP/1.1" 200 15034
+::1 - - [09/Aug/2018:04:49:29 +0100] "GET /media/css/style.css?2018-08-09%2004:49:29am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:49:30 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:50:42 +0100] "GET /client/ HTTP/1.1" 200 15244
+::1 - - [09/Aug/2018:04:50:42 +0100] "GET /media/css/style.css?2018-08-09%2004:50:42am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:50:42 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:52:20 +0100] "GET /client/ HTTP/1.1" 200 15283
+::1 - - [09/Aug/2018:04:52:20 +0100] "GET /media/css/style.css?2018-08-09%2004:52:20am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:52:20 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:04:52:47 +0100] "GET /client/ HTTP/1.1" 200 15292
+::1 - - [09/Aug/2018:04:52:47 +0100] "GET /media/css/style.css?2018-08-09%2004:52:47am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:04:52:47 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:05:06:14 +0100] "GET /client/ HTTP/1.1" 200 15371
+::1 - - [09/Aug/2018:05:06:14 +0100] "GET /media/css/style.css?2018-08-09%2005:06:14am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:06:15 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:05:07:08 +0100] "GET /client/ HTTP/1.1" 200 15370
+::1 - - [09/Aug/2018:05:07:09 +0100] "GET /media/css/style.css?2018-08-09%2005:07:08am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:07:09 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:05:07:18 +0100] "GET /client/ HTTP/1.1" 200 15371
+::1 - - [09/Aug/2018:05:07:18 +0100] "GET /media/css/style.css?2018-08-09%2005:07:18am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:07:18 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:05:07:55 +0100] "GET /client/ HTTP/1.1" 200 15368
+::1 - - [09/Aug/2018:05:07:55 +0100] "GET /media/css/style.css?2018-08-09%2005:07:55am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:07:55 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:05:10:37 +0100] "GET /client/ HTTP/1.1" 200 15370
+::1 - - [09/Aug/2018:05:10:37 +0100] "GET /media/css/style.css?2018-08-09%2005:10:37am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:10:37 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:05:12:48 +0100] "GET /docs/logout HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:05:12:48 +0100] "GET / HTTP/1.1" 200 16296
+::1 - - [09/Aug/2018:05:12:48 +0100] "GET /media/css/style.css?2018-08-09%2005:12:48am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:12:52 +0100] "GET /rs-admin/ HTTP/1.1" 200 12862
+::1 - - [09/Aug/2018:05:12:52 +0100] "GET /media/css/style.css?2018-08-09%2005:12:52am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:13:20 +0100] "POST /rs-admin/admin_login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:05:13:21 +0100] "GET /admin/main.php HTTP/1.1" 301 240
+::1 - - [09/Aug/2018:05:13:21 +0100] "GET /admin/main HTTP/1.1" 200 11296
+::1 - - [09/Aug/2018:05:13:21 +0100] "GET /media/css/style.css?2018-08-09%2005:13:21am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:13:26 +0100] "GET /admin/add_service HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:05:13:26 +0100] "GET /media/css/style.css?2018-08-09%2005:13:26am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:18:49 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:05:18:49 +0100] "GET /admin/add_service.php?added HTTP/1.1" 301 253
+::1 - - [09/Aug/2018:05:18:49 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:05:18:49 +0100] "GET /media/css/style.css?2018-08-09%2005:18:49am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:18:56 +0100] "GET /docs/logout HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:05:18:56 +0100] "GET / HTTP/1.1" 200 16296
+::1 - - [09/Aug/2018:05:18:56 +0100] "GET /media/css/style.css?2018-08-09%2005:18:56am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:18:58 +0100] "GET /docs/login HTTP/1.1" 200 12898
+::1 - - [09/Aug/2018:05:18:58 +0100] "GET /media/css/style.css?2018-08-09%2005:18:58am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:19:06 +0100] "POST /docs/login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:05:19:06 +0100] "GET /client/ HTTP/1.1" 200 16266
+::1 - - [09/Aug/2018:05:19:06 +0100] "GET /media/css/style.css?2018-08-09%2005:19:06am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:19:09 +0100] "GET /client/ HTTP/1.1" 200 16266
+::1 - - [09/Aug/2018:05:19:09 +0100] "GET /media/css/style.css?2018-08-09%2005:19:09am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:21:03 +0100] "GET /client/ HTTP/1.1" 200 16302
+::1 - - [09/Aug/2018:05:21:03 +0100] "GET /media/css/style.css?2018-08-09%2005:21:03am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:21:04 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:05:22:28 +0100] "GET /client/ HTTP/1.1" 200 16337
+::1 - - [09/Aug/2018:05:22:28 +0100] "GET /media/css/style.css?2018-08-09%2005:22:28am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:22:28 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:05:24:34 +0100] "GET /client/ HTTP/1.1" 200 16382
+::1 - - [09/Aug/2018:05:24:34 +0100] "GET /media/css/style.css?2018-08-09%2005:24:34am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:05:24:35 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:08:34:24 +0100] "GET /client/ HTTP/1.1" 200 16381
+::1 - - [09/Aug/2018:08:34:24 +0100] "GET /media/css/style.css?2018-08-09%2008:34:24am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:08:34:25 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:09:42:09 +0100] "GET /client/ HTTP/1.1" 200 16381
+::1 - - [09/Aug/2018:09:42:09 +0100] "GET /media/css/style.css?2018-08-09%2009:42:09am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:09:42:10 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:10:28:11 +0100] "GET /automated/ HTTP/1.1" 200 19
+::1 - - [09/Aug/2018:10:29:10 +0100] "GET /automated/ HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:10:29:12 +0100] "GET /automated/ HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:10:29:41 +0100] "GET /automated/ HTTP/1.1" 200 114
+::1 - - [09/Aug/2018:10:38:00 +0100] "-" 408 -
+::1 - - [09/Aug/2018:10:38:00 +0100] "GET /automated/ HTTP/1.1" 200 114
+::1 - - [09/Aug/2018:10:40:24 +0100] "-" 408 -
+::1 - - [09/Aug/2018:10:40:24 +0100] "GET /automated/ HTTP/1.1" 200 135
+::1 - - [09/Aug/2018:10:40:35 +0100] "GET /automated/ HTTP/1.1" 200 114
+::1 - - [09/Aug/2018:11:03:11 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:03:28 +0100] "GET /automated/ HTTP/1.1" 200 51
+::1 - - [09/Aug/2018:11:06:29 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:06:29 +0100] "GET /automated/ HTTP/1.1" 200 55
+::1 - - [09/Aug/2018:11:07:46 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:07:46 +0100] "GET /automated/ HTTP/1.1" 200 55
+::1 - - [09/Aug/2018:11:08:25 +0100] "GET /client/ HTTP/1.1" 200 16379
+::1 - - [09/Aug/2018:11:08:25 +0100] "GET /media/css/style.css?2018-08-09%2011:08:25am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:11:08:30 +0100] "GET /client/ HTTP/1.1" 200 16379
+::1 - - [09/Aug/2018:11:08:30 +0100] "GET /media/css/style.css?2018-08-09%2011:08:30am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:11:08:30 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:11:11:24 +0100] "GET /automated/ HTTP/1.1" 200 7
+::1 - - [09/Aug/2018:11:12:19 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:12:19 +0100] "GET /automated/ HTTP/1.1" 200 6
+::1 - - [09/Aug/2018:11:15:42 +0100] "GET /automated/ HTTP/1.1" 200 6
+::1 - - [09/Aug/2018:11:16:07 +0100] "GET /automated/ HTTP/1.1" 200 21
+::1 - - [09/Aug/2018:11:16:44 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:26:07 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:26:07 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:29:12 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:29:12 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:29:14 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:29:46 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:30:20 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:30:33 +0100] "GET /automated/ HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:11:31:07 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:32:30 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:32:30 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:32:31 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:33:22 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:33:24 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:34:18 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:34:18 +0100] "GET /automated/ HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:11:34:33 +0100] "GET /automated/ HTTP/1.1" 200 26
+::1 - - [09/Aug/2018:11:35:08 +0100] "GET /client/ HTTP/1.1" 200 16385
+::1 - - [09/Aug/2018:11:35:09 +0100] "GET /media/css/style.css?2018-08-09%2011:35:09am HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:11:35:10 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:11:36:20 +0100] "GET /automated/ HTTP/1.1" 200 38
+::1 - - [09/Aug/2018:11:53:23 +0100] "GET /automated/ HTTP/1.1" 200 38
+::1 - - [09/Aug/2018:11:54:27 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:54:27 +0100] "GET /automated/ HTTP/1.1" 200 38
+::1 - - [09/Aug/2018:11:55:39 +0100] "-" 408 -
+::1 - - [09/Aug/2018:11:55:39 +0100] "GET /automated/ HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:11:55:54 +0100] "GET /automated/ HTTP/1.1" 200 2
+::1 - - [09/Aug/2018:11:56:20 +0100] "GET /automated/ HTTP/1.1" 200 12
+::1 - - [09/Aug/2018:11:56:41 +0100] "GET /automated/ HTTP/1.1" 200 6
+::1 - - [09/Aug/2018:11:57:09 +0100] "GET /automated/ HTTP/1.1" 200 7
+::1 - - [09/Aug/2018:12:01:32 +0100] "-" 408 -
+::1 - - [09/Aug/2018:12:01:32 +0100] "GET /automated/ HTTP/1.1" 200 8
+::1 - - [09/Aug/2018:12:01:45 +0100] "GET /client/ HTTP/1.1" 200 16385
+::1 - - [09/Aug/2018:12:01:45 +0100] "GET /media/css/style.css?2018-08-09%2012:01:45pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:01:46 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:12:03:47 +0100] "GET /automated/ HTTP/1.1" 200 24
+::1 - - [09/Aug/2018:12:06:46 +0100] "-" 408 -
+::1 - - [09/Aug/2018:12:11:05 +0100] "GET /automated/ HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:12:13:58 +0100] "-" 408 -
+::1 - - [09/Aug/2018:12:13:58 +0100] "GET /client/ HTTP/1.1" 200 16383
+::1 - - [09/Aug/2018:12:13:58 +0100] "GET /media/css/style.css?2018-08-09%2012:13:58pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:13:59 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:12:15:32 +0100] "GET /docs/logout HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:12:15:32 +0100] "GET / HTTP/1.1" 200 16296
+::1 - - [09/Aug/2018:12:15:32 +0100] "GET /media/css/style.css?2018-08-09%2012:15:32pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:15:35 +0100] "GET /docs/login HTTP/1.1" 200 12898
+::1 - - [09/Aug/2018:12:15:35 +0100] "GET /media/css/style.css?2018-08-09%2012:15:35pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:15:43 +0100] "GET /rs-admin/ HTTP/1.1" 200 12862
+::1 - - [09/Aug/2018:12:15:43 +0100] "GET /media/css/style.css?2018-08-09%2012:15:43pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:15:57 +0100] "POST /rs-admin/admin_login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:12:15:57 +0100] "GET /admin/main.php HTTP/1.1" 301 240
+::1 - - [09/Aug/2018:12:15:57 +0100] "GET /admin/main HTTP/1.1" 200 11296
+::1 - - [09/Aug/2018:12:15:57 +0100] "GET /media/css/style.css?2018-08-09%2012:15:57pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:16:00 +0100] "GET /admin/add_service HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:12:16:00 +0100] "GET /media/css/style.css?2018-08-09%2012:16:00pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:23:45 +0100] "-" 408 -
+::1 - - [09/Aug/2018:12:23:45 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:12:23:45 +0100] "GET /admin/add_service.php?added HTTP/1.1" 301 253
+::1 - - [09/Aug/2018:12:23:45 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:12:23:45 +0100] "GET /media/css/style.css?2018-08-09%2012:23:45pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:25:49 +0100] "GET /automated/ HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:12:31:18 +0100] "-" 408 -
+::1 - - [09/Aug/2018:12:31:18 +0100] "GET /automated/ HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:12:52:08 +0100] "-" 408 -
+::1 - - [09/Aug/2018:12:52:08 +0100] "GET /automated/ HTTP/1.1" 200 320
+::1 - - [09/Aug/2018:12:52:15 +0100] "GET / HTTP/1.1" 200 15925
+::1 - - [09/Aug/2018:12:52:15 +0100] "GET /media/css/style.css?2018-08-09%2012:52:15pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:56:23 +0100] "-" 408 -
+::1 - - [09/Aug/2018:12:57:00 +0100] "GET /admin/add_service HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:12:57:00 +0100] "GET /media/css/style.css?2018-08-09%2012:57:00pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:57:41 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:12:57:42 +0100] "GET /admin/add_service.php?added HTTP/1.1" 301 253
+::1 - - [09/Aug/2018:12:57:42 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:12:57:42 +0100] "GET /media/css/style.css?2018-08-09%2012:57:42pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:12:59:53 +0100] "-" 408 -
+::1 - - [09/Aug/2018:12:59:53 +0100] "GET /automated/reminder.php HTTP/1.1" 301 248
+::1 - - [09/Aug/2018:12:59:53 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:00:38 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:17:45 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:20:00 +0100] "GET /automated/reminder HTTP/1.1" 200 181
+::1 - - [09/Aug/2018:13:21:42 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:21:42 +0100] "GET /automated/reminder HTTP/1.1" 200 181
+::1 - - [09/Aug/2018:13:22:42 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:24:38 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:25:34 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:25:34 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:26:26 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:30:56 +0100] "POST /admin/add_service.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:13:30:56 +0100] "GET /admin/add_service.php?added HTTP/1.1" 301 253
+::1 - - [09/Aug/2018:13:30:56 +0100] "GET /admin/add_service?added HTTP/1.1" 200 14389
+::1 - - [09/Aug/2018:13:30:56 +0100] "GET /media/css/style.css?2018-08-09%2001:30:56pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:33:20 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:34:53 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:34:53 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:36:40 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:37:10 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:38:04 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:39:51 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:39:51 +0100] "GET /docs/logout HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:13:39:51 +0100] "GET / HTTP/1.1" 200 16296
+::1 - - [09/Aug/2018:13:39:51 +0100] "GET /media/css/style.css?2018-08-09%2001:39:51pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:39:55 +0100] "GET /docs/login HTTP/1.1" 200 12898
+::1 - - [09/Aug/2018:13:39:55 +0100] "GET /media/css/style.css?2018-08-09%2001:39:55pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:40:01 +0100] "POST /docs/login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:13:40:01 +0100] "GET /docs/login.php?errorRecord HTTP/1.1" 301 252
+::1 - - [09/Aug/2018:13:40:01 +0100] "GET /docs/login?errorRecord HTTP/1.1" 200 12898
+::1 - - [09/Aug/2018:13:40:02 +0100] "GET /media/css/style.css?2018-08-09%2001:40:01pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:40:09 +0100] "POST /docs/login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:13:40:09 +0100] "GET /docs/login.php?errorRecord HTTP/1.1" 301 252
+::1 - - [09/Aug/2018:13:40:09 +0100] "GET /docs/login?errorRecord HTTP/1.1" 200 12898
+::1 - - [09/Aug/2018:13:40:09 +0100] "GET /media/css/style.css?2018-08-09%2001:40:09pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:40:19 +0100] "POST /docs/login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:13:40:19 +0100] "GET /client/ HTTP/1.1" 200 13618
+::1 - - [09/Aug/2018:13:40:20 +0100] "GET /media/css/style.css?2018-08-09%2001:40:19pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:40:35 +0100] "GET /client/ HTTP/1.1" 200 13618
+::1 - - [09/Aug/2018:13:40:35 +0100] "GET /media/css/style.css?2018-08-09%2001:40:35pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:40:36 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:13:40:51 +0100] "GET /docs/login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:13:40:51 +0100] "GET /docs/login.php? HTTP/1.1" 301 241
+::1 - - [09/Aug/2018:13:40:51 +0100] "GET /docs/login? HTTP/1.1" 302 12531
+::1 - - [09/Aug/2018:13:40:51 +0100] "GET /client/ HTTP/1.1" 200 13617
+::1 - - [09/Aug/2018:13:40:51 +0100] "GET /media/css/style.css?2018-08-09%2001:40:51pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:41:16 +0100] "GET /docs/login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:13:41:16 +0100] "GET /docs/login.php? HTTP/1.1" 301 241
+::1 - - [09/Aug/2018:13:41:16 +0100] "GET /docs/login? HTTP/1.1" 302 12531
+::1 - - [09/Aug/2018:13:41:16 +0100] "GET /client/ HTTP/1.1" 200 13618
+::1 - - [09/Aug/2018:13:41:17 +0100] "GET /media/css/style.css?2018-08-09%2001:41:16pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:47:58 +0100] "GET /client/ HTTP/1.1" 200 13616
+::1 - - [09/Aug/2018:13:47:58 +0100] "GET /media/css/style.css?2018-08-09%2001:47:58pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:47:59 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:13:49:51 +0100] "GET /client/ HTTP/1.1" 200 13616
+::1 - - [09/Aug/2018:13:49:51 +0100] "GET /media/css/style.css?2018-08-09%2001:49:51pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:13:49:52 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:13:50:11 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:51:16 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:53:03 +0100] "-" 408 -
+::1 - - [09/Aug/2018:13:53:03 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:53:05 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:13:53:40 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:14:10:45 +0100] "-" 408 -
+::1 - - [09/Aug/2018:14:11:07 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:14:11:10 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:14:12:03 +0100] "-" 408 -
+::1 - - [09/Aug/2018:14:12:03 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:14:12:24 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:14:12:25 +0100] "GET /media/css/style.css?2018-08-09%2002:12:24pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:14:12:25 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:14:13:50 +0100] "GET /client/ HTTP/1.1" 200 13613
+::1 - - [09/Aug/2018:14:13:50 +0100] "GET /media/css/style.css?2018-08-09%2002:13:50pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:14:13:50 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:14:14:10 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:14:14:11 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:14:15:50 +0100] "-" 408 -
+::1 - - [09/Aug/2018:14:16:26 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:14:16:26 +0100] "GET /media/css/style.css?2018-08-09%2002:16:26pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:14:16:27 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:14:17:27 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:14:17:27 +0100] "GET /media/css/style.css?2018-08-09%2002:17:27pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:14:17:28 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:14:18:45 +0100] "GET /client/ HTTP/1.1" 200 13611
+::1 - - [09/Aug/2018:14:18:45 +0100] "GET /media/css/style.css?2018-08-09%2002:18:45pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:14:18:46 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:14:19:22 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:14:19:22 +0100] "GET /media/css/style.css?2018-08-09%2002:19:22pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:14:19:23 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:14:20:23 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:14:20:23 +0100] "GET /media/css/style.css?2018-08-09%2002:20:23pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:14:20:24 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:14:20:29 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:14:31:25 +0100] "-" 408 -
+::1 - - [09/Aug/2018:14:41:14 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:14:41:14 +0100] "GET /media/css/style.css?2018-08-09%2002:41:14pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:14:41:15 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:14:41:21 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:14:44:20 +0100] "-" 408 -
+::1 - - [09/Aug/2018:15:23:51 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:15:23:51 +0100] "GET /media/css/style.css?2018-08-09%2003:23:51pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:15:23:52 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:15:24:00 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:15:26:11 +0100] "-" 408 -
+::1 - - [09/Aug/2018:15:26:37 +0100] "GET /client/ HTTP/1.1" 200 13613
+::1 - - [09/Aug/2018:15:26:37 +0100] "GET /media/css/style.css?2018-08-09%2003:26:37pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:15:26:37 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:15:27:30 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:15:35:55 +0100] "-" 408 -
+::1 - - [09/Aug/2018:15:35:55 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:15:35:55 +0100] "GET /media/css/style.css?2018-08-09%2003:35:55pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:15:35:56 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:15:37:25 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:15:45:17 +0100] "-" 408 -
+::1 - - [09/Aug/2018:15:45:17 +0100] "GET /client/ HTTP/1.1" 200 13612
+::1 - - [09/Aug/2018:15:45:17 +0100] "GET /media/css/style.css?2018-08-09%2003:45:17pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:15:45:18 +0100] "GET /media/images/favicon.ico HTTP/1.1" 200 59882
+::1 - - [09/Aug/2018:15:46:03 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:16:14:14 +0100] "-" 408 -
+::1 - - [09/Aug/2018:16:15:10 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:16:26:27 +0100] "-" 408 -
+::1 - - [09/Aug/2018:16:28:10 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:16:39:05 +0100] "-" 408 -
+::1 - - [09/Aug/2018:16:52:20 +0100] "GET /docs/logout HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:16:52:20 +0100] "GET / HTTP/1.1" 200 16296
+::1 - - [09/Aug/2018:16:52:20 +0100] "GET /media/css/style.css?2018-08-09%2004:52:20pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:16:52:24 +0100] "GET /docs/login HTTP/1.1" 200 12898
+::1 - - [09/Aug/2018:16:52:24 +0100] "GET /media/css/style.css?2018-08-09%2004:52:24pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:16:52:34 +0100] "POST /docs/login.inc.php HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:16:52:34 +0100] "GET /client/ HTTP/1.1" 200 13624
+::1 - - [09/Aug/2018:16:52:35 +0100] "GET /media/css/style.css?2018-08-09%2004:52:34pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:17:07:14 +0100] "GET /automated/ HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:07:14 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:08:36 +0100] "GET /automated/ HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:08:36 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:08:40 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:09:31 +0100] "-" 408 -
+::1 - - [09/Aug/2018:17:09:31 +0100] "GET /automated/reminder HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:09:31 +0100] "GET /automated/expired.php HTTP/1.1" 301 247
+::1 - - [09/Aug/2018:17:09:31 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:09:36 +0100] "GET /automated/ HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:09:36 +0100] "GET /automated/reminder HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:09:36 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:10:52 +0100] "GET /automated/ HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:10:52 +0100] "GET /automated/reminder HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:10:52 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:11:09 +0100] "GET /automated/reminder HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:11:09 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:11:36 +0100] "GET /automated/ HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:11:36 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:11:40 +0100] "GET /automated/reminder HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:12:21 +0100] "GET /automated/ HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:12:21 +0100] "GET /automated/reminder HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:12:26 +0100] "GET /automated/expired HTTP/1.1" 200 -
+::1 - - [09/Aug/2018:17:15:38 +0100] "GET /automated/expired HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:15:38 +0100] "GET / HTTP/1.1" 200 15933
+::1 - - [09/Aug/2018:17:15:38 +0100] "GET /media/css/style.css?2018-08-09%2005:15:38pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:17:16:38 +0100] "GET /automated/ HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:16:38 +0100] "GET /automated/reminder HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:16:43 +0100] "GET /automated/expired HTTP/1.1" 302 -
+::1 - - [09/Aug/2018:17:16:43 +0100] "GET / HTTP/1.1" 200 15933
+::1 - - [09/Aug/2018:17:16:43 +0100] "GET /media/css/style.css?2018-08-09%2005:16:43pm HTTP/1.1" 200 26694
+::1 - - [09/Aug/2018:17:21:53 +0100] "GET /client/ HTTP/1.1" 200 13622
+::1 - - [09/Aug/2018:17:21:53 +0100] "GET /media/css/style.css?2018-08-09%2005:21:53pm HTTP/1.1" 200 26694

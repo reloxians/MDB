@@ -66,6 +66,7 @@ CREATE TABLE `active_service` (
   `renewal_fee` int(65) NOT NULL,
   `one_time_fee` int(65) NOT NULL,
   `activity_status` int(4) NOT NULL default '0' ,
+  `reminded` int(4) NOT NULL default '0',
   
   
   PRIMARY KEY  (`id`)
