@@ -135,6 +135,7 @@ A recurrent annual payment for this plan
 
 <form method="post" action="/checkout/">	
 		<input name="item" type="hidden" value="WordPress Full" />
+		<input name="type" type="hidden" value="wordpress" />
 		<input name="price" type="hidden" value="47000" />
 		<input name="billing" type="hidden" value="Yearly" />
 
@@ -210,6 +211,7 @@ A one time payment is required for this plan
 
 <form method="post" action="/checkout/">	
 		<input name="item" type="hidden" value="WordPress Design" />
+		<input name="type" type="hidden" value="wordpress" />
 		<input name="price" type="hidden" value="23000" />
 		<input name="billing" type="hidden" value="One Time" />
 

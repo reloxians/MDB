@@ -9,149 +9,128 @@
 	<div class="page_wrapper_sub">
 	
 	<div class="page_intro">
-			Add a new service to the list of services 
-			
+			Add a new service to the list of services 		
+	</div>
+
+<table width="100%">
+<tr bgcolor="">
+<td class="invisible" width="20%">
+</td>
+
+<td width="60%">
+
+<!-- controller class -->
+
+<center>
+
+<div class="form_class">
+<form id="controller">
+
+<select id="dynamic_form" required="required">
+<option value="app_service">App Service</option>
+<option value="website_service">Web Service</option>
+</select>
+
+<div class="forbidden_class_wrapper">			
+			<div class="forbidden_class">
+<i class="fa fa-warning"></i> Please endeavour to select the right option, as this may lead to a incorrect record entry
 			</div>
-			
-			<table width="100%" cellpadding="5">
-			<tr bgcolor="">
-			<td class="invisible" width="20%">
-			
-			</td>
-			
-			<td width="60%">
-						
-			
-			
-			<center>
-			<div class="form_class">
-			
-			<form action="add_service.inc.php" method="POST">
-			
-			<select name="service_type" required="required">
-				<option value="">Select Service Type</option>
-				<option value="Renewable">Renewable</option>
-				<option value="Non-Renewable">Non-Renewable</option>
-			</select>
-			
-			<br>
-			
-			<input name="username" type="text" placeholder="Username" required="required" />
-			
-			<?php 
-				$main_link = 	$_SERVER['REQUEST_URI'];
-				$username_error_link = '/docs/signup?usernameError';
-			
-			if($main_link == $username_error_link) {
-			
-					?>
-					
-					<div class="forbidden_class_wrapper">			
+</div>
+
+
+
+</form>
+</div>
+
+</center>
+
+
+<!--child forms -->
+
+<center>
+
+<div class="form_class">
+<form id="app_service" action="add_service.inc.php" method="POST">
+<input name="username" type="text" placeholder="Username" required="required" />
+
+<div class="forbidden_class_wrapper">			
 			<div class="forbidden_class">
 <i class="fa fa-warning"></i> The username you entered has been used, please fix this error before proceeding with the signup process
 			</div>
-					</div>
-		
-				
-		<?		
-			}
-			?>
-			
-				<div class="forbidden_class_wrapper">		
-					
-			<div class="valid_class">
-<i class="fa fa-warning"></i> This should be a valid email address as it is going to be verified before completing the signup process
 </div>
-				</div>
-			
+
+			<input name="service" type="hidden" value="app" />
+
 			<input name="email" type="hidden" placeholder="Email" required="required" />	
 		
-			<input name="website" type="text" placeholder="Website Url" required="required" />	
+			<input name="service_name" type="text" placeholder="Service Name" required="required" />	
 			<br>
 							
-			<input name="platform" type="text" placeholder="Platform" required="required" />
-			
-			<?php 
-				$main_link = 	$_SERVER['REQUEST_URI'];
-				$email_error_link = '/docs/signup?emailError';
-			
-			if($main_link == $email_error_link) {
-			
-					?>
-					
-					<div class="forbidden_class_wrapper">			
-			<div class="forbidden_class">
-<i class="fa fa-warning"></i> The email you entered has been used, please fix this error before proceeding with the signup process
-			</div>
-					</div>
-		
-				
-		<?		
-			}
-			?>
-			<br>
-			<input name="expiration" type="text" placeholder="Expiration Date" required="required" />
-			<br>
-			
-			<input name="renewal_fee" type="number" placeholder="Renewal Fee $USD" required="required" />
-			
-			
-			<?php 
-				$main_link = 	$_SERVER['REQUEST_URI'];
-				$other_link = '/docs/signup?passwordError';
-			
-			if($main_link == $other_link) {
-			
-					?>
-					
-					<div class="forbidden_class_wrapper">			
-			<div class="forbidden_class">
-<i class="fa fa-warning"></i> The passwords you entered didnt match, please fix this error before proceeding with the signup process
-			</div>
-					</div>
-		
-				
-		<?		
-			}
-			?>
-			
-					
-			
-			<input name="one_time_fee" type="number" placeholder="One Time Fee $USD" required="required" />			
-			<br>
-			
-			
+			<input name="type" type="text" placeholder="Type" value="App" required="required" />
+
+			<input name="fee" type="number" placeholder="One Time Fee" required="required" />
 			
 			<input type="submit" value="Save" name="submit" />
-			</form>
-		
-			</div>			
-			</center>
-			
-			<center>
-			
-			<div class="agreement">
-			By clicking "Save", you acknowledge that you have been credited with the ammount you requeated for this service
-			
-			
-			
-			
+
+</form>
+
+<!-- second child form starts -->
+
+<form id="website_service" style="display: none;" action="add_service.inc.php" method="POST">
+<input name="username" type="text" placeholder="Username" required="required" />
+
+<div class="forbidden_class_wrapper">			
+			<div class="forbidden_class">
+<i class="fa fa-warning"></i> The username you entered has been used, please fix this error before proceeding with the signup process
 			</div>
+</div>
+
+			<input name="service" type="hidden" value="website" />
+
+			<input name="email" type="hidden" placeholder="Email" required="required" />	
+		
+			<input name="service_name" type="text" placeholder="Service Name" required="required" />	
+			<br>
+							
+			<input name="type" type="text" placeholder="Type" value="Website" required="required" />
 			
-			</center>
+			<select name="platform" required="required">
+			<option value="">Select an option</option>
+			<option value="wordpress">WordPress</option>
+			<option value="PHP_based">Full PHP</option>
+			</select>
 			
-			</td>
+			<input name="expiration" type="datetime-local" placeholder="Expiration Date" required="required" />
 			
-			<td class="invisible" width="20%">
+			<input name="fee" type="number" placeholder="Renewal Fee" required="required" />
 			
-			</td>
-			</tr>
-			</table>
+			<input type="submit" value="Save" name="submit" />
+
+
+</form>
+</div>
+
+</center>
+
+<!-- script for controller -->
+
+<script>
 			
+	  $("#dynamic_form").on("change", function() { $("#" + $(this).val()).show().siblings().hide();
+				 }) 
+				
+</script>			
+
+
+</td>
+
+<td class="invisible" width="20%">
+</td>
+</tr>
+</table>
+	
 	
 	</div>
 	
-	<?php
-		include '../footer.php';
-	
-	
+<?php
+	include '../footer.php' ;

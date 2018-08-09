@@ -51,14 +51,15 @@ CREATE TABLE `users` (
 
 //////////////////////////////////////////////////
 
-DROP TABLE IF EXISTS `website_service`;
+DROP TABLE IF EXISTS `active_service`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
-CREATE TABLE `website_service` (
+CREATE TABLE `active_service` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `website` varchar(255) NOT NULL,
+  `service_name` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
   `platform` varchar(255) NOT NULL,
   `created` timestamp NOT NULL default '0000-00-00 00:00:00',
   `expiration` timestamp NOT NULL default '0000-00-00 00:00:00',

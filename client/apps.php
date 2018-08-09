@@ -2,8 +2,8 @@
 	//
 	
 	$link = 'active' ;
-	$active = 'websites' ;
-	$child = 'active_websites' ;
+	$active = 'android' ;
+	$child = 'active_apps' ;
 	
 	include '../database/database.php' ;
 	
@@ -56,15 +56,18 @@
 			
 			<div class="pre_block">
 			<div class="pre_block_header">						
-			Active Website Services
+			Pending Services
 			</div>
 			
 			<br></br>
-			Below is an overview of your active website 
+			Below is an overview of your pending website 
 			
 			<?php if($count == 1 ) { echo 'service'  ; } elseif($count > 1 ) { echo 'services' ; } ?>
 			
-			 currently under the management of our developers, we'll do our best to keep you updated regularly
+			 currently under construction, we'll do our best to comlete 
+			
+			<?php if($count == 1 ) { echo 'it'  ; } elseif($count > 1 ) { echo 'them' ; } ?> as soon as possible. 
+			you'll be notified upon completion
 			
 			</div>
 

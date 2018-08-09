@@ -29,7 +29,7 @@
 	<?php
 	$me = $_SESSION['username'] ;
 	
-	$sel = "select * from cart_order  where username= '$me' and type= 'website' ORDER BY ID desc";
+	$sel = "select * from cart_order  where username= '$me' and type= 'website' OR type= 'wordpress' ORDER BY ID desc";
 	
 	$cmd = mysqli_query($connect, $sel) ;
 	
