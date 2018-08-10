@@ -25,7 +25,7 @@ $interval = $future_date->diff($now);
 
 //vars
 
-$years =  $interval->format("%y year");
+$years =  $interval->format("%y");
 
 $months =  $interval->format("%m");
 
@@ -35,20 +35,23 @@ $hours = $interval->format("%h");
 
 //cond check
 
-if($years < 1 && $months < 1 && $days < 1 && $hours < 1 && $rem == 4 ) {
+if($years < 1 && $months < 1 && $days < 1 && $rem == 4 ) {
 	
 	//action starts
 	
+	$id = $res['id'];
 	$email = $res['email'];
 	$username = $res['username'];
 	$service_name = $res['service_name'];
 	$renewal_fee = $res['renewal_fee'];
 	
-   						$headers = "From: " . strip_tags('donotreply@gmail.com') . "\r\n";
-                        $headers .= "Reply-To: ". strip_tags('donotreply@gmail.com') . "\r\n";
-                        //$headers .= "CC: susan@example.com\r\n";
+   						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
+						$headers .= "From: Alvin Excel <billing@reloxians.com>". "\r\n";
+                        $headers .= "CC: Alvin@reloxians.com\r\n";
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+
                         $subject = 'Reloxians - Service Expiration';                     
                          
                          $message = '
@@ -134,7 +137,7 @@ Email
 	if($send) {
 		//update 
 		$upd = "update active_service set 
-						reminded = '5' where username = '$username' " ;
+						reminded = '5' where id = '$id' " ;
 						
 		$cmd1 = mysqli_query($connect, $upd);
 		

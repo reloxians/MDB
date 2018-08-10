@@ -45,6 +45,7 @@ if($years < 1 && $months < 1 && $days < 31 && $days > 0 && $rem == 0 ) {
 	
 	//action starts
 	
+	$id = $res['id'];
 	$email = $res['email'];
 	$username = $res['username'];
 	
@@ -53,11 +54,13 @@ if($years < 1 && $months < 1 && $days < 31 && $days > 0 && $rem == 0 ) {
 	$service_name = $res['service_name'];
 	$renewal_fee = $res['renewal_fee'];
 	
-   						$headers = "From: " . strip_tags('donotreply@gmail.com') . "\r\n";
-                        $headers .= "Reply-To: ". strip_tags('donotreply@gmail.com') . "\r\n";
-                        //$headers .= "CC: susan@example.com\r\n";
+   						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
+						$headers .= "From: Alvin Excel <billing@reloxians.com>". "\r\n";
+                        $headers .= "CC: Alvin@reloxians.com\r\n";
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+
                         $subject = 'Reloxians - Service Expiration';                     
                          
                          $message = '
@@ -139,7 +142,7 @@ Email
 	if($send) {
 		//update 
 		$upd = "update active_service set 
-						reminded = '4' where username = '$username' " ;
+						reminded = '4' where id = '$id' " ;
 						
 		$cmd1 = mysqli_query($connect, $upd);
 		

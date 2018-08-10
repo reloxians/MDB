@@ -6,7 +6,34 @@ $now = new DateTime();
 $future_date = new DateTime($datetime); 
 $interval = $future_date->diff($now); 
 
-return $interval->format("%y years, %m months, %d days %h hours, %i minutes, %s seconds");
+//vars
+
+$years = $interval->format("%y");
+
+$months = $interval->format("%m");
+
+$days = $interval->format("%d");
+
+$hours = $interval->format("%h");
+
+if($years < 1 && $months < 1 && $days < 1 ) {
+	
+			return $interval->format("%h hours, %i minutes, %s seconds");
+	
+	} elseif ($years < 1 && $months < 1 ) {
+
+			return $interval->format("%d days %h hours, %i minutes, %s seconds");
+			
+	} elseif ($years < 1 ) {
+		
+			return $interval->format("%m months %d days %h hours, %i minutes, %s seconds");
+		
+		} else {
+		
+			return $interval->format("%y years, %m months %d days %h hours, %i minutes, %s seconds");
+		
+		}
+
 
 }
 

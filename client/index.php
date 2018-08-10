@@ -102,13 +102,19 @@ Started <? echo now ($res['created']) ?>
 
 </div>
 
+
+<!--
 <div class="service_desc_container">
 Expiration Date is <b><? echo  ($res['expiration']) ?></b>
 
 </div>
+-->
 
 <div class="service_desc_container">
-Time Left is <b><? echo time_up ($res['expiration']) ?></b>
+
+<b style="color: #E65100;">
+<? if($res['reminded'] == 5 ) { echo 'Service has Expired' ; } else { echo time_up ($res['expiration'])  ;} ?>
+</b>
 
 </div>
 
