@@ -9,11 +9,20 @@ $me = $_SESSION['username'];
 		
 	<li <?php if($link == 'active') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../client/">Active</a></li> 
 
-<!--
+
+<?
+
+$ch = "select * from notify where username='$me' and stats= 0 " ;
+$cmdb = mysqli_query($connect, $ch);
+
+$count = mysqli_num_rows($cmdb);
+
+?>
+		
 	
-	<li <?php if($link == 'renew') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../client/renew.php">Renew</a></li> 
+	<li <?php if($link == 'notify') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../notify/">Inbox <span class="email"><? echo $count ?></span> </a></li> 
 	
--->
+
 	
 	<li <?php if($link == 'pending') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../pending/"><i id="warning" class="fa fa-warning"></i>  Pending</a></li>
 	

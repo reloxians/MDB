@@ -14,9 +14,9 @@ $user = $_SESSION['username'];
 	
 	
 
-<!-- part 1 ends -->
+<!-- part 1 ends -->	
 
-
+	
 	<?php if($_SESSION['username']){ 
 	
 	?>
@@ -41,7 +41,16 @@ $user = $_SESSION['username'];
 	
 	<?php
 	} 
+	
+	
+	
 		?>
+		
+		
+		
+		<li class="wide_nav_right"><a href="../../notify/"><i class="fa fa-envelope"></i><span class="">  Inbox</span></a></li>
+		
+		
 	
 </ul>
 

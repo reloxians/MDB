@@ -379,7 +379,7 @@ body {
 
 .wide_nav_ul > li {
 	display: inline-block;
-	padding: 12px;
+	padding: 12px 6px 12px 6px;
 }
 
 .wide_nav_ul > li > a {
@@ -1690,6 +1690,65 @@ button.stripe-button-el>span {
 	padding: 5px !important;
 
 }
+
+.title_wrapper, .title_wrapper > a {
+	padding: 8px;
+	background: #F0F8FF;
+	color: #393D58;
+	font-size: 13px;
+	font-weight: bold; 
+	text-decoration: none;
+	
+}
+
+.msg_wrapper, .msg_wrapper > a {
+	padding: 0px 0px 8px 8px;
+	background: #;
+	font-size: 13px;
+	color: #666;
+	min-height: 25px;
+	border-bottom: solid #eee 1px;
+	text-decoration: none;
+
+}
+
+.msg_wrapper_open {
+	background: #FFEBEE;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 20px;
+	min-height: 400px;
+	color: #EF5350;
+
+}
+
+
+.msg_open_time {
+	background: #FFEBEE;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 10px;
+	color: #EF5350;
+
+}
+
+.msg_title {
+	background: #FFEBEE;
+	font-size: 16px;
+	padding: 20px;
+	font-weight: bold;
+	color: #EF5350;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

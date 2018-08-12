@@ -185,7 +185,31 @@ CREATE TABLE `cart_order` (
   
   
   
+  ////////////////////////////////////////////////////////
+
+DROP TABLE IF EXISTS `notify`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `notify` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `msg` text NOT NULL,
+  `created` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `stats` int(65) NOT NULL default '0' ,
   
+  
+  PRIMARY KEY  (`id`)
+  ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1480 ;
+
+
+
+
+
+
+
+
   
 
 

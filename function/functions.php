@@ -107,7 +107,7 @@ function chop_string($str, $len) {
     if ($spc_pos = strrpos($str," "))
             $str = substr($str,0,$spc_pos);
 
-    return $str . ' __<span style="color: #558B2F;"> Read more...</span>';
+    return $str . ' __<span style="color: #e56600;"> Read more...</span>';
 }   
 }
 

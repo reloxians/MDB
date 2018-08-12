@@ -1,12 +1,10 @@
 <?php 
-	//
+	// Services INDEX
 	
-	$link = 'pending' ;
-	$active = 'android' ;
-	$child = 'pending_apps' ;
+	$link = 'notify' ;
+	$active = 'notify' ;
 	
 	include '../database/database.php' ;
-	include '../security/auth_check.php' ;
 	
 	include '../header.php' ;
 	include '../parallax.php' ;
@@ -18,18 +16,18 @@
 ?>
 	
 <?
-	include '../sidebars/pending_bar_small.php' ;
-	include '../sidebars/pending_bar.php' ;
+	include '../sidebars/notify_bar_small.php' ;
+	include '../sidebars/notify_bar.php' ;
 	
 ?>
 	
 	<div class="near_sidebar">
 	<center>
-	<img class="disabled" src="/media/images/dev.svg" width="80%"/>
+	<img class="disabled" src="/media/images/blank.svg" width="45%"/>
 	
 	<div style="width: 60%;" class="pre_block_plain">
-	<span class="email">RS - Developers</span> have provided a section for you to track record of your order placement 
-	and lot more. Make a selction from the navigation bar to view order status
+	<span class="email">RS - Developers</span> have provided a section for you to be updated with informations internally.
+Do well to	check regularly to stay updated with tips and lot more.
 	</div>
 	
 	
