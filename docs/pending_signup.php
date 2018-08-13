@@ -36,7 +36,7 @@
 		<td width="">
 		
 			<center>
-		<a href="../" class="action_main">
+		<a href="../" style="text-decoration: none;" class="pink_btn">
 		Back Home <i class="fa fa-home"></i>
 		</a>
 			</center>

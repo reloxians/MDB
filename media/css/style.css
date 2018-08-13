@@ -1691,7 +1691,7 @@ button.stripe-button-el>span {
 
 }
 
-.title_wrapper, .title_wrapper > a {
+.title_wrapper {
 	padding: 8px;
 	background: #F0F8FF;
 	color: #393D58;
@@ -1701,7 +1701,34 @@ button.stripe-button-el>span {
 	
 }
 
-.msg_wrapper, .msg_wrapper > a {
+ .title_wrapper > a  {
+	text-decoration: none;
+	color: #393D58;
+	font-size: 13px;
+	font-weight: bold;
+	
+}
+
+.read_title_wrapper {
+	padding: 8px 8px 8px 0px;
+	background: #FFEBEE;
+	color: #EF5350;
+	font-size: 13px;
+	font-weight: bold; 
+	text-decoration: none;
+	
+}
+
+.read_title_wrapper > a {
+	color: #EF5350;
+	font-size: 13px;
+	font-weight: bold; 
+	text-decoration: none;
+	padding: 8px;
+
+}
+
+.msg_wrapper {
 	padding: 0px 0px 8px 8px;
 	background: #;
 	font-size: 13px;
@@ -1710,6 +1737,15 @@ button.stripe-button-el>span {
 	border-bottom: solid #eee 1px;
 	text-decoration: none;
 
+}
+
+.msg_wrapper > a  {
+	text-decoration: none;
+	background: #;
+	font-size: 13px;
+	color: #666;
+	min-height: 25px;
+	margin: ;
 }
 
 .msg_wrapper_open {

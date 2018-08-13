@@ -16,6 +16,11 @@
 			exit();		
 			
 	} else {
+		//get for later
+		$sel = "select username from users where firstname= '$user' and auth_code= '$code' " ;
+		$sel_cmd = mysqli_query($connect, $sel);
+		$get = mysqli_fetch_assoc($sel_cmd);
+		
 		//update
 		$upd = "update users set account_status= 1, auth_code= '' where firstname= '$user' ";
 		$cmd = mysqli_query($connect, $upd);
@@ -25,11 +30,12 @@
 			
 			//mail user 
 			$to = $email;
-   					$headers = "From: " . strip_tags('donotreply@gmail.com') . "\r\n";
-                        $headers .= "Reply-To: ". strip_tags('donotreply@gmail.com') . "\r\n";
-                        //$headers .= "CC: susan@example.com\r\n";
+   						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
+						$headers .= "From: Alvin Excel <support@reloxians.com>". "\r\n";
+                        $headers .= "CC: Alvin@reloxians.com\r\n";
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
                         $subject = 'Welcome to Reloxians';                     
                          
                          $message = '
@@ -73,9 +79,27 @@ Welcome to Reloxians website, this is to confirm that you now own an account wit
 ' ;
                          							         
    $sentmail = mail($to,$subject,$message,$headers);
-			header("location: ../docs/login.php");
 			
 			//echo 'done';
+			
+			//send user msg
+			//vars
+			
+			$username = $get['username'];
+			
+			$title = 'Alvin Welcomes You To RS - Developers' ;
+			$created = date("Y-m-d h:i:sa");
+			$msg = 'Welcome to RS - Developers, we are glad to do business with you.
+							we look foward to working for you as you make your choices.
+							for any technical issue, feel free to call our support lines at anytime.
+							' ;
+			
+			
+			$insert = "insert into notify(username, email, title, msg, created)values('$username', '$email', '$title', '$msg', '$created')";
+			
+			header("location: ../docs/login.php");
+			$cmd = mysqli_query($connect, $insert);
+			
 		} else {
 			header("location: ../");
 		}

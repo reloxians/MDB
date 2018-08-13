@@ -1,5 +1,6 @@
 <?php
 	include '../database/database.php' ;
+	include '../security/auth_check.php' ;
 	
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		//vars
@@ -39,11 +40,13 @@
 		if($cmd) {
 				 		 	
 				 		 	$to = $email;
-   						$headers = "From: " . strip_tags('billing@reloxians.com') . "\r\n";
-                        $headers .= "Reply-To: ". strip_tags('donotreply@gmail.com') . "\r\n";
-                        //$headers .= "CC: susan@example.com\r\n";
+							
+   						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
+						$headers .= "From: Alvin Excel <billing@reloxians.com>". "\r\n";
+                        $headers .= "CC: Alvin@reloxians.com\r\n";
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
                         $subject = 'Reloxians Order Confirmation';                     
                          
                          $message = '
@@ -85,7 +88,7 @@ Item
 Charge fee
 </td>
 <td width="80%">
-'.$price.' NGN
+<b style="color: red">₦'. number_format($price).' NGN</b>
 </td>
 </tr>
 
@@ -139,9 +142,9 @@ Email
 				 		 //mail admin of new order placement 
 				 		 
 				 		 	$to_admin = $admin_email;
-   						$headers = "From: " . strip_tags('donotreply@gmail.com') . "\r\n";
-                        $headers .= "Reply-To: ". strip_tags('donotreply@gmail.com') . "\r\n";
-                        //$headers .= "CC: susan@example.com\r\n";
+   						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
+						$headers .= "From: Alvin Excel <billing@reloxians.com>". "\r\n";
+                        $headers .= "CC: Alvin@reloxians.com\r\n";
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
                         $subject = 'Reloxians Order Confirmation';                     
@@ -185,7 +188,7 @@ Item
 Charge fee
 </td>
 <td width="80%">
-'.$price.' NGN
+<b style="color: red;">₦'. number_format($price).' NGN</b>
 </td>
 </tr>
 

@@ -3,14 +3,17 @@
 	if(isset($_POST['submit'])) {
 		include '../database/database.php';
 		//vars
-		$username = mysqli_real_escape_string($connect, $_POST['username']);
+		
+		$capital = ucfirst($_POST['username']);
+		
+		$username = mysqli_real_escape_string($connect, $capital);
 		$password = mysqli_real_escape_string($connect, $_POST['password']);
 		
 		$next = mysqli_real_escape_string($connect, $_POST['next']);
 		
 		$password_raw = base64_encode($password);
 		//query
-		$check = "SELECT * FROM users WHERE account_status= 1 AND username= '$username' OR email= '$username'";
+		$check = "SELECT * FROM users WHERE username= '$username' AND account_status= 1 OR email= '$username' AND account_status= 1";
 		
 		$cmd = mysqli_query($connect, $check);
 		$res = mysqli_fetch_assoc($cmd);

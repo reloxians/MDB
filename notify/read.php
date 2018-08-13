@@ -57,7 +57,7 @@
 	
 
 	
-	<div class="title_wrapper">	
+	<div class="read_title_wrapper">	
 	<a href="#" onclick="document.getElementById('<? echo $ress['id'] ?>').submit();"> <? echo $ress['title'] ?></a>
 	</div>
 	

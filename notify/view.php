@@ -9,8 +9,8 @@
 		}
 	
 	$link = 'notify' ;
-	$active = 'unread' ;
-	$child = 'unread_msg' ;
+	$active = 'read' ;
+	$child = 'read_msg' ;
 	
 	include '../database/database.php' ;
 	include '../security/auth_check.php' ;
