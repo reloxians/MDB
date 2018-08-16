@@ -26,10 +26,10 @@ Can i pay for this service 2 times?
 </div>
 
 <div class="faq_answer">
-For the sake of doubt, insufficient cash or any other financial impedement, we allow payment of <span class="email">60%</span> of the charge fee which can be made via the <a class="" href="#">e-pay payment</a> platform. 
+For the sake of doubt, insufficient cash or any other financial impedement, we allow payment of <span class="email">70%</span> of the charge fee which can be made via the <a class="" href="../../i-pay/">i-pay payment</a> platform. 
 <br>
 <br>
-Note: A service fee of <span class="email">5%</span> of the charge fee is required on the <a href="#">e-pay</a> platform 
+Note: A service fee of <span class="email">15%</span> of the charge fee is required on the <a href="../../i-pay/">i-pay</a> platform 
 </div>
 
 </td>

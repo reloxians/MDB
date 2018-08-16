@@ -1,45 +1,31 @@
 <?php
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+	
 	include '../database/database.php' ;
 	include '../security/auth_check.php' ;
+	include '../function/functions.php' ;
 	
-	if($_SERVER['REQUEST_METHOD'] == 'POST') {
-		//vars
+	//vars
+	
+	$username = $_POST['username'] ;
+	$email = $_POST['email'] ;
+	$admin_email = site_email() ;
+	$billing = 'Yearly' ;
+	$ref = $_POST['ref'] ;
+	$product = $_POST['product'] ;
+	$product_name = $_POST['product_name'] ;
+	$price = $_POST['price'] ;
+	$balance = $_POST['balance'] ;
+	$created = date("Y-m-d h:i:sa");
+	
+	$ins = "insert into ipay (username, email, ref, product, price, balance, created) values ('$username', '$email', '$ref', '$product', '$price', '$balance', '$created')" ;
+	
+	$cmd = mysqli_query($connect, $ins);
+	
+	if($cmd) {
 		
-		$ref = $_POST['ref'];
-		$item = $_POST['item'];
-		$type = $_POST['type'];
-		$price = $_POST['price'];
-		$billing = $_POST['billing'];
-		$username = $_POST['username'];
-		$created = date("Y-m-d h:i:sa");
-		
-		//admin
-		include '../function/functions.php' ;
-		
-		$admin_email = site_email();
-		
-		//get user details 
-		$chk = "select * from users where username= '$username' ";
-		$cmd = mysqli_query($connect, $chk);
-		$info = mysqli_fetch_array($cmd);
-		
-		//use info
-		$firstname = $info['firstname'];
-		$lastname = $info['lastname'];
-		$email = $info['email'];
-		$phone = $info['phone'];
-		
-		//create record
-		
-		$ins = "insert into cart_order(username, firstname, lastname, email, phone, item, type, price, billing, ref, created ) values ('$username', '$firstname', '$lastname', '$email', '$phone', '$item', '$type', '$price', '$billing', '$ref', '$created')";
-
-		$cmd = mysqli_query($connect, $ins);
-		
-		//send them notification
-		
-		if($cmd) {
-				 		 	
-				 		 $to = $email;
+						$to = $email;
 							
    						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
 						$headers .= "From: Alvin Excel <billing@reloxians.com>". "\r\n";
@@ -77,18 +63,27 @@ Here is a Confirmation that we have received your order placement. our team of d
 <table width="100%" style="font-family: helvetica;">
 <tr>
 <td width="20%">
-Item 
+Product 
 </td>
 <td width="80%">
-'.$item.'
+'.$product_name.'
 </td>
 
 <tr>
 <td width="20%">
-Charge fee
+Charged fee
 </td>
 <td width="80%">
 <b style="color: red">₦'. number_format($price).' NGN</b>
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+Balance
+</td>
+<td width="80%">
+<b style="color: red">₦'. number_format($balance).' NGN</b>
 </td>
 </tr>
 
@@ -141,7 +136,7 @@ Email
 				 		 
 				 		 //mail admin of new order placement 
 				 		 
-				 		 	$to_admin = $admin_email;
+				 		$to_admin = $admin_email;
    						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
 						$headers .= "From: Alvin Excel <billing@reloxians.com>". "\r\n";
                         $headers .= "CC: Alvin@reloxians.com\r\n";
@@ -180,15 +175,24 @@ Here is a Confirmation of an order placement on your website. below are details 
 Item 
 </td>
 <td width="80%">
-'.$item.'
+'.$product_name.'
 </td>
 
 <tr>
 <td width="20%">
-Charge fee
+Charged fee
 </td>
 <td width="80%">
 <b style="color: red;">₦'. number_format($price).' NGN</b>
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+Balance
+</td>
+<td width="80%">
+<b style="color: red">₦'. number_format($balance).' NGN</b>
 </td>
 </tr>
 
@@ -250,14 +254,17 @@ Email
 				 		 document.getElementById("form").submit();
 				 		 </script>
 				 		 
-				 		 
-				 		 
-				 		 <?
-				 
-			}
-				
+		
+						<?
+						
+		}	else {
+			header("Location: /");
+		}
+	
+	
+	
+	
 	} else {
-		header("Location: ../");
+	header("Location: /");
+	
 	}
-	
-	

@@ -36,18 +36,48 @@
 	<?php
 	$me = $_SESSION['username'] ;
 	
-	$sel = "select * from cart_order  where username= '$me' and type= 'website' OR type= 'wordpress' ORDER BY ID desc";
+	$sel = "select * from active_service  where type != 'website' and username='$me' ORDER BY ID desc";
 	
-	$cmd = mysqli_query($connect, $sel) ;
+	$cmd0 = mysqli_query($connect, $sel) ;
 	
 //	$res = mysqli_fetch_array($cmd) ; 
 	
-	$count = mysqli_num_rows($cmd) ;
+	$count = mysqli_num_rows($cmd0) ;
 	
 	if($count < 1 ) {
 		
-		echo 'you currently have no active service' ;
+		?>
 		
+	<img class="disabled" src="/media/images/lap.svg" width="60%" />
+		
+	<div style="width: 60%;" class="pre_block_plain">
+	You currently do not have an active service on <span class="email">RS - Developers</span> website, select one from the list of available services
+	</div>
+	
+
+	
+	<table cellpadding="10" width="50%">
+	<tr bgcolor="">
+	
+	<td align="center" width="50%">
+	<span class="purple_btn">
+<a id="order" href="mailto:<? echo site_email() ?>"><i class="fa fa-cart-plus"></i>   SUPPORT EMAIL</a>
+</span>
+	</td>
+	
+	<td align="center" width="50%">
+	
+<span class="parallax_tabs_b">
+<a href="tel:<?php echo site_number() ?>"><i class="fa fa-phone"></i>   SUPPORT LINE </a>
+</span>
+	
+	</td>
+	</tr>
+	</table>
+	
+		
+		<?
+			
 		
 		} else {
 			

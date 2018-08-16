@@ -947,7 +947,15 @@ body {
 	font-size: 12px;
 }
 
-.faq_answer > a {
+.ipay_calc {
+	color: #525F7F;
+	font-family: Camphor W01 Regular;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+.faq_answer > a, .ipay_calc > a {
 	font-family: Camphor W01 Medium;
 	color: #6772E5;
 	text-decoration: none;
@@ -1600,6 +1608,16 @@ button.stripe-button-el>span {
 	line-height: 28px!important;
 	
 }
+
+
+.sidebar_links_ipay {
+	list-style-type: asterisk;
+	padding-left: 20px !important;
+	line-height: 28px!important;
+	
+}
+
+
 
 .sidebar_links > li > a {
 	text-decoration: none;

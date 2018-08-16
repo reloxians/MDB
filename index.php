@@ -16,7 +16,7 @@
 	<td width="50%">
 	
 	<!-- inner table -->
-	<table cellpadding="5" width="100%"><!-- inner tab -->
+<table cellpadding="5" width="100%"><!-- inner tab -->
 <tr bgcolor="">
 <td align="center" valign="top" bgcolor="" width="10%">
 

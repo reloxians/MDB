@@ -46,7 +46,37 @@
 	
 	if($count < 1 ) {
 		
-		echo 'you currently have no active service' ;
+		?>
+		
+		
+		<img class="disabled" src="/media/images/lap.svg" width="60%" />
+		
+	<div style="width: 60%;" class="pre_block_plain">
+	You currently do not have an active service on <span class="email">RS - Developers</span> website, select one from the list of available services
+	</div>
+	
+
+	
+	<table cellpadding="10" width="50%">
+	<tr bgcolor="">
+	
+	<td align="center" width="50%">
+	<span class="purple_btn">
+<a id="order" href="mailto:<? echo site_email() ?>"><i class="fa fa-cart-plus"></i>   SUPPORT EMAIL</a>
+</span>
+	</td>
+	
+	<td align="center" width="50%">
+	
+<span class="parallax_tabs_b">
+<a href="tel:<?php echo site_number() ?>"><i class="fa fa-phone"></i>   SUPPORT LINE </a>
+</span>
+	
+	</td>
+	</tr>
+	</table>
+
+	<?
 		
 		
 		} else {

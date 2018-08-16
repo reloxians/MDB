@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="0 0 787.3007 662.2261" width="787.3007" height="662.2261" style="stroke:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:1;stroke-dasharray:none;fill:#000000;fill-opacity:1;fill-rule:evenodd" font-family="Arial" font-size="15" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Rounded rectangle" transform="matrix(1,0,0,1,240,360)">
+    <rect x="0" y="0" width="360" height="190.982" rx="10.5917" style="stroke-linecap:round;stroke-linejoin:round;fill:#B2B2B2;" />
+  </g>
+  <path id="Rounded rectangle1" d="M256.6848,367.6615L582.7751,367.6615C588.5726,367.6615 593.3433,372.5665 593.3433,378.5273L593.3433,516.8321C593.3433,522.7928 588.5726,527.6978 582.7751,527.6978L256.6848,527.6978C250.8872,527.6978 246.1166,522.7928 246.1166,516.8321L246.1166,378.5273C246.1166,372.5665 250.8872,367.6615 256.6848,367.6615z" style="stroke-linecap:round;stroke-linejoin:round;fill:#CCCCCC;" />
+  <g transform="matrix(1,0,0,1,246.1166,367.6615)">
+    <text x="127.4102" y="118.3775" style="fill:#FFAA00;" font-family="Monospace" font-size="64">&lt;/&gt;</text>
+  </g>
+  <g id="Trapezium" transform="matrix(1,0,0,1,191.5992,550.982)">
+    <path d="M55.2494,0L401.5522,0L456.8015,54.9302L0,54.9302L55.2494,0z" style="stroke-linecap:round;stroke-linejoin:round;fill:#B2B2B2;" />
+  </g>
+  <g id="Rounded rectangle2" transform="matrix(1,0,0,1,191.5992,599.7927)">
+    <rect x="0" y="0" width="456.8015" height="18.6416" rx="10" style="stroke-linecap:round;stroke-linejoin:round;fill:#B2B2B2;" />
+  </g>
+  <g id="Trapezium1" transform="matrix(1,0,0,1,217.6413,560.8166)">
+    <path d="M34.9913,0L369.726,0L404.7173,35.2609L0,35.2609L34.9913,0z" style="stroke-linecap:round;stroke-linejoin:round;fill:#808080;" />
+  </g>
+  <g id="Circle" transform="matrix(1,0,0,1,412.8513,531.6765)">
+    <ellipse cx="7.1487" cy="7.1487" rx="7.1487" ry="7.1487" style="stroke-linecap:round;stroke-linejoin:round;fill:#999999;" />
+  </g>
+  <g id="Rounded rectangle3" transform="matrix(1,0,0,1,280.3254,547.4138)">
+    <rect x="0" y="0" width="5.454" height="6.8447" rx="0.4816" style="stroke-linecap:round;stroke-linejoin:round;fill:#999999;" />
+  </g>
+  <g id="Rounded rectangle4" transform="matrix(1,0,0,1,556.539,547.4138)">
+    <rect x="0" y="0" width="5.454" height="6.8447" rx="0.4816" style="stroke-linecap:round;stroke-linejoin:round;fill:#999999;" />
+  </g>
+</svg>

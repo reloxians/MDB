@@ -5,6 +5,7 @@
 	$active = 'notify' ;
 	
 	include '../database/database.php' ;
+	include '../security/auth_check.php' ;
 	
 	include '../header.php' ;
 	include '../parallax.php' ;

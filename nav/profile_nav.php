@@ -27,6 +27,8 @@ $count = mysqli_num_rows($cmdb);
 	<li <?php if($link == 'pending') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../pending/"><i id="warning" class="fa fa-warning"></i>  Pending</a></li>
 	
 	
+	<li <?php if($link == 'i-pay') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../i-pay/"><i id="warning" class="fa fa-dollar"></i>  I-Pay</a></li>
+	
 	<?php 
 	//	include '../database/database.php' ;
 		$chk = "select * from website_service_request where username= '$me'";
