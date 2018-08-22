@@ -108,8 +108,8 @@ Learn More  <i class="fa fa-angle-double-right"></i>
 
 
 
-<div class="pre_block">
-<div class="pre_block_header">
+<div style="background: transparent;" class="pre_block">
+<div style="color: #566383;" class="pre_block_header">
 Things You Can Learn From Us
 </div>
 <br>
@@ -177,8 +177,8 @@ Learn Android App Development from scratch with examples of the basic functions 
 
 
 
-<div class="pre_block">
-<div class="pre_block_header">
+<div style="background: transparent" class="pre_block">
+<div class="pre_block_header_pink">
 Our Client Arena
 </div>
 <br>

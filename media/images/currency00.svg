@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="0 0 600 504" width="600" height="504" style="stroke:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:1;stroke-dasharray:none;fill:#000000;fill-opacity:1;fill-rule:evenodd" font-family="Arial" font-size="15" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Circle" transform="matrix(1,0,0,1,96,48)">
+    <ellipse cx="204" cy="204" rx="204" ry="204" style="stroke-linecap:round;stroke-linejoin:round;fill:#F4A0A0;" />
+  </g>
+  <g id="Circle1" transform="matrix(1,0,0,1,133.5,85.5)">
+    <ellipse cx="166.5" cy="166.5" rx="166.5" ry="166.5" style="stroke-linecap:round;stroke-linejoin:round;fill:#FF9595;" />
+  </g>
+  <g id="Circle2" transform="matrix(1,0,0,1,159.375,111.375)">
+    <ellipse cx="140.625" cy="140.625" rx="140.625" ry="140.625" style="stroke-linecap:round;stroke-linejoin:round;fill:#FF6868;" />
+    <text x="113.6484" y="198.1641" style="fill:#FFFFFF;" font-size="96">$</text>
+  </g>
+</svg>

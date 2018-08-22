@@ -19,8 +19,8 @@ Note: all web development services are delivered within 14 working days. if ther
 <div class="footer_main"><!-- main - container -->
 <table class="spy_foot_tab" width="100%" cellpadding="20">
 <tr>
-<td class="responsive" valign="top" width="30%">
-<h3 class="foot_name">About <?php echo site_name(); ?></h3>
+<td class="responsive" valign="top" width="25%">
+<h3 class="foot_name">About RS - Developers</h3>
 
 <div class="foot_text">
 <?php echo site_name() ?> are a team of Stack Developers that work together to ensure the delivery of your expectation in the web development enviroment, contact us today!
@@ -29,7 +29,18 @@ Note: all web development services are delivered within 14 working days. if ther
 
 </td>
 
-<td class="responsive" valign="top" width="23%">
+<td class="responsive" valign="top" width="15%">
+<h3 class="foot_name">Company </h3>
+<ul class="foot_links">
+	<li><a href="/docs/disclaimer.php">Work Here</a></li>
+	<li><a href="/docs/privacy.php">Reviews</a></li>
+	<li><a href="/docs/support.php">Support</a></li>
+	<li><a href="/docs/faq.php">FAQ</a></li>
+	<li><a href="/docs/survey.php">Quick Survey</a></li>
+</ul>
+</td>
+
+<td class="responsive" valign="top" width="18%">
 <h3 class="foot_name">Services </h3>
 
 <ul class="foot_links">
@@ -38,12 +49,12 @@ Note: all web development services are delivered within 14 working days. if ther
 	<li><a href="/services/websites.php">Full PHP Based Websites</a></li>
 	<li><a href="/services/websites.php">E-Commerce Websites</a></li>
 	<li><a href="#">Web Dev. Training</a></li>
-	<li><a href="#">Android App Dev. Training</a></li>
+	<li><a href="#">App Dev. Training</a></li>
 
 </ul>
 </td>
 
-<td class="responsive" valign="top" width="23%">
+<td class="responsive" valign="top" width="22%">
 <h3 class="foot_name">Legal Informations </h3>
 <ul class="foot_links">
 	<li><a href="/docs/disclaimer.php">Disclaimer</a></li>
@@ -54,14 +65,14 @@ Note: all web development services are delivered within 14 working days. if ther
 
 <br>
 
-<h3 class="foot_name">Help Center</h3>
-<a class="foot_email" href="mailto:payments@reloxians.com">payments@reloxians.com <i class="fa fa-external-link"></i></a>
+<h3 class="foot_name">Help Email</h3>
+<a class="foot_email" href="mailto:billing@reloxians.com">billing@reloxians.com <i class="fa fa-external-link"></i></a>
 <br>
 <a class="foot_email" href="mailto:support@reloxians.com">support@reloxians.com <i class="fa fa-external-link"></i></a>
 
 </td>
 
-<td class="responsive" valign="top" width="24%">
+<td class="responsive" valign="top" width="20%">
 <h3 class="foot_name">Head Office</h3>
 
 <div class="foot_text"><i id="map_ico" class="fa fa-map-marker"></i>  22330 Hathaway Ave, Hayward, CA 94541</div>
@@ -105,7 +116,7 @@ Copyright © 2017 - <?php echo date("Y") ?> Top Web Developers & Designers – 
 <li><a href="#"><i class="fa fa-html5"></i></a></li>
 <li><a href="#"><i class="fa fa-wordpress"></i></a></li>
 <li><a href="#"><i class="fa fa-stack-overflow"></i></a></li>
-<li><a href="#"><i class="fa fa-android"></i></a></li>
+<li><a href="#"><i class="fa fa-github"></i></a></li>
 
 </ul>
 

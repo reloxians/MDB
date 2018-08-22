@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="0 0 600 480" width="600" height="480" style="stroke:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:1;stroke-dasharray:none;fill:#000000;fill-opacity:1;fill-rule:evenodd" font-family="Arial" font-size="15" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Triangle" transform="matrix(-0.6604,-0.7509,0.7509,-0.6604,127.6984,407.2529)">
+    <path d="M24,0L0,126L48,126L24,0z" style="stroke-linecap:round;stroke-linejoin:round;fill:#E5E5E5;" />
+  </g>
+  <g id="Circle" transform="matrix(1,0,0,1,138,66)">
+    <ellipse cx="162" cy="162" rx="162" ry="162" style="stroke-linecap:round;stroke-linejoin:round;fill:#E5E5E5;" />
+  </g>
+  <g id="Circle1" transform="matrix(1,0,0,1,156,84)">
+    <ellipse cx="144" cy="144" rx="144" ry="144" style="stroke-linecap:round;stroke-linejoin:round;fill:#C34B4B;" />
+  </g>
+  <g id="Circle2" transform="matrix(1,0,0,1,168,96)">
+    <ellipse cx="132" cy="132" rx="132" ry="132" style="stroke-linecap:round;stroke-linejoin:round;fill:#FF4D4D;" />
+    <text x="109.3125" y="189.5391" style="fill:#FFFFFF;" font-size="96">?</text>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 <div class="faq_wrapper">
-
+<br></br>
 <div class="pre_block_header">
 Frequently asked questions
 </div>
