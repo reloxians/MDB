@@ -15,94 +15,123 @@
 	?>
 	<div class="page_wrapper_sub">
 	
-			<!--  svg section -->
 	
-	<table width="100%" cellpadding="10">
-	<tr bgcolor="">
-	<td width="50%">
-	
-	<!-- inner table -->
-<table cellpadding="5" width="100%"><!-- inner tab -->
-<tr bgcolor="">
-<td align="center" valign="top" bgcolor="" width="10%">
-
-<div class="quest_wrapper">
-!
+<div style="background: transparent" class="pre_block">
+<div class="pre_block_header_pink">
+Quick Survey Form
 </div>
-</td>
+<br>
+Having any challenges with the usage of our website and it's services? help us serve you better by taking part in our quick survey exercise.  
+</div>	
 
-
-<td valign="top" width="90%">
-<div class="faq_question">
-Having any technical challenge?
-</div>
-
-<div class="faq_answer">
-We are here to assist our clients with any problem or complains not stated in the <a href="faq.php">FAQ</a>
-section of this website
-</div>
-
-</td>
-
-
-</tr>
-</table>
-	
-	
-	
-	</td>
-	
-	<td align="center" width="50%">
-	<img class="disabled" src="/media/images/support.svg" width="35%" />
-	</td>
-	</tr>
-	</table>
-	<br></br>
-	
-	<script type="text/javascript">
 			
-//submit.js
-
-$(document).ready(function() {
-	
-	$("#ajax_form").submit(function(event){
-		
-		event.preventDefault();
-		
-		var username = $("#username").val() ;
-		var firstname = $("#firstname").val() ;
-		var lastname = $("#lastname").val() ;
-		var email = $("#email").val() ;
-		var submit = $("#submit").val() ;
-		
-		$("#notification").load("survey.inc.php", {
-			username: username,
-			firstname: firstname,
-			lastname: lastname,
-			email: email,
-			submit: submit
+		<center>
+		<div class="form_class"><!-- forms -->
 			
-		}) ;
-	
-	});
+		<form action="survey.inc.php" method="POST">
+		<input name="username" type="text" placeholder="<? echo $me ?> " readonly="readonly" />
+			
+		<div class="forbidden_class_wrapper">
+		<div class="valid_class">How did you come across this website? </div> 
+		</div>
+		
+		<select name="source-answer" required="required">
+		<option value="">Select an option</option>
+		<option value="Throung a friend">Through a friend</option>
+		<option value="Via an advert">Via an advert</option>
+		<option value="Stumbled upon it">Stumbled upon it</option>
+		</select>
+			
+		<div class="forbidden_class_wrapper">
+		<div class="valid_class">How long have you been using this website? </div> 
+		</div>
 
-});
-	
-	</script>
-	
-	
-	
-	<form id="ajax_form"  action="survey.inc.php" method="POST">
-	<input type="text" id="username" name="username" placeholder="Username" />
-	<input type="text" id="firstname" name="firstname" placeholder="Firstname" />
-	<input type="text" id="lastname" name="lastname" placeholder="Lastname" />
-	<input type="email" id="email" name="email" placeholder="E-mail" />
-	<input type="submit" id="submit" value="submit" />
-	
-	<div id="notification"></div>
-	
-	</form>
-	
+		<select name="time-answer" required="required">
+		<option value="">Select an option</option>
+		<option value="For a few weeks now">For a few weeks now</option>
+		<option value="For a few months now">For a few months now</option>
+		<option value="For some years now">For some years now</option>
+		</select>
+		
+		<div class="forbidden_class_wrapper">
+		<div class="valid_class">Do you like the quality of services we render here in this website? </div> 
+		</div>
+		
+		<select name="service-answer" required="required">
+		<option value="">Select an option</option>
+		<option value="Yes">Yes</option>
+		<option value="To an extent">To an extent</option>
+		<option value="Not really">Not really</option>
+		<option value="No">No</option>
+		</select>
+
+		<div class="forbidden_class_wrapper">
+		<div class="valid_class">How would you rate our services here on this website? </div> 
+		</div>
+		
+		<select name="rate-answer" required="required">
+		<option value="">Select an option</option>
+		<option value="100">100</option>
+		<option value="90">90</option>
+		<option value="80">80</option>
+		<option value="70">70</option>
+		<option value="60">60</option>
+		<option value="50">50</option>
+		<option value="40">40</option>
+		<option value="30">30</option>
+		<option value="20">20</option>
+		<option value="10">10</option>
+		</select>
+
+		
+		<div class="forbidden_class_wrapper">
+		<div class="valid_class">Would you recommend this website to friends and family if the need be? </div> 
+		</div>
+
+		<select name="recommend-answer" required="required">
+		<option value="">Select an option</option>
+		<option value="Yes">Yes</option>
+		<option value="Maybe">Maybe</option>
+		<option value="No">No</option>
+		</select>
+		
+		<div class="forbidden_class_wrapper">
+		<div class="valid_class">Is there a way we can improve our services? if yes, drop a comment below! </div> 
+		</div>
+		
+		<textarea rows="5" name="improve-answer" placeholder="Tell us how we can improve our services"></textarea>
+
+
+						
+			<input type="submit" value="Submit" name="submit" />
+			</form>
+		
+			</div>			
+			</center>
+			
+			<center>
+			
+			<div class="agreement">
+			By clicking "Submit", you acknowledge that you have read our updated <a class="email" href="tos.php"> terms of service</a>, <a class="email" href="disclaimer.php">Disclaimer</a> and that your continued use of the website is subject to these policies.
+			
+			
+			
+			
+			</div>
+			
+			</center>
+			
+			</td>
+			
+			<td class="invisible" width="20%">
+			
+			</td>
+			</tr>
+			</table>
+			
+			
+			
+</div>		
 		
 	
 	</div><!-- wrapper ends -->

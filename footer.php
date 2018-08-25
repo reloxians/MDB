@@ -32,11 +32,12 @@ Note: all web development services are delivered within 14 working days. if ther
 <td class="responsive" valign="top" width="15%">
 <h3 class="foot_name">Company </h3>
 <ul class="foot_links">
-	<li><a href="/docs/disclaimer.php">Work Here</a></li>
-	<li><a href="/docs/privacy.php">Reviews</a></li>
-	<li><a href="/docs/support.php">Support</a></li>
-	<li><a href="/docs/faq.php">FAQ</a></li>
-	<li><a href="/docs/survey.php">Quick Survey</a></li>
+	<li><a href="/team/">Team</a></li>
+	<li><a href="/jobs/">Jobs</a></li>
+	<li><a href="/docs/privacy">Reviews</a></li>
+	<li><a href="/docs/support">Support</a></li>
+	<li><a href="/docs/faq">FAQ</a></li>
+	<li><a href="/docs/survey">Quick Survey</a></li>
 </ul>
 </td>
 
@@ -44,10 +45,10 @@ Note: all web development services are delivered within 14 working days. if ther
 <h3 class="foot_name">Services </h3>
 
 <ul class="foot_links">
-	<li><a href="/services/android.php">Android App Dev.</a></li>
-	<li><a href="/services/wordpress.php">WordPress Blog Dev.</a></li>
-	<li><a href="/services/websites.php">Full PHP Based Websites</a></li>
-	<li><a href="/services/websites.php">E-Commerce Websites</a></li>
+	<li><a href="/services/android">Android App Dev.</a></li>
+	<li><a href="/services/wordpress">WordPress Blog Dev.</a></li>
+	<li><a href="/services/websites">Full PHP Based Websites</a></li>
+	<li><a href="/services/websites">E-Commerce Websites</a></li>
 	<li><a href="#">Web Dev. Training</a></li>
 	<li><a href="#">App Dev. Training</a></li>
 
@@ -57,10 +58,10 @@ Note: all web development services are delivered within 14 working days. if ther
 <td class="responsive" valign="top" width="22%">
 <h3 class="foot_name">Legal Informations </h3>
 <ul class="foot_links">
-	<li><a href="/docs/disclaimer.php">Disclaimer</a></li>
-	<li><a href="/docs/privacy.php">Privacy Policy</a></li>
-	<li><a href="/docs/refund.php">Refund Policy</a></li>
-	<li><a href="/docs/tos.php">Terms & Conditions</a></li>
+	<li><a href="/docs/disclaimer">Disclaimer</a></li>
+	<li><a href="/docs/privacy">Privacy Policy</a></li>
+	<li><a href="/docs/refund">Refund Policy</a></li>
+	<li><a href="/docs/tos">Terms & Conditions</a></li>
 </ul>
 
 <br>
