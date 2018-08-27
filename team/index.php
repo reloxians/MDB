@@ -27,7 +27,7 @@ Reloxians Alvin Iruoghene is a full stack developer from Nigeria. he is the main
 
 </div>
 </td>
-<td align="right" valign="top" width="15%">
+<td align="right" valign="" width="15%">
 <!-- imgs -->
 
 <img src="/media/images/devs/alvin_007.jpeg" class="disabled" width="80%" />
@@ -88,7 +88,7 @@ Wareen wong is ultimately responsible for the financial health of the company; h
 
 </div>
 </td>
-<td align="right" valign="top" width="15%">
+<td align="right" valign="" width="15%">
 <!-- imgs -->
 
 <img src="/media/images/devs/warren-wong.jpeg" class="disabled" width="80%" />

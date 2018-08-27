@@ -1958,7 +1958,7 @@ select {
 
 .dev_details {
 	padding: 10px 0px 0px 0px;
-	font-size: 14px !important;
+	font-size: 12px !important;
 	line-height: 19px;
 }
 
@@ -1967,6 +1967,24 @@ select {
 	text-decoration: none ;
 }
 
+.skills {
+	margin-top: 8px;
+}
+
+.skill {
+	background: ;
+	border-radius: 4px;
+	color: #393D56;
+	font-size: 8px;
+	font-weight: bold;
+	border: solid #393D56 1px;
+	padding: 3px;
+}
+
+.main-skill {
+	background: #393D56;
+	color: white ;
+}
 /** standalone **/
 
 .transparent-bg {
