@@ -9,7 +9,7 @@
 	
 	<li <?php if($link == 'jobs') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../jobs/">Jobs</a></li>
 		
-	<li <?php if($link == 'reviews') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../team/reviews">Reviews</a></li> 
+	<li <?php if($link == 'reviews') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="#">Partnership</a></li> 
 	 
 	</ul>
 	</div>

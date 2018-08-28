@@ -40,7 +40,7 @@ Reloxians Alvin Iruoghene is a full stack developer from Nigeria. he is the main
 <td align="right" valign="" width="15%">
 <!-- imgs -->
 
-<img src="/media/images/devs/alvin_007.jpeg" class="disabled" width="80%" />
+<img src="/media/images/devs/alvin-excel.jpeg" class="disabled" width="80%" />
 
 </td>
 
@@ -139,7 +139,7 @@ Wareen wong is ultimately responsible for the financial health of the company; h
 <span class="email">Hanna Cassie - Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
+Hanna Cassie is a developer here at RS - Developers, she focuses more on front-end programming languages. she takes the lead when it comes to front-end form validation. she holds an accounting degree from St. Michael's University and is also a Certified JavaScript Developer. Hanna joined RS - Developers in 2017, & since then it has been an awesome time working with her.
 
 </div>
 
@@ -175,10 +175,10 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 
 <td valign="top" width="75%">
 <!-- details starts -->
-<span class="email">Mantho James - Developer</span><!-- name -->
+<span class="email">Mantho James - Stack Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
+Mantho James also known as MJ, is a back-end developer who has the best database management skills here at RS - Developers. James has been with us since the inception of this company. James uses his spare time to write books on database management here at RS - Developers. James graduated from Yale University with a computer science degree & also a Certified SQL Developer. Before college, he served in the Israeli Defense Forces as a paratrooper and helped found Kibbutz Hanaton.
 
 </div>
 
@@ -219,7 +219,7 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <span class="email">Meireles Neto - Stack Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
+Meireles Neto is another bad ass Developer here at RS - Developers who is known for his wonderful manipulation of front-end codes. Neto joined RS - Developer in 2017, after an outstanding peformance at the RSD job interview. Neto is a computer science graduate from the Unversity of Toronto in Canada. Just like some other developers, Neto uses his spare time to write books on website cascading using the CSS programming language. 
 
 </div>
 
@@ -260,16 +260,16 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <span class="email">James Smith - Stack Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
+James Smith is one of RSD's best Android Developer. Smith has developed over 300 Android apps within a few months of joining RSD. Smith also works at Stack Overflow as the Chief Technology Officer. Apart from being an Android Developer, Smith is also good with front-end & database management programming languages. 
 
 </div>
 
 
 <div class="skills">
-<span class="skill">Perl</span>
+<span class="skill">Java</span>
 <span class="skill">CSS</span>
 <span class="skill">SQL</span>
-<span class="skill main-skill">PHP</span>
+<span class="skill main-skill">Android</span>
 <span class="skill">JavaScript</span>
 <span class="skill">HTML</span>
 </div>
@@ -301,15 +301,14 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <span class="email">Charles Tim - Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
-
+Charles Tim is the Chief Technology Officer of RSD, responsible for software development, design, IT, and site reliability. Tim joined RSD in 2017 as a Development Team Lead before assuming a leadership role in 2018 as Vice President of Engineering. Prior to joining RSD, Tim worked at Fog Creek Software, where he began his career as an intern and then as a developer on the FogBugz team. He has a BA in computer science from Dartmouth College, and holds strong opinions on working remotely, private offices, and engineering management in general.
 </div>
 
 
 <div class="skills">
 <span class="skill">SQL</span>
 <span class="skill">CSS</span>
-<span class="skill main-skill">Perl</span>
+<span class="skill main-skill">Ajax</span>
 <span class="skill">JavaScript</span>
 <span class="skill">HTML</span>
 </div>
@@ -341,7 +340,7 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <span class="email">Rancho Peters - Stack Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
+Rancho Peters is a guru in fanciful appearance of both websites & applications. Rancho joined RSD in 2017 & has developed over 200 apps & websites with the aid of other developers. Rancho fought his way in with a beautiful presentation at the RSD interview in 2017.
 
 </div>
 
@@ -349,9 +348,9 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <div class="skills">
 <span class="skill">CSS</span>
 <span class="skill">SQL</span>
-<span class="skill">JavaScript</span>
+<span class="skill">Java</span>
 <span class="skill">HTML</span>
-<span class="skill">Perl</span>
+<span class="skill">Android</span>
 <span class="skill main-skill">JQuery</span>
 </div>
 
@@ -382,16 +381,16 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <span class="email">Alexis Markson - Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
-
+Great Alexis Markson is an amazing being. he is the youngest among the RSD team yet almost the smartest. Alexis joined RSD in 2017 without a degree from any University. Alexis is the boss here when it comes to Android app development. he uses his spare time to write books on Java & Android programming at large.
 </div>
 
 
 <div class="skills">
 <span class="skill">CSS</span>
-<span class="skill main-skill">SQL</span>
+<span class="skill main-skill">Java</span>
 <span class="skill">JavaScript</span>
 <span class="skill">HTML</span>
+<span class="skill">Android</span>
 <span class="skill">PHP</span>
 </div>
 
@@ -423,7 +422,7 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <span class="email">Sir Raymond Stark - Stack Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
+Sir Raymond Stark is an experienced Sofware Engineer who started programming at the age of 22. Raymond is good with both front-end and back-end programming languages. consequently, he is in charge of the books we publish on sale here at RSD.
 
 </div>
 
@@ -465,7 +464,7 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <span class="email">Eddie Mich - Developer</span><!-- name -->
 <div class="dev_details">
 
-Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been managing our executive team since 2017, ensuring that they're focused, efficient, and serving our employees well. With two fairly useless (but fascinating!) degrees in art history and film studies, Jennifer had been an executive assistant for her entire career before she became Deputy Chief of Staff. She joined the tech industry by happenstance when she applied to RS - Developers because it was listed 15th in Crain's "Best Place to Work in NYC". She spends her extra time advocating for RS - Developers to become the most inclusive place for developers to ethically shape the future. She's an amateur cook, avid documentary viewer, and a lively conversationalist. She plans to spend the rest of her life in Brooklyn.
+Eddie Mich, another front-end Developer with great creative ability. Eddie is new to the RSD family, as he joined RSD in 2018 yet single-handedly developed over 45 websites. Eddie is fluent with front-end and back-end languages such as PHP, CSS, JavaScript and lot more.
 
 </div>
 
@@ -491,10 +490,11 @@ Jennifer Montrose is RS - Developer's expert in Getting Things Done. She's been 
 <td class="invisible" width="5%"></td>
 </tr>
 </table>
-<br>
-
+<br />
 
 
 </div>
+
+
 <?
 include '../footer.php' ;

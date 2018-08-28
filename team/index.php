@@ -30,7 +30,7 @@ Reloxians Alvin Iruoghene is a full stack developer from Nigeria. he is the main
 <td align="right" valign="" width="15%">
 <!-- imgs -->
 
-<img src="/media/images/devs/alvin_007.jpeg" class="disabled" width="80%" />
+<img src="/media/images/devs/alvin-excel.jpeg" class="disabled" width="80%" />
 
 </td>
 

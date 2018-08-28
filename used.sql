@@ -225,6 +225,29 @@ CREATE TABLE `ipay` (
   ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1480 ;
 
 
+
+///////////////////////////////////////////////////////////////
+
+DROP TABLE IF EXISTS `ipay_balance`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `ipay_balance` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `ref` varchar(255) NOT NULL,
+  `product` text NOT NULL,
+  `price` int(255) NOT NULL,
+  `balance` int(255) NOT NULL,
+  `created` timestamp NOT NULL default '0000-00-00 00:00:00',
+  
+  
+  PRIMARY KEY  (`id`)
+  ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1480 ;
+
+
+
+
 ///////////////////////////////////////////////////////////////
 
 DROP TABLE IF EXISTS `survey`;

@@ -84,8 +84,8 @@
 			
 			?>
 			
-			<div class="pre_block">
-			<div class="pre_block_header">						
+			<div class="pre_block" style="background: transparent">
+			<div class="pre_block_header_pink">						
 			Active Website Services
 			</div>
 			

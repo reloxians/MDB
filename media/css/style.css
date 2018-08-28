@@ -1991,11 +1991,31 @@ select {
 	background: transparent ;
 	
 	}
+	
+.white-chart-cards {
+	background: white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.10);
+	border-radius: 5px;
+	margin: 10px;
+
+}
+
+.pink-chart-cards {
+	background: #FFEBEE;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.10);
+	border-radius: 5px;
+	margin: 10px;
+
+}
 
 .white {
 	color: white;
 }
 
+.grey {
+	color: grey;
+
+	}
 
 
 

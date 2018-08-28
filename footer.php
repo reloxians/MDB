@@ -34,7 +34,7 @@ Note: all web development services are delivered within 14 working days. if ther
 <ul class="foot_links">
 	<li><a href="/team/">Team</a></li>
 	<li><a href="/jobs/">Jobs</a></li>
-	<li><a href="/docs/privacy">Reviews</a></li>
+	<li><a href="#">Partnership</a></li>
 	<li><a href="/docs/support">Support</a></li>
 	<li><a href="/docs/faq">FAQ</a></li>
 	<li><a href="/docs/survey">Quick Survey</a></li>

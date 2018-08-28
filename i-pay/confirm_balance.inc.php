@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$balance = $_POST['balance'] ;
 	$created = date("Y-m-d h:i:sa");
 	
-	$ins = "insert into ipay (username, email, ref, product, price, balance, created) values ('$username', '$email', '$ref', '$product', '$price', '$balance', '$created')" ;
+	$ins = "insert into ipay_balance (username, email, ref, product, price, balance, created) values ('$username', '$email', '$ref', '$product', '$price', '$balance', '$created')" ;
 	
 	$cmd = mysqli_query($connect, $ins);
 	
@@ -137,7 +137,7 @@ Email
 				 		 //mail admin of new order placement 
 				 		 
 				 		$to_admin = $admin_email;
-   						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
+   					$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
 						$headers .= "From: Alvin Excel <billing@reloxians.com>". "\r\n";
                         $headers .= "CC: Alvin@reloxians.com\r\n";
                         $headers .= "MIME-Version: 1.0\r\n";

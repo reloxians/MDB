@@ -22,9 +22,14 @@
 		$cmd = mysqli_query($connect, $ins);
 		
 		if($cmd) {
-			echo 'yes' ;
+			
+			header("Location: /");
+			
 		} else {
-			echo 'no' ;
+		
+		
+			header("Location: /");
+			
 			}
 	
 	}	

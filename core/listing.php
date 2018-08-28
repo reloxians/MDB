@@ -2,8 +2,8 @@
 
 
 
-<div class="pre_block">
-<div class="pre_block_header">
+<div style="background: transparent" class="pre_block">
+<div class="pre_block_header_pink">
 What We Can Do For You
 </div>
 <br>
@@ -19,7 +19,10 @@ The <?php echo site_name() ?> can help you register your online presence to by c
 <div class="list" href="#"><!-- wrapper starts -->
 
 <div class="list_item">
+<!--
 <div class="list_icon_pink">
+-->
+<div class="list_icon_left">
 <i class="fa fa-wordpress"></i>
 </div>
 
@@ -33,8 +36,8 @@ Get a WordPress blog up and running within few minutes with clean & elegant desi
 
 <br>
 <span class="white_pink_btn">
-<a href="/services/wordpress.php" class="">
-Learn More  <i class="fa fa-angle-double-right"></i>
+<a href="/services/wordpress.php"><span class="grey">
+Learn More  <i class="fa fa-angle-double-right"></i></span>
 </a>
 </span>
 
@@ -48,7 +51,7 @@ Learn More  <i class="fa fa-angle-double-right"></i>
 <div class="list" href="#"><!-- wrapper starts -->
 
 <div class="list_item">
-<div class="list_icon_green">
+<div class="list_icon_left">
 <i class="fa fa-android"></i>
 </div>
 
@@ -62,8 +65,8 @@ Get an Android app for your website to facilitate growth and expansion of your b
 
 <br>
 <span class="white_green_btn">
-<a href="/services/android.php" class="">
-Learn More  <i class="fa fa-angle-double-right"></i>
+<a href="/services/android.php"><span class="grey">
+Learn More  <i class="fa fa-angle-double-right"></i></span>
 </a>
 </span>
 
@@ -77,7 +80,7 @@ Learn More  <i class="fa fa-angle-double-right"></i>
 <div class="list" href="#"><!-- wrapper starts -->
 
 <div class="list_item">
-<div class="list_icon_purple">
+<div class="list_icon_left">
 <i class="fa fa-code"></i>
 </div>
 
@@ -91,8 +94,8 @@ Get a website that suites your businesses & other organisations
 
 <br>
 <span class="parallax_tabs_b">
-<a href="/services/websites.php" class="">
-Learn More  <i class="fa fa-angle-double-right"></i>
+<a href="/services/websites.php"><span class="grey">
+Learn More  <i class="fa fa-angle-double-right"></i></span>
 </a>
 </span>
 
