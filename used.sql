@@ -285,6 +285,8 @@ CREATE TABLE `job_applicant` (
   `skills` text(255) NOT NULL,
   `working_years` text(255) NOT NULL,
   `department` text(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `potrait` varchar(255) NOT NULL,
   `created` timestamp NOT NULL default '0000-00-00 00:00:00',
   
   

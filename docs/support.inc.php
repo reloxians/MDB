@@ -13,7 +13,7 @@
 		
 						$to = $email;
 							
-   						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
+   					$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
 						$headers .= "From: Alvin Excel <support@reloxians.com>". "\r\n";
                         $headers .= "CC: Alvin@reloxians.com\r\n";
                         $headers .= "MIME-Version: 1.0\r\n";
@@ -90,7 +90,11 @@ Message
 					<?
 				
 				
-				}
+				} else {
+				
+					header("Location: /");
+					
+					}
 				 		 	
 		
 		

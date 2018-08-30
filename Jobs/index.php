@@ -214,7 +214,7 @@ require a lot of time for completion
 	<!-- forms here-->
 	<center>
 	
-	<form action="apply.inc.php" method="POST">
+	<form action="apply.inc.php" enctype="multipart/form-data" method="POST">	
 	<input type="text" name="username" readonly="readonly" placeholder="<? echo $me ?>">
 	<input type="text" name="username" readonly="readonly" placeholder="<? echo $inf['firstname']?>">
 	<input type="text" name="username" readonly="readonly" placeholder="<? echo $inf['lastname']?>">
@@ -265,6 +265,12 @@ require a lot of time for completion
 	<option value="App Development">App Development</option>
 	<option value="Web Development">Web Development</option>
 	</select>
+	
+	<div class="valid_class" style="width: 91%; margin-top: 10px;">
+	Select a clear potrait image
+	</div>
+	
+	<input type="file" required="required" name="potrait" />
 	
 	<br></br>
 	

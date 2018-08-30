@@ -15,6 +15,32 @@
 	
 	$skills = implode(',' , $skill);
 	
+	
+	//image section
+	
+	//security
+	
+	$verifyimg = getimagesize($_FILES['potrait']['tmp_name']);
+	
+	$pattern = "#^(image/)[^\s\n<]+$#i";
+	
+	if(!preg_match($pattern, $verifyimg['mime'])) {
+		 header("Location: /");
+		exit;
+	}
+	
+	
+	$dir = '../media/images/applicant/';
+	//loadfile	
+	$uploadfile = $dir. basename($_FILES['potrait']['name']);
+	//get file name
+	$filename = basename($_FILES['potrait']['name']);
+	//upload file
+	if(!move_uploaded_file($_FILES['potrait']['tmp_name'], $uploadfile)) { 
+				header("Location: /");
+				exit();
+	
+		} 
 	//validation
 	
 	if(empty($skill) || empty($working_years) || empty($department)) {
@@ -36,6 +62,7 @@
 	$firstname = $info['firstname'];
 	$lastname = $info['lastname'];
 	$email = $info['email'];
+	$country = $info['country'];
 	
 	
 	if($count < 1 ) {
@@ -45,7 +72,7 @@
 		} else {
 			
 				//
-				$ins = "insert into job_applicant (username, firstname, lastname, email, skills,  working_years, department, created ) values ('$username', '$firstname', '$lastname', '$email', '$skills', '$working_years', '$department', '$created' ) ";
+				$ins = "insert into job_applicant (username, firstname, lastname, email, skills,  working_years, department, country, potrait, created ) values ('$username', '$firstname', '$lastname', '$email', '$skills', '$working_years', '$department', '$country', '$filename', '$created' ) ";
 				
 				$ins_cmd = mysqli_query($connect, $ins);
 				
