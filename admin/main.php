@@ -174,7 +174,7 @@
 	<table width="100%" cellpadding="10">
 	<tr bgcolor="">
 	<td class="white-chart-cards responsive" width="30%">
-
+	<a class="card_act" href="users"><!-- card act -->
 	<table width="100%" cellpadding="5"><!-- inner -->
 	<tr bgcolor="">
 	<td width="30%">
@@ -202,6 +202,7 @@
 	</td>
 	</tr>
 	</table><!-- inner -->
+	</a><!-- card act ends -->
 	</td>
 	
 	<td class="white-chart-cards responsive" width="30%">
@@ -246,7 +247,7 @@
 	
 	<td align="right" valign="" width="70%">
 	<span class="card_info">
-	Total Revenue
+	Overall Revenue
 	</span>
 	
 	<div class="card_info_val">
@@ -287,6 +288,112 @@
 	
 	</tr>
 	</table>
+	
+	
+	
+	<!-- segment 2 -->
+	
+	<table width="100%" cellpadding="10">
+	<tr bgcolor="">
+	<td class="white-chart-cards responsive" width="30%">
+	<a class="card_act" href="library"><!-- card act -->
+	<table width="100%" cellpadding="5"><!-- inner -->
+	<tr bgcolor="">
+	<td width="30%">
+	<div class="yellow-plastic">
+	<i class="fa fa-cart-plus"></i>
+	</div>
+	</td><!-- icon -->
+	
+	<td align="right" valign="" width="70%">
+	<span class="card_info">
+	Library
+	</span>
+	
+	<div class="card_info_val">
+	<?
+	$se = "select * from job_applicant";
+	$ru = mysqli_query($connect, $se);
+	$cn = mysqli_num_rows($ru);
+	
+	echo $cn ;
+	
+	?>
+	</div>
+	</td>
+	</tr>
+	</table><!-- inner -->
+	</a><!-- card act ends -->
+	</td>
+	
+	<td class="white-chart-cards responsive" width="30%">
+	<a class="card_act" href="applicant"><!-- card act -->
+	<table width="100%" cellpadding="5"><!-- inner -->
+	<tr bgcolor="">
+	<td width="30%">
+	<div class="pink-plastic">
+	<i class="fa fa-code"></i>
+	</div>
+	</td><!-- icon -->
+	
+	<td align="right" valign="" width="70%">
+	<span class="card_info">
+	Job Applicants
+	</span>
+	
+	<div class="card_info_val">
+	<?
+	$se = "select * from job_applicant";
+	$ru = mysqli_query($connect, $se);
+	$cn = mysqli_num_rows($ru);
+	
+	echo $cn ;
+	
+	?>
+	</div>
+	</td>
+	</tr>
+	</table><!-- inner -->
+	</a><!-- card act ends -->
+	</td>
+	
+	
+	<td class="white-chart-cards responsive" width="30%">
+	<a class="card_act" href="applicant"><!-- card act -->
+	<table width="100%" cellpadding="5"><!-- inner -->
+	<tr bgcolor="">
+	<td width="30%">
+	<div class="blue-plastic">
+	<i class="fa fa-code"></i>
+	</div>
+	</td><!-- icon -->
+	
+	<td align="right" valign="" width="70%">
+	<span class="card_info">
+	Job Applicants
+	</span>
+	
+	<div class="card_info_val">
+	<?
+	$se = "select * from job_applicant";
+	$ru = mysqli_query($connect, $se);
+	$cn = mysqli_num_rows($ru);
+	
+	echo $cn ;
+	
+	?>
+	</div>
+	</td>
+	</tr>
+	</table><!-- inner -->
+	</a><!-- card act ends -->
+	</td>
+	
+	</tr>
+	</table>
+	
+	<!-- segment 2 ends -->
+	
 	</div><!-- wrapper ends -->
 	
 	<!-- survey -->

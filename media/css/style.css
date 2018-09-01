@@ -1949,12 +1949,36 @@ select, input[type=file] {
     margin-bottom: 7px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.10);
     
-    
+ 
     
   /**  border: solid 1px #FFE0B2; **/
 	
 	 } 
+
 	
+input[type=search] { 
+    background: #fff ;
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.10);
+    
+   }
+  
+.search-btn {
+	background: #fff ;
+	color: grey;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	font-size: 25px;
+	line-height: 25px;
+	border-radius: 100%;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.10);
+}
 
 .dev_details {
 	padding: 10px 0px 0px 0px;
@@ -1993,8 +2017,16 @@ select, input[type=file] {
 
 .pad-10 {
 	padding: 8px;
-
 }
+
+.full-width {
+	
+}
+
+.space-5 {
+	margin-right: 5px;
+}
+
 .survey_quest {
 	font-size: 13px;
 	color: #393D58;
@@ -2085,6 +2117,22 @@ select, input[type=file] {
 
 }
 
+.green-chart-cards {
+	background: #DCEDC8;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.10);
+	border-radius: 5px;
+	margin: 4px;
+
+}
+
+.orange-chart-cards {
+	background: #FFE0B2;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.10);
+	border-radius: 5px;
+	margin: 4px;
+
+}
+
 .card_act {
 	text-decoration: none !important;
 }
@@ -2110,7 +2158,17 @@ select, input[type=file] {
 
 	}
 
-
+.infomat {
+	background: rgba(54, 162, 235, 0.1) ;
+	border: solid 1px rgba(54, 162, 235, 1);
+	width: 90%;
+	padding: 10px;
+	border-radius: 4px;
+	margin:5px 0px 5px 0px;
+	color: #01579B;
+	font-size: 13px;
+	
+}
 
 
 

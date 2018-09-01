@@ -117,15 +117,16 @@
 	
 	<?
 	
-	$sel = "select * from job_applicant order by id DESC";
+	$sel = "select * from job_applicant order by id DESC limit 10";
 	$cmd = mysqli_query($connect, $sel);
 	
 	while($inf = mysqli_fetch_assoc($cmd)) {
+	$user = $inf['username'];
 		?>
 	
 	<table class="white-chart-cards" width="100%" cellpadding="10">
 	<tr bgcolor="">
-	<td class="responsive pink-chart-cards" width="30%">
+	<td class="responsive -chart-cards" width="30%">
 	<!-- inner -->
 	<table width="100%" cellpadding="5">
 	<tr>
@@ -168,13 +169,74 @@
 	<!-- inner ends -->
 	</td>
 	
-	<td class="responsive" width="30%">
-	@@@
+	<td valign="top" class="responsive" width="60%">
+	<!-- skills -->
+	<? 
+	$skill = explode(',', $inf['skills']);
+	
+	if(!empty($skill['0'])) {echo '<span class="skill space-5">' .$skill['0'].'</span>'; }
+	if(!empty($skill['1'])) {echo '<span class="skill space-5">' .$skill['1'].'</span>'; }
+	if(!empty($skill['2'])) {echo '<span class="skill space-5">' .$skill['2'].'</span>'; }
+	if(!empty($skill['3'])) {echo '<span class="skill space-5">' .$skill['3'].'</span>'; }
+	if(!empty($skill['4'])) {echo '<span class="skill space-5">' .$skill['4'].'</span>'; }
+	if(!empty($skill['5'])) {echo '<span class="skill space-5">' .$skill['5'].'</span>'; }
+	if(!empty($skill['6'])) {echo '<span class="skill space-5">' .$skill['6'].'</span>'; }
+	if(!empty($skill['7'])) {echo '<span class="skill space-5">' .$skill['7'].'</span>'; }
+	if(!empty($skill['8'])) {echo '<span class="skill space-5">' .$skill['8'].'</span>'; }
+	
+	?>
+	<!-- Q&A -->
+	<table width="100%" cellpadding="5">
+	<div class="survey_quest skills">
+	How many years have you worked with these languages?
+	</div>
+	
+	<tr class="" bgcolor="">
+	
+	<td width="80%">	
+	<div class="survey_ans">
+	<?
+	$get = "select * from job_applicant where username = '$user' ";
+	$get_res = mysqli_query($connect, $get);
+	$in = mysqli_fetch_assoc($get_res);
+	
+	echo $in['working_years'];
+	
+	?>
+	</div>	
 	</td>
 	
-	<td class="responsive" width="30%">
-	@@@
+	</tr>
+	</table><!--inner ends -->
+	
+	
+	<!-- Q&A -->
+	<table width="100%" cellpadding="5">
+	<div class="survey_quest skills">
+	What can you do if you are employed?
+	</div>
+	
+	<tr class="" bgcolor="">
+	
+	<td width="80%">	
+	<div class="survey_ans">
+	<?
+	$get = "select * from job_applicant where username = '$user' ";
+	$get_res = mysqli_query($connect, $get);
+	$in = mysqli_fetch_assoc($get_res);
+	
+	echo $in['department'];
+	
+	?>
+	</div>	
 	</td>
+	
+	</tr>
+	</table><!--inner ends -->
+	
+	</td>
+	
+
 	</tr>
 	</table>
 	

@@ -225,7 +225,7 @@ require a lot of time for completion
 	Select your coding skills
 	</div>
 	
-	<select name="skills[]" multiple="multiple" required="required">
+	<select name="skills[]" size="6" multiple="multiple" required="required">
 	<option value="PHP">PHP</option>
 	<option value="SQL">SQL</option>
 	<option value="CSS">CSS</option>
@@ -236,7 +236,7 @@ require a lot of time for completion
 	<option value="ASP.NET">ASP.NET</option>
 	<option value="MySQL">MySQL</option>
 	</select>
-	
+		
 	
 	<div class="forbidden_class" style="width: 90.0%;">
 	<i class="fa fa-warning"></i>

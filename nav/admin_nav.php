@@ -4,7 +4,7 @@
 
 <div class="nav_wrapper">
 	<ul>
-	<li <?php if($link == 'wordPress') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../services/wordpress.php">E-book listing</a></li> 
+	<li <?php if($link == 'library') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../library/">Library</a></li> 
 		
 	<li <?php if($link == 'stats') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../admin/main.php">Statistics</a></li> 
 	

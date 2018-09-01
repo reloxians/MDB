@@ -9,7 +9,7 @@ $user = $_SESSION['username'];
 	<li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li>
 	<li><a href="#"><i class="fa fa-android"></i>  Apps</a></li>
 	<li><a href="/services/websites.php"><i class="fa fa-html5"></i>  Websites</a></li>
-	<li><a href="#"><i class="fa fa-code"></i>  E-books</a></li>
+	<li><a href="/library/"><i class="fa fa-code"></i>  E-books</a></li>
 	<li><a href="/services/"><i class="fa fa-cart-plus"></i>  Services</a></li>
 	
 	

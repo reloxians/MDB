@@ -124,7 +124,7 @@ MENU
 </td>
 
 <td width="80%">
-<a class="small_nav_icon_ebook_txt" href="#">E-book</a>
+<a class="small_nav_icon_ebook_txt" href="/library/">E-book</a>
 </td>
 </tr>
 </table>
