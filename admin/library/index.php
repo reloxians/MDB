@@ -414,7 +414,7 @@
 	Select the PDF file and the cover photo of the document you are uploading
 	</div>
 	
-	<input name="cover_pdf[]" type="file" multiple />	
+	<input name="cover_pdf[]" type="file" required="required" multiple />	
 	
 	<!--
 	

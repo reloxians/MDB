@@ -2170,6 +2170,33 @@ input[type=search] {
 	
 }
 
+.pagination {
+	list-style-type: none;		
+}
+
+.pagination > li {
+	display: inline-block;
+	padding: auto;
+}
+
+.pagination > li > a {
+	color: rgba(255, 154, 54, 1.0);
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	/* background: rgba(255, 54, 54, 0.1); */
+	padding: 5px;
+	border-radius: 2px;
+	border: solid 1px rgba(255, 194, 54, 1.0);
+}
+
+.pagination > .disabled > a {
+	color: #ccc !important;
+}
+
+
+
+
 
 
 

@@ -26,15 +26,23 @@
 	**/
 	
 	for($i = 0; $i < count($_FILES['cover_pdf']['tmp_name']); $i++){
-	$dir = 'product/' ;
+	$dir = '../../sales/product/' ;
 		//Get the temp file path 
 	$tmpFilePath = $_FILES['cover_pdf']['tmp_name'][$i];
 	//real file path 
 	$target_dir = $dir. basename($_FILES['cover_pdf']['name'][$i]);
 	//
-	//file names
+	//file names	
+	$type = basename($_FILES['cover_pdf']['type']['0']);
+	
+	if($type == 'pdf'){
+	$cover = array(basename($_FILES['cover_pdf']['name']['1']));
+	$file = array(basename($_FILES['cover_pdf']['name']['0']));
+	
+	} elseif($type != 'pdf') {
 	$cover = array(basename($_FILES['cover_pdf']['name']['0']));
 	$file = array(basename($_FILES['cover_pdf']['name']['1']));
+	}
 	
 	move_uploaded_file($tmpFilePath, $target_dir);
 	
