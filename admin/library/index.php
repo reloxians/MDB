@@ -302,6 +302,7 @@
 	
 	<!-- chart analysis ends -->
 	
+	<br />
 	
 	
 	<!-- stats 1 -->
@@ -384,11 +385,11 @@
 	
 	<div class="card_info_val">
 	<?
-	$se = "select * from job_applicant";
+	$se = "select sum(price) as prices from book_sales";
 	$ru = mysqli_query($connect, $se);
-	$cn = mysqli_num_rows($ru);
+	$cn = mysqli_fetch_assoc($ru);
 	
-	echo $cn ;
+	echo '₦'.number_format($cn['prices']);
 	
 	?>
 	</div>

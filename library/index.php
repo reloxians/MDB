@@ -1,7 +1,7 @@
 <?php
 	//library_frontend 
 	$link = 'library' ;
-	include '../security/auth_check.php' ;
+	//include '../security/auth_check.php' ;
 	include '../database/database.php' ;
 	include '../header.php' ;
 	echo '<br>';
@@ -66,30 +66,42 @@
 			echo '<tr bgcolor="">'. PHP_EOL;
 		}
 	
-	echo '
+	?>
 	
+	<form id="<? echo $res['id'] ?>" action="preview" method="POST">
+	<input type="hidden" name="ids" value="<? echo $res['id'] ?>">
+	</form>
 	
 	<td class="white-chart-cards responsive" width="30%">
-	<a class="card_act" href="library"><!-- card act -->
+	<a class="card_act" href="javascript:void(0)" onclick="document.getElementById('<? echo $res['id'] ?>').submit();"><!-- card act -->
 	<table width="100%" cellpadding="5"><!-- inner -->
 	<tr bgcolor="">
 	<td width="30%">
-	<img src="../sales/product/'.$res['cover_name'].'" width="100%" class="disabled"/>
+	<img src="../sales/product/<? echo $res['cover_name'] ?>" width="100%" class="disabled"/>
 	</td><!-- icon -->
 	
-	<td align="right" valign="" width="70%">
+	<td align="right" valign="top" width="70%">
 	<span class="card_info">
-	'.$res['title_key'].'
+	<? echo $res['title_key'] ?>
 	</span>
 	
+	<div class="card_info">
+	<? echo $res['description'] ?>
+	</div>
+	
 	<div class="card_info_val">
-	₦'.number_format($res['price']).'
+	<? echo '₦'.number_format($res['price']) ?>
+	</div>
+	
+	<div class="card_info">
+	<? echo now($res['created'])?>
 	</div>
 	</td>
 	</table><!-- inner -->
 	</a><!-- card act ends -->
-	</td>'.PHP_EOL;
+	</td>
 	
+	<?
 	
 	$i++ ;
 	

@@ -272,8 +272,11 @@
 	$row = mysqli_fetch_assoc($mth); 
 	$total4 = $row['prices'] / 100 ;
 	
+	$mth = mysqli_query($connect, "select sum(price) as prices from book_sales");
+	$row = mysqli_fetch_assoc($mth); 
+	$total5 = $row['prices'] ;	
 	
-	$total = $total0 + $total1 + $total2 + $total3 + $total4;
+	$total = $total0 + $total1 + $total2 + $total3 + $total4 + $total5;
 	
 	echo '₦'.number_format($total);
 	
@@ -312,7 +315,7 @@
 	
 	<div class="card_info_val">
 	<?
-	$se = "select * from job_applicant";
+	$se = "select * from books";
 	$ru = mysqli_query($connect, $se);
 	$cn = mysqli_num_rows($ru);
 	
