@@ -330,7 +330,7 @@
 	</td>
 	
 	<td class="white-chart-cards responsive" width="30%">
-	<a class="card_act" href="applicant"><!-- card act -->
+	<a class="card_act" href="services"><!-- card act -->
 	<table width="100%" cellpadding="5"><!-- inner -->
 	<tr bgcolor="">
 	<td width="30%">
@@ -341,12 +341,12 @@
 	
 	<td align="right" valign="" width="70%">
 	<span class="card_info">
-	Job Applicants
+	Total Services
 	</span>
 	
 	<div class="card_info_val">
 	<?
-	$se = "select * from job_applicant";
+	$se = "select * from active_service";
 	$ru = mysqli_query($connect, $se);
 	$cn = mysqli_num_rows($ru);
 	
@@ -362,7 +362,7 @@
 	
 	
 	<td class="white-chart-cards responsive" width="30%">
-	<a class="card_act" href="applicant"><!-- card act -->
+	<a class="card_act" href="developers"><!-- card act -->
 	<table width="100%" cellpadding="5"><!-- inner -->
 	<tr bgcolor="">
 	<td width="30%">
@@ -373,7 +373,7 @@
 	
 	<td align="right" valign="" width="70%">
 	<span class="card_info">
-	Job Applicants
+	Developers
 	</span>
 	
 	<div class="card_info_val">

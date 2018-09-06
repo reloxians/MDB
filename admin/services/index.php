@@ -1,5 +1,5 @@
 <?php
-	//users
+	//services
 	$link = 'function' ;
 	include '../../security/admin_check.php' ;
 	include '../../database/database.php' ;
@@ -13,26 +13,44 @@
 	
 	<div class="page_wrapper_sub">
 	
+	<!-- search -->
+	<center>
+	<form action="search" method="POST">
+	<table width="100%" cellpadding="5">
+	<tr bgcolor="">
+	<td width="90%">
+	<input type="search" name="search" placeholder="         Search Services" required="required" />
+	</td>
+	<td align="left" bgcolor="" width="10%">
+	<button class="search-btn" type="submit" name="submit"><i class="fa fa-search"></i></button>
+	</td>
+	</tr>
+	</table>
+	</form>
+	</center>
+	<!-- search ends -->
+	
+	
 	<table width="100%" cellpadding="10">
 	<tr bgcolor="">
 	<td class="white-chart-cards responsive" width="30%">
-	<a class="card_act" href="#"><!-- card act -->
+	<a class="card_act" href="plus"><!-- card act -->
 	<table width="100%" cellpadding="5"><!-- inner -->
 	<tr bgcolor="">
 	<td width="30%">
 	<div class="yellow-plastic">
-	<i class="fa fa-user-o"></i>
+	<i class="fa fa-plus"></i>
 	</div>
 	</td><!-- icon -->
 	
 	<td align="right" valign="" width="70%">
 	<span class="card_info">
-	Total Users
+	Add Service
 	</span>
 	
 	<div class="card_info_val">
 	<?
-	$se = "select * from users";
+	$se = "select * from active_service";
 	$ru = mysqli_query($connect, $se);
 	$cn = mysqli_num_rows($ru);
 	
@@ -134,7 +152,7 @@
 	$total_pages = ceil($total_rows / $no_of_records_per_page);
 	
 	
-	$sel = "select * from users ORDER BY ID DESC LIMIT $offset, $no_of_records_per_page";
+	$sel = "select * from active_service ORDER BY ID DESC LIMIT $offset, $no_of_records_per_page";
 	$cmd = mysqli_query($connect, $sel);
 	
 	$i = 0;
@@ -152,6 +170,7 @@
 	</form>
 		
 	<a href="javascript:void(0)" onclick="document.getElementById('<? echo $inf['id'] ?>').submit();" class="card_act"><!-- card act -->
+	
 	<table class="white-chart-cards" width="100%" cellpadding="10">
 	<tr bgcolor="">
 	<td class="responsive -chart-cards" width="30%">
@@ -165,7 +184,7 @@
 	<td align="right" valign="center" width="70%">
 	
 	<div class="card_info">
-	<? echo $inf['username']?> <? echo $inf['lastname']?>
+	<? echo $inf['username']?>
 	</div>	
 	
 	<div class="card_info">
@@ -177,12 +196,18 @@
 	<tr>
 	<td align="right" width="%">
 	<span class="card_info">
-	<img src="/media/images/country/svg/<? echo $inf['country']?>.svg" width="20%" />
+	<?
+	$me = $inf['username'];
+	$cn = "select country from users where username = '$me' ";
+	$cn_cmd = mysqli_query($connect, $cn);
+	$if = mysqli_fetch_assoc($cn_cmd);
+	?>
+	<img src="/media/images/country/svg/<? echo $if['country']?>.svg" width="20%" />
 	</span>
 	</td>
 	<td align="right" width="%">
 	<span class="card_info">
-	<? echo $inf['country']?>
+	<? echo $if['country']?>
 	</span>
 	</td>
 	</tr>
@@ -195,17 +220,11 @@
 	</td>
 	
 	<td valign="top" class="responsive" width="60%">
-	<?
-	$ses = "select * from active_service where username ='$user' ";
-	$cmd_ses = mysqli_query($connect, $ses);
-	$ress = mysqli_fetch_assoc($cmd_ses);
-	
-	?>
 	
 	<!-- Q&A -->
 	<table width="100%" cellpadding="5">
 	<div class="survey_quest skills">
-	Active Services
+	Service Name
 	</div>
 	
 	<tr class="" bgcolor="">
@@ -214,13 +233,9 @@
 	<div class="survey_ans">
 	<? 
 	
-	$ses = "select * from active_service where username ='$user' ";
-	$cmd_ses = mysqli_query($connect, $ses);
-	while($resu = mysqli_fetch_assoc($cmd_ses)) {
 	
-	if(!empty($resu['service_name']) && $resu['reminded'] < 1) {echo '<span class="skill space-5">' .$resu['service_name'].'</span>'; } else {echo '<span class="skill main-skill space-5">' .$resu['service_name'].'</span>'; }
+	if(!empty($inf['service_name']) && $inf['reminded'] < 1) {echo '<span class="skill space-5">' .$inf['service_name'].'</span>'; } else {echo '<span class="skill main-skill space-5">' .$inf['service_name'].'</span>'; }
 	
-	}
 	
 	?>
 	</div>	
@@ -233,7 +248,7 @@
 	<!-- Q&A -->
 	<table width="100%" cellpadding="5">
 	<div class="survey_quest skills">
-	What can you do if you are employed?
+	Service Platform
 	</div>
 	
 	<tr class="" bgcolor="">
@@ -241,11 +256,8 @@
 	<td width="80%">	
 	<div class="survey_ans">
 	<?
-	$get = "select * from job_applicant where username = '$user' ";
-	$get_res = mysqli_query($connect, $get);
-	$in = mysqli_fetch_assoc($get_res);
 	
-	echo $in['department'];
+	echo $inf['platform'];
 	
 	?>
 	</div>	

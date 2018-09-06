@@ -4,18 +4,31 @@
 	//vars
 	$ids = $_POST['ids'];
 	
+	$se = "select * from books where id ='$ids' ";
+	$cmd_se = mysqli_query($connect, $se);
+	$re = mysqli_fetch_array($cmd_se);
+	
+	//file details
+	$cover_file = '../../sales/product/'.$re['cover_name'];
+	$pdf_file = '../../sales/product/'.$re['file_name'];
+
+	//del files
+	$del1 = unlink($cover_file);
+	$del2 = unlink($pdf_file);
+	
+	if($del1 && $del2) {
+	
 	//del record
 	$del = "delete from books where id = '$ids' ";
 	$cmd = mysqli_query($connect, $del);
-	
-	$cover_file = '../../sales/product/';
-	$pdf_file = '../../sales/product/';
 	
 	if($cmd){
 	//
 	header("Location: ../../admin/library.php");
 	} else {
 	header("Location: ../../admin/library.php");
+	}
+	
 	}
 	
 	} elseif(isset($_POST['update'])) {
