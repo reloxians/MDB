@@ -1,16 +1,16 @@
 <?php
 	//library_frontend 
-	$link = 'library' ;
+	$link = 'php' ;
 	//include '../security/auth_check.php' ;
-	include '../database/database.php' ;
-	include '../header.php' ;
+	include '../../database/database.php' ;
+	include '../../header.php' ;
 	echo '<br>';
 	echo '<br>';
 	echo '<br>';
 	if($_SESSION['username'] == 'Admin'){
-	include '../nav/admin_nav.php' ;
+	include '../../nav/admin_nav.php' ;
 	} else {
-	include '../nav/book_nav.php' ;
+	include '../../nav/book_nav.php' ;
 	}
 	
 	
@@ -24,7 +24,7 @@
 	$no_of_records_per_page = 30; 
 	$offset = ($pageno-1) * $no_of_records_per_page;
 	
-	$cnt = "SELECT * from books";
+	$cnt = "SELECT * from books where category = 'PHP' ";
 	$cmd_cnt = mysqli_query($connect, $cnt);
 	$total_rows = mysqli_num_rows($cmd_cnt);
 	
@@ -35,7 +35,7 @@
 	<div class="page_wrapper_sub">
 	<!-- search -->
 	<center>
-	<form action="search" method="POST">
+	<form action="../search" method="POST">
 	<table width="100%" cellpadding="5">
 	<tr bgcolor="">
 	<td width="90%">
@@ -51,7 +51,7 @@
 	<!-- search ends -->
 	
 	<?
-	$sel = "select * from books ORDER BY ID DESC LIMIT $offset, $no_of_records_per_page";
+	$sel = "select * from books where category = 'PHP' ORDER BY ID DESC LIMIT $offset, $no_of_records_per_page";
 	$cmd = mysqli_query($connect, $sel);
 	$count = mysqli_num_rows($cmd);
 	
@@ -70,7 +70,7 @@
 	
 	?>
 	
-	<form id="<? echo $res['id'] ?>" action="preview" method="POST">
+	<form id="<? echo $res['id'] ?>" action="../preview" method="POST">
 	<input type="hidden" name="ids" value="<? echo $res['id'] ?>">
 	</form>
 	
@@ -79,7 +79,7 @@
 	<table width="100%" cellpadding="5"><!-- inner -->
 	<tr bgcolor="">
 	<td valign="top" width="30%">
-	<img src="../sales/product/<? echo $res['cover_name'] ?>" width="100%" class="disabled"/>
+	<img src="../../sales/product/<? echo $res['cover_name'] ?>" width="100%" class="disabled"/>
 	</td><!-- icon -->
 	
 	<td align="" valign="top" width="70%">
@@ -137,4 +137,4 @@
 		</ul>
 		</center>
 	<?
-	include '../footer.php';
+	include '../../footer.php';

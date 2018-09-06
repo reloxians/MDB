@@ -1,18 +1,23 @@
 <?php
-	//library_frontend 
-	$link = 'library' ;
-	//include '../security/auth_check.php' ;
-	include '../database/database.php' ;
-	include '../header.php' ;
+	/**User Search**/
+	$link = 'library';
+	if(isset($_POST['search']) || $_GET['pageno']) {
+//	include '../security/admin_check.php' ;
+	include '../database/database.php';
+	include '../header.php';
 	echo '<br>';
 	echo '<br>';
 	echo '<br>';
-	if($_SESSION['username'] == 'Admin'){
-	include '../nav/admin_nav.php' ;
-	} else {
 	include '../nav/book_nav.php' ;
-	}
 	
+	//vars
+	$item = $_POST['search'] ;
+		
+	//search
+		
+	$sea = "select *from books where title_key like '%$item%'";
+	$cmd = mysqli_query($connect, $sea);
+	$count = mysqli_num_rows($cmd);
 	
 	if (isset($_GET['pageno'])) { 
 		$pageno = $_GET['pageno']; 
@@ -21,28 +26,29 @@
 		$pageno = 1; 
 	}
 	
-	$no_of_records_per_page = 30; 
+	$no_of_records_per_page = 100; 
 	$offset = ($pageno-1) * $no_of_records_per_page;
 	
-	$cnt = "SELECT * from books";
+	$cnt = "SELECT * from books where title_key like '%$item%'";
 	$cmd_cnt = mysqli_query($connect, $cnt);
 	$total_rows = mysqli_num_rows($cmd_cnt);
 	
 	$total_pages = ceil($total_rows / $no_of_records_per_page);
 	
-	?>
 	
+	?>
 	<div class="page_wrapper_sub">
+	
 	<!-- search -->
 	<center>
 	<form action="search" method="POST">
 	<table width="100%" cellpadding="5">
 	<tr bgcolor="">
 	<td width="90%">
-	<input type="search" name="search" placeholder="         Search Library" />
+	<input type="search" class="disabled" name="search" placeholder="       <? echo $count ?> Search Results" required="required" />
 	</td>
 	<td align="left" bgcolor="" width="10%">
-	<button class="search-btn" type="submit" name="submit"><i class="fa fa-search"></i></button>
+	<button class="search-btn disabled" type="submit" name="submit"><i class="fa fa-search"></i></button>
 	</td>
 	</tr>
 	</table>
@@ -51,12 +57,12 @@
 	<!-- search ends -->
 	
 	<?
-	$sel = "select * from books ORDER BY ID DESC LIMIT $offset, $no_of_records_per_page";
-	$cmd = mysqli_query($connect, $sel);
-	$count = mysqli_num_rows($cmd);
+	//search
+		
+	$se = "select *from books where title_key like '%$item%' ORDER BY ID DESC LIMIT $offset, $no_of_records_per_page";
+	$cmd = mysqli_query($connect, $se);
 	
 	?>
-	
 	
 	<table width="100%" cellpadding="10">
 	
@@ -79,7 +85,7 @@
 	<table width="100%" cellpadding="5"><!-- inner -->
 	<tr bgcolor="">
 	<td valign="top" width="30%">
-	<img src="../sales/product/<? echo $res['cover_name'] ?>" width="100%" class="disabled"/>
+	<img src="../../sales/product/<? echo $res['cover_name'] ?>" width="100%" class="disabled"/>
 	</td><!-- icon -->
 	
 	<td align="" valign="top" width="70%">
@@ -115,14 +121,14 @@
 		
 	?>
 	</table>
+	</div>	
 	
 	
-	</div>
 	<br>
 	<br>
 	<br>
 	
-	
+	<!--
 		<center>
 		<ul class="pagination"> 
 		<li><a href="?pageno=1"><i class="fa fa-angle-double-left"></i> First</a></li> 
@@ -136,5 +142,11 @@
 		
 		</ul>
 		</center>
+		
+	-->
+	
 	<?
 	include '../footer.php';
+	} else {
+		header("Location: /");
+	}

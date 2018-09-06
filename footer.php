@@ -66,7 +66,7 @@ Note: all web development services are delivered within 14 working days. if ther
 
 <br>
 
-<h3 class="foot_name">Help Email</h3>
+<h3 class="foot_name">Support Email</h3>
 <a class="foot_email" href="mailto:billing@reloxians.com">billing@reloxians.com <i class="fa fa-external-link"></i></a>
 <br>
 <a class="foot_email" href="mailto:support@reloxians.com">support@reloxians.com <i class="fa fa-external-link"></i></a>

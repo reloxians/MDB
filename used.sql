@@ -328,6 +328,7 @@ CREATE TABLE `book_sales` (
   `firstname` varchar(100) NOT NULL,
   `lastname` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `category` varchar(255) NOT NULL,
   `country` varchar(255) NOT NULL,
   `price` varchar(255) NOT NULL,
   `created` timestamp NOT NULL default '0000-00-00 00:00:00',

@@ -65,12 +65,12 @@ $inf = mysqli_fetch_assoc($runit);
 	</td>
 	
 	
-	<td align="center" width="30%" class="white-chart-cards responsive">
+	<td align="" width="30%" class="white-chart-cards responsive">
 	
-	<span class="card_info">
+	<div class="card_info">
 	<? echo $res['title_key'] ?>
-	</span>
-	
+	</div>
+	<br>
 	<div class="card_info">
 	<? echo $res['description'] ?>
 	</div>
@@ -109,6 +109,9 @@ $inf = mysqli_fetch_assoc($runit);
 	<input name="ids" type="hidden" value="<? echo $ids ?>" />
 	<input name="firstname" type="text" value="<? echo $firstname ?>" readonly="readonly" />
 	<input name="lastname" type="text" value="<? echo $lastname ?>" readonly="readonly" />
+	<div class="infomat">
+	Book will be delivered to this email, ensure it is correctly spelt
+	</div>
 	<input name="email" type="email" value="<? echo $email ?>" readonly="readonly" />
 	<input name="location" type="text" value="<? echo $location ?>" readonly="readonly" />
 	<input name="price" type="hidden" value="<? echo $pc->add_for_kobo($price) . "\n"; ?>" />

@@ -112,6 +112,20 @@ function chop_string($str, $len) {
 }
 
 
+if (!function_exists('chop_string_null')) {
+function chop_string_null($str, $len) {
+    if (strlen($str) < $len)
+        return $str;
+
+    $str = substr($str,0,$len);
+    if ($spc_pos = strrpos($str," "))
+            $str = substr($str,0,$spc_pos);
+
+    return $str . ' __<span style="color: #e56600; font-size: 13px;"> Read more...</span>';
+}   
+}
+
+
 if (!function_exists('chop_int')) {
 function chop_int($str, $len) {
     if (strlen($str) < $len)

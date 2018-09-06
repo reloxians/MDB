@@ -2194,7 +2194,12 @@ input[type=search] {
 	color: #ccc !important;
 }
 
-
+.book-title {
+	font-size: 12px;
+	color: #32325D;
+	font-weight: bold;
+	line-height: 12px !important;
+}
 
 
 

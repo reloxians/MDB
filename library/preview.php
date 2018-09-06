@@ -14,6 +14,8 @@ echo '<br>';
 echo '<br>';
 if($_SESSION['username'] == 'Admin'){
 	include '../nav/admin_nav.php' ;
+} else {
+	include '../nav/book_nav.php';
 }
 
 $rand = grs();
@@ -56,12 +58,12 @@ $inf = mysqli_fetch_assoc($runit);
 	</div>
 	</td>
 	
-	<td align="center" width="30%" class="white-chart-cards responsive">
+	<td align="" width="30%" class="white-chart-cards responsive">
 	
-	<span class="card_info">
+	<div class="card_info">
 	<? echo $res['title_key'] ?>
-	</span>
-	
+	</div>
+	<br>
 	<div class="card_info">
 	<? echo $res['description'] ?>
 	</div>
@@ -88,6 +90,11 @@ $inf = mysqli_fetch_assoc($runit);
 	<input type="hidden" name="ids" value="<? echo $res['id'] ?>" />
 	<input name="firstname" type="text" value="<? echo $inf['firstname'] ?>" required="required" placeholder="Firstname">
 	<input name="lastname" type="text" value="<? echo $inf['lastname'] ?>" required="required" placeholder="Lastname">
+	
+	<div class="infomat">
+	Book will be delivered to this email, ensure it is correctly spelt
+	</div>
+	
 	<input name="email" type="email" value="<? echo $inf['email'] ?>" required="required" placeholder="Email">
 	<input name="location" type="text" value="<? echo $inf['country'] ?>" required="required" placeholder="Country">
 			<br>

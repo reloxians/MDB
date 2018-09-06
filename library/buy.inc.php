@@ -16,7 +16,7 @@
 	$firstname = $_POST['firstname'];
 	$lastname = $_POST['lastname'];
 	$user_email = $_POST['email'];
-	$location = $_POST['loction'];
+	$location = $_POST['location'];
 	$price = $_POST['price'];
 	$created = date("Y-m-d h:i:sa");
 	
@@ -24,6 +24,8 @@
 	$sel = "select * from books where id ='$ids' ";
 	$cmd = mysqli_query($connect, $sel);
 	$res = mysqli_fetch_array($cmd);
+	
+	$category = $res['category'];
 	
 	//file
 	$file = $res['file_name'];
@@ -109,7 +111,7 @@ Here is the book you paid for at RSD website, click below for immediate download
 	if($send){
 		//take records
 		
-		$ins = "insert into book_sales (firstname, lastname, email, country, price, created) values ('$firstname', '$lastname', '$user_email', '$location', '$price', '$created') ";
+		$ins = "insert into book_sales (firstname, lastname, email, category, country, price, created) values ('$firstname', '$lastname', '$user_email', '$category', '$location', '$price', '$created') ";
 		$ins_cmd = mysqli_query($connect, $ins);
 		//
 		if($ins_cmd){
