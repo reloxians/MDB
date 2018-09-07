@@ -32,7 +32,6 @@ $Next = $_POST['next'];
 						
 			
 			<center>
-			<div class="form_class">
 			
 			<div class="forbidden_class_wrapper">			
 			<div class="warning_class">
@@ -52,19 +51,9 @@ $Next = $_POST['next'];
 			<button type="submit" name="submit" class="purple_btn">Login <i class="fa fa-long-arrow-right"></i></button>
 			
 		</form>
-		
-			</div>			
+					
 			</center>
 			
-			<center>
-			
-			<div class="agreement">
-			For a lost or forgotten password, click the <a class="email" href="/forget_password.php">Forgot password link</a> for immediate retreival via your registered email address.			
-			</div>
-			
-			
-			
-			</center>
 			
 			</td>
 			

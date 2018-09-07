@@ -16,6 +16,9 @@
 		if($password_raw != $password_verify ) {
 			header("Location: signup.php?passwordError");
 			
+		} elseif(!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z]{8,15}$/', $password_raw )) {
+		header("Location: signup.php?passwordError");
+			
 		} else {				
 		//validation
 		$check = "select * from users where username= '$username' ";
@@ -33,6 +36,8 @@
 			if($res1 > 0 ) {
 				header("Location: signup.php?emailError");
 				
+			} elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+				header("Location: signup.php?emailError");
 			} else {
 			//encrypt password
 			$password = base64_encode($password_raw);
@@ -47,7 +52,7 @@
 			//
 			 				$to = $email;
    						$headers .= "Reply-To: ". strip_tags('donotreply@reloxians.com') . "\r\n";
-						$headers .= "From: Alvin Excel <support@reloxians.com>". "\r\n";
+							$headers .= "From: Alvin Excel <support@reloxians.com>". "\r\n";
                         $headers .= "CC: Alvin@reloxians.com\r\n";
                         $headers .= "MIME-Version: 1.0\r\n";
                         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
@@ -161,7 +166,7 @@ Email
 							if($del_cmd) {
 							
 							//tell user about the error
-							echo 'couldnt send';
+							header("Location: /");
 							}
 							
 						}

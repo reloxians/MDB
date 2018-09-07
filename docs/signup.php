@@ -25,7 +25,6 @@ $link = 'signup' ;
 			
 			
 			<center>
-			<div class="form_class">
 			
 			<form action="signup.inc.php" method="POST">
 			<input name="username" type="text" placeholder="Username" required="required" />
@@ -57,7 +56,7 @@ $link = 'signup' ;
 				
 				<div class="forbidden_class_wrapper">		
 					
-			<div class="valid_class">
+			<div class="infomat" style="width: 95%">
 <i class="fa fa-warning"></i> This should be a valid email address as it is going to be verified before completing the signup process
 </div>
 				</div>
@@ -86,7 +85,19 @@ $link = 'signup' ;
 			
 			<input name="password" type="password" placeholder="*********** 8 characters minimum" required="required" pattern=".{8,15}" />
 			<br>
-			<input name="password_verify" type="password" placeholder="*********** 8 characters minimum" required="required" pattern=".{8,15}" />
+			<input name="password_verify" type="password" placeholder="*********** confirm password" required="required" pattern=".{8,15}" />
+			
+			
+			<div class="forbidden_class_wrapper">
+			<div class="infomat" style="width: 95%">
+			<ul>
+			<li>May contain letter and numbers</li>
+			<li>Must contain at least 1 number and 1 letter</li>
+			<li>Must be 8-12 characters</li>
+			</div>
+			</div>
+				
+			
 			
 			
 			<?php 
@@ -381,7 +392,7 @@ $link = 'signup' ;
 			
 			
 			
-			</div>
+			
 			
 			</center>
 			

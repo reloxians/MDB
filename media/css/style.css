@@ -2170,6 +2170,30 @@ input[type=search] {
 	
 }
 
+.infomat-error {
+	background: rgba(255, 30, 30, 0.1) ;
+	border: solid 1px rgba(255, 30, 30, 1);
+	width: 90%;
+	padding: 10px;
+	border-radius: 4px;
+	margin:5px 0px 5px 0px;
+	color: rgba(255, 30, 30, 1);
+	font-size: 13px;
+	
+}
+
+.infomat-valid {
+	background: rgba(30, 200, 30, 0.1) ;
+	border: solid 1px rgba(30, 200, 30, 1);
+	width: 90%;
+	padding: 10px;
+	border-radius: 4px;
+	margin:5px 0px 5px 0px;
+	color: rgba(30, 150, 30, 1);
+	font-size: 13px;
+	
+}
+
 .pagination {
 	list-style-type: none;		
 }

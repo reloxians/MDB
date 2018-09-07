@@ -34,9 +34,9 @@
 
 	
 	<?php
-	$me = $_SESSION['username'] ;
+
 	
-	$sel = "select * from active_service  where type != 'website' and username='$me' ORDER BY ID desc";
+	$sel = "select * from active_service  where type = 'App' and username='$me' ORDER BY ID desc";
 	
 	$cmd0 = mysqli_query($connect, $sel) ;
 	
@@ -84,27 +84,24 @@
 			
 			?>
 			
-			<div class="pre_block">
-			<div class="pre_block_header">						
-			Pending Services
+			<div class="pre_block" style="background: transparent">
+			<div class="pre_block_header_pink">						
+			Active App Services
 			</div>
 			
 			<br></br>
-			Below is an overview of your pending website 
+			Below is an overview of your active App 
 			
 			<?php if($count == 1 ) { echo 'service'  ; } elseif($count > 1 ) { echo 'services' ; } ?>
 			
-			 currently under construction, we'll do our best to comlete 
-			
-			<?php if($count == 1 ) { echo 'it'  ; } elseif($count > 1 ) { echo 'them' ; } ?> as soon as possible. 
-			you'll be notified upon completion
+			 currently under the management of our developers, we'll do our best to keep you updated regularly
 			
 			</div>
 
 			<?
 			
 			
-			while($res = mysqli_fetch_array($cmd) ) { //loop starts
+			while($res = mysqli_fetch_array($cmd0) ) { //loop starts
 			
 			?>
 			
@@ -126,17 +123,17 @@ WordPress
 <td bgcolor="" align="left" valign="top" width="70%">
 <div class="service_desc_container">
 
-<a href="#"><? echo $res['item'] ?> <i class="fa fa-external-link"></i> </a>
+<a href="#"><? echo $res['service_name'] ?> <i class="fa fa-external-link"></i> </a>
 
 </div>
 
 <div class="service_desc_container">
-Ordered <? echo now ($res['created']) ?>
+Created <? echo now ($res['created']) ?>
 
 </div>
 
 <div class="service_desc_container">
-Price  <span class="service_fee">₦<?php echo number_format( $res['price'] ) ?>  
+Price  <span class="service_fee">₦<?php echo number_format( $res['one_time_fee'] ) ?>  
 </span>
 </div>
 

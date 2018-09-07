@@ -10,8 +10,6 @@
 	
 	<li <?php if($link == 'send') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../admin/send.php">Broadcast</a></li>
 		
-	<li <?php if($link == 'add_service') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../admin/add_service.php">Add Service</a></li> 
-	
 	<li <?php if($link == 'function') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="#">Function</a></li> 
 	 
 	</ul>
