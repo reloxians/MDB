@@ -353,8 +353,34 @@ CREATE TABLE `reset` (
   
   PRIMARY KEY  (`id`)
   ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1480 ;
-
-
   
+  
+///////////////////////////////////////////////////////////////
+
+
+DROP TABLE IF EXISTS `developers`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `developers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `pin` varchar(255) NOT NULL,
+  `dob` varchar(255) NOT NULL,
+  `skills` text(255) NOT NULL,
+  `department` text(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `potrait` varchar(255) NOT NULL,
+  `account_status` int(10) NOT NULL default '0',
+  `created` timestamp NOT NULL default '0000-00-00 00:00:00',
+  
+  
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1480 ;
 
 

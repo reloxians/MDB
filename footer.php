@@ -32,6 +32,7 @@ Note: all web development services are delivered within 14 working days. if ther
 <td class="responsive" valign="top" width="15%">
 <h3 class="foot_name">Company </h3>
 <ul class="foot_links">
+	<li><a href="/developer/">Developer</a></li>
 	<li><a href="/team/">Team</a></li>
 	<li><a href="/jobs/">Jobs</a></li>
 	<li><a href="#">Partnership</a></li>

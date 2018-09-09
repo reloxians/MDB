@@ -1,6 +1,6 @@
 <?php 
 	//
-	
+	session_start();
 	$link = 'active' ;
 	$active = 'websites' ;
 	$child = 'active_websites' ;
@@ -9,9 +9,11 @@
 	
 	$me = $_SESSION['username'];
 	
-	//if(!$_SESSION['username']) {
-//		header("Location: ../docs/login.php");
-//	}
+	if($_SESSION['username'] == 'Admin') {
+		header("Location: ../admin/main");
+	} elseif($_SESSION['type'] == 'Developer') {
+		header("Location: ../developer/dashboard");
+	}
 	require '../security/auth_check.php' ;
 	
 	include '../header.php' ;

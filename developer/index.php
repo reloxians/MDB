@@ -1,26 +1,19 @@
-<?php 
-// ADMIN INDEX
-			session_start();
-			
-			if($_SESSION['username'] || $_SESSION['email']) {
-				header("Location: ../client/");
-				
-			} elseif($_SESSION['admin']) {
-				header("Location: ../admin/main.php");
-			}
-			
-$link = 'login' ;
-
-			 include '../header.php' ;
-			 include '../parallax.php' ;
-			 include '../nav/signup_login_nav.php' ;
+<?php
+//developer frontend
+	include '../security/anti_session.php';
+	include '../header.php';
+	$link = 'login';
+	echo '<br>';
+	echo '<br>';
+	echo '<br>';
+	include '../nav/signup_login_nav.php' ;
 			
 			?>
 			
 	<div class="page_wrapper_sub">
 	
 			<div class="page_intro">
-			Sign in To Access The Dashboard
+			Welcome Developer!
 			
 			</div>
 			
@@ -36,7 +29,6 @@ $link = 'login' ;
 						
 			
 			<center>
-			<div class="form_clas">
 			
 			<div class="forbidden_class_wrapper">			
 			<div class="warning_class">
@@ -44,31 +36,27 @@ $link = 'login' ;
 			</div>
 					</div>
 			
-			<form action="admin_login.inc.php" method="POST">
+			<form action="login.inc" method="POST">
 			<input name="username" type="text" placeholder="Username or Email" required="required" />
 			<br>
-			<input name="first_token" type="password" pattern=".{4,4}" placeholder="First Token" required="required" />
+			<input name="password" type="password" pattern=".{8,15}" placeholder="***********" required="required" />
 			<br>
-			<input name="second_token" type="password"pattern=".{4,4}" placeholder="Second Token" required="required" />
+			<input name="pin" type="password" pattern=".{4,4}" placeholder="****" required="required" />
+			
+			<input name="dob" type="date" placeholder="***********" required="required" />
+			
 			<br>
-			
-			<input name="dob" type="date" />
-			
-			<input type="submit" value="Login" name="submit" />
-			</form>
-		
-			</div>			
-			</center>
-			
-			<center>
-			
+			<br>			
+			<button type="submit" name="developer" class="purple_btn">Login <i class="fa fa-long-arrow-right"></i></button>
+				
 			<div class="agreement">
 			For a lost or forgotten password, click the <a class="email" href="mailto:reloxians@gmail.com">RS-Developer</a> for identification and assistance			
 			</div>
 			
-			
-			
+		</form>
+					
 			</center>
+			
 			
 			</td>
 			

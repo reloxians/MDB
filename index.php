@@ -7,7 +7,8 @@
 	
 	<div class="page">
 	
-	<?PHP INCLUDE 'CORE/LISTING.PHP' ?>
+	<?php 
+include 'core/listing.php' ?>
 	
 	
 		<!-- part 3 -->

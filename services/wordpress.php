@@ -3,6 +3,7 @@ $link = 'services';
 $active = 'wordpress' ;
 
 				session_start();
+				include '../security/auth_check.php';
 				include '../database/database.php' ;
 				include '../header.php' ;
 				include '../parallax.php' ;

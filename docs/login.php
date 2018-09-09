@@ -42,13 +42,37 @@ $Next = $_POST['next'];
 			<form action="login.inc.php" method="POST">
 			<input name="username" type="text" placeholder="Username or Email" required="required" />
 			<br>
-			<input name="password" type="password" placeholder="***********" required="required" />
-			<br>
+			<input name="password" type="password" pattern=".{8, 15}" placeholder="***********" required="required" />
 			<br>	
+			
+			<?
+			if(isset($_POST['pass-error'])) {
+			?>
+			
+			<div class="infomat-error">
+			Invalid password and username combination, review your entries before retrying the sign in process.
+			</div>
+			<?
+			
+			} elseif(isset($_POST['no-entry'])) {
+			
+			?>
+			
+			<div class="infomat-error">
+			No account information was found on your submission, kindly review your spellings or any other typographical errors.
+			</div>
+			
+			<?
+			
+			}
+			
+			?>
+			<br>
 			
 			<input type="hidden" name="next" value="<? echo $Next ?>" />
 			
-			<button type="submit" name="submit" class="purple_btn">Login <i class="fa fa-long-arrow-right"></i></button>
+			<button type="submit" name="submit" class="purple_btn">Sign in <i class="fa fa-long-arrow-right"></i></button>
+			
 			
 		</form>
 					

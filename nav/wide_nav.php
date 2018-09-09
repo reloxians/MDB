@@ -21,35 +21,36 @@ $user = $_SESSION['username'];
 	
 	?>
 	
-	<li class="wide_nav_right"><a href="../docs/logout.php"><i class="fa fa-user-o"></i>  Sign Out</a></li>
+	<li class="wide_nav_right"><a href="../../docs/logout.php"><i class="fa fa-user-o"></i>  Sign Out</a></li>
 	
 	<?php
 	} else {
 		?>
 		
-			<li class="wide_nav_right"><a href="../docs/login.php">Sign In  <i class="fa fa-long-arrow-right"></i></a></li>
+			<li class="wide_nav_right"><a href="../../docs/login.php">Sign In  <i class="fa fa-long-arrow-right"></i></a></li>
 			
 			<?php
 	}
 	?>
 	
-	<?php if($_SESSION['username']){ 
+	<?php if($_SESSION['username'] && $_SESSION['type'] != 'Developer') { 
 	
 	?>
 	
 	<li class="wide_nav_right"><a href="../../client/"><i class="fa fa-user-circle"></i>  <? echo $user ?></a></li>
 	
 	<?php
-	} 
+	} elseif($_SESSION['type'] == 'Developer') {
 	
+	?>
 	
+	<li class="wide_nav_right"><a href="../../developer/dashboard"><i class="fa fa-user-circle"></i>  <? echo '<b style="color: #ff6600;">Dev</b> '.$user ?></a></li>
+	
+	<?
+	
+	}
 	
 		?>
-		
-		
-		
-		<li class="wide_nav_right"><a href="../../notify/"><i class="fa fa-envelope"></i><span class="">  Inbox</span></a></li>
-		
 		
 	
 </ul>

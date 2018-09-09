@@ -407,7 +407,7 @@ body {
 .parallax { 
 /**	background-image: linear-gradient( rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.9) ), 
 	url(../images/main.png); **/	
-	background: linear-gradient(to right, #311B92 , #80D8FF /* #80D8FF */ ); /* Standard  syntax
+	background: linear-gradient(to right, #311B92, #80D8FF /* #80D8FF */ ); /* Standard  syntax
 /**	background-size: cover; **/
 	height: auto;
 	width: 100%;
@@ -1321,6 +1321,7 @@ input[type=number],
 input[type=text], 
 input[type=email],
 input[type=datetime-local],
+input[type=date],
 input[type=password], textarea {
    width: 90%;
    padding: 12px;
@@ -1328,6 +1329,7 @@ input[type=password], textarea {
    border-radius: 5px;
    margin-top: 7px;
    margin-bottom: 7px;
+   background: #fff;
   /** border: solid 1px #FFE0B2; **/
    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.10);
   /*  border-radius: 4px; */

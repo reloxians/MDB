@@ -29,7 +29,8 @@
 	<?php
 	$me = $_SESSION['username'] ;
 	
-	$sel = "select * from cart_order  where username= '$me' and type= 'website' OR type= 'wordpress' ORDER BY ID desc";
+	
+	$sel = "select * from cart_order  where username= '$me' and type= 'website' OR username = '$me' and type= 'wordpress' ORDER BY ID desc";
 	
 	$cmd = mysqli_query($connect, $sel) ;
 	
@@ -39,7 +40,7 @@
 	
 	if($count < 1 ) {
 		
-		echo 'you currently have no active service' ;
+		echo 'you currently have no pending service' ;
 		
 		
 		} else {

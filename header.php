@@ -37,23 +37,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>   
     
-    <!--Main css -->
-    
-    
-    
-    
-    
-    
-   
-    
-    
-     <link rel="stylesheet" href="/media/css/style.css?<? echo date("Y-m-d h:i:sa") ?>"  type="text/css" />
-   
-   
-   <!-- font -->
+     <link rel="stylesheet" href="/media/css/style.css"  type="text/css" />
    
    		<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
    		

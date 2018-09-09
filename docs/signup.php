@@ -1,6 +1,6 @@
 <?php 
 $link = 'signup' ;
-
+			 include '../security/anti_session.php' ;
 			 include '../header.php' ;
 			 include '../parallax.php' ;
 			 include '../nav/signup_login_nav.php' ;
@@ -89,7 +89,7 @@ $link = 'signup' ;
 			
 			
 			<div class="forbidden_class_wrapper">
-			<div class="infomat" style="width: 95%">
+			<div class="infomat" style="width: 95%; text-align: left;">
 			<ul>
 			<li>May contain letter and numbers</li>
 			<li>Must contain at least 1 number and 1 letter</li>
