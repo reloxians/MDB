@@ -84,11 +84,18 @@ Here is the book you paid for at RSD website, click below for immediate download
 	try{
 	
 	//Server settings 
-	$email->isSMTP(); // Set mailer to use SMTP 
-	$email->Host = 'smtp.gmail.com; smtp.gmail.com'; // Specify main and backup SMTP servers 
+//	$email->isSMTP(); // Set mailer to use SMTP 
+//	$email->Host = 'smtp.gmail.com; smtp.gmail.com'; // Specify main and backup SMTP servers 
+//	$email->Username = 'bizzygodaddy@gmail.com'; // SMTP username 
+//	$email->Password = 'smartabc2017'; // SMTP password 
+
+
+
+	$email->Host = "billing@reloxians.com";
+	$email->Port = '465';
+	$email->Username = "admin@reloxians.com"; //from@domainname.com 
+	$email->Password = "";
 	$email->SMTPAuth = true; // Enable SMTP authentication 
-	$email->Username = 'bizzygodaddy@gmail.com'; // SMTP username 
-	$email->Password = 'smartabc2017'; // SMTP password 
 	$email->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted 
 	$email->Port = 587;
 	$email->SMTPDebug = false; // Enable or disable verbose debug output 

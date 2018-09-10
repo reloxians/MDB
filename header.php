@@ -3,7 +3,7 @@
 		
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Get A Responsive Website Now At An Affordable Rate" />
+    <meta name="description" content="We render Web Development Services at an affordable rate" />
     <meta name="keywords" content="put, keywords, here" />  
     
     <title itemprop="name">RS - Developers™ | Global Web & App Development Services</title>
@@ -13,7 +13,7 @@
        <!-- JQuery -->
        
  		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
- 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+ 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  		
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js'></script>
@@ -38,6 +38,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>   
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://js.paystack.co/v1/paystack.js?<? date("Y-m-d h:i:sa");?>"></script>
     
      <link rel="stylesheet" href="/media/css/style.css"  type="text/css" />
    

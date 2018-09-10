@@ -119,7 +119,7 @@ Email
 
 <td style="background: blue; border-radius: 8px;" width="20%">
 
-<div style="text-align: center; font-weight: bold; font-family: helvetica; font-size: 18; color: white;"><a style="color: white; text-decoration: none;"href="http://localhost:8080/docs/email_verify.php?auth_code='.$auth_code.'&temp='.$firstname.'">Confirmation</a></div>
+<div style="text-align: center; font-weight: bold; font-family: helvetica; font-size: 18; color: white;"><a style="color: white; text-decoration: none;"href="https://reloxians.com/docs/email_verify.php?auth_code='.$auth_code.'&temp='.$firstname.'">Confirmation</a></div>
 </td>
 
 <td width="40%">

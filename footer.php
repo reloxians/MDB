@@ -77,7 +77,7 @@ Note: all web development services are delivered within 14 working days. if ther
 <td class="responsive" valign="top" width="20%">
 <h3 class="foot_name">Head Office</h3>
 
-<div class="foot_text"><i id="map_ico" class="fa fa-map-marker"></i>  22330 Hathaway Ave, Hayward, CA 94541</div>
+<div class="foot_text"><i id="map_ico" class="fa fa-map-marker"></i>  Plot 9 Otunba Jobi Fele Way, Ikeja, Lagos</div>
 
 <br>
 

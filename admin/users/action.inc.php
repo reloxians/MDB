@@ -10,9 +10,9 @@
 	
 	if($cmd){
 	//
-	header("Location: ../../admin/library.php");
+	header("Location: ../../admin/users/");
 	} else {
-	header("Location: ../../admin/library.php");
+	header("Location: ../../admin/users/");
 	}
 	
 	

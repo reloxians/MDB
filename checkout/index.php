@@ -7,6 +7,7 @@
 		include '../database/database.php' ;
 		include '../security/auth_check.php' ;
 		include '../client/init.php' ;
+		include '../classes/paystackCharge.php' ;
 		include '../header.php' ;
 		include '../parallax.php' ;
 		include '../nav/profile_nav.php' ;
@@ -31,7 +32,7 @@
 					?>
 					
 					<br>
-				
+	
 			
 			<table width="100%" cellpadding="5">
 			<tr bgcolor="">
@@ -136,7 +137,6 @@
 				
 				
 		<?php
-			require '../classes/paystackCharge.php' ;
 			
 			$pc = new PaystackCharge(0.015, 0); // always 1.5% flat					
 			
@@ -158,6 +158,7 @@
 		 
 		 
 		</script>
+		
 		<input type="hidden" value="<? echo $rand ?>" name="ref" />
 		
 		<input type="hidden" value="<? echo $me ?>" name="username" />
