@@ -42,7 +42,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://js.paystack.co/v1/paystack.js?<? date("Y-m-d h:i:sa");?>"></script>
     
-     <link rel="stylesheet" href="/media/css/style.css"  type="text/css" />
+     <link rel="stylesheet" href="/media/css/style.css?<? date("Y-m-d h:i:sa");?>"  type="text/css" />
    
    		<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
    		

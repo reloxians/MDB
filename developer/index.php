@@ -2,11 +2,13 @@
 //developer frontend
 	include '../security/anti_session.php';
 	include '../header.php';
-	$link = 'login';
+	//$link = 'login';
+	$link = 'Developer';
 	echo '<br>';
 	echo '<br>';
 	echo '<br>';
-	include '../nav/signup_login_nav.php' ;
+	//include '../nav/signup_login_nav.php' ;
+	include '../nav/company_nav.php' ;
 			
 			?>
 			
@@ -37,7 +39,7 @@
 					</div>
 			
 			<form action="login.inc" method="POST">
-			<input name="username" type="text" placeholder="Username or Email" required="required" />
+			<input name="username" type="text" placeholder="Identity" required="required" />
 			<br>
 			<input name="password" type="password" pattern=".{8,15}" placeholder="***********" required="required" />
 			<br>
@@ -47,7 +49,7 @@
 			
 			<br>
 			<br>			
-			<button type="submit" name="developer" class="purple_btn">Login <i class="fa fa-long-arrow-right"></i></button>
+			<button type="submit" name="developer" class="purple_btn">Sign in <i class="fa fa-long-arrow-right"></i></button>
 				
 			<div class="agreement">
 			For a lost or forgotten password, click the <a class="email" href="mailto:reloxians@gmail.com">RS-Developer</a> for identification and assistance			

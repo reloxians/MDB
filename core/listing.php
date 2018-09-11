@@ -180,14 +180,6 @@ Learn Android App Development from scratch with examples of the basic functions 
 
 
 
-<div style="background: transparent" class="pre_block">
-<div class="pre_block_header_pink">
-Our Client Arena
-</div>
-<br>
-We have a dashboard for individuals & companies currently hosting & managing their websites with us with features like odering for a new service, making payment for existing services, reminder of service expiration date and lot more.
-
-</div>
 
 
 
