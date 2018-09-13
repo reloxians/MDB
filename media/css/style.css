@@ -12,6 +12,8 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
+html,body { -webkit-text-size-adjust: initial; }
+
 * { margin: 0; border: none; }
 
 html, div, span, object, iframe,
@@ -29,10 +31,10 @@ time, mark, audio, video {
     padding:0;
     border:0;
     outline:0;
-    font-size:100%;
+    font-size: %;
     vertical-align:baseline;
     background:transparent;
-	 font-family: helvetica;
+	 	font-family: helvetica;
 }
 
 body {
@@ -63,7 +65,7 @@ q:before, q:after {
 a {
     margin:0;
     padding:0;
-    font-size:100%;
+    font-size: %;
     vertical-align:baseline;
     background:transparent;
 }
@@ -253,7 +255,7 @@ body {
 
 .wide_nav_right {
 	float: right;
-	margin-right: 10px;
+	margin: 10px;
 }
 
 .small_nav_right {
@@ -379,7 +381,9 @@ body {
 
 .wide_nav_ul > li {
 	display: inline-block;
-	padding: 12px 6px 12px 6px;
+	/** padding: 12px 8px 12px 8px; **/
+	margin: 15px;
+	margin-left: 14px;
 }
 
 .wide_nav_ul > li > a {
@@ -398,9 +402,24 @@ body {
 	font-weight: bold;
 	font-size: 16px;
 	font-family: roboto ;
-	margin-left: -20px;
+	margin-left: -15px;
+	color: #ccc;
 	
 }
+
+.foot-logo {
+	margin-top: -6px;
+}
+
+@media screen and (max-width: 700px) {
+.foot-logo {
+	margin-top: -6px;
+	width: 50%;
+}
+
+
+}
+
 
 @media screen and (min-width: 700px) {
 
@@ -869,7 +888,7 @@ body {
 	background: #E8EAF6;
 	padding:15px; 
 	margin-top: 20px;
-	font-size: 12px;
+	font-size: 0.8rem;
 	color: #393D50;
 }
 
@@ -2353,29 +2372,64 @@ input[type=email].newsletter::-webkit-input-placeholder{
 .post-title {
 	font-size: 28px;
 	text-align: left !important;
-	font-family: roboto;
+	font-family: 'open sans';
 	font-weight: ;
 	color: #363660;
 
 }
 
 .post-body {
-	font-size: 20px;
+	font-size: 1.0em;
 	color: #363660;
 	text-align: left !important;
 	margin-top: 8px !important;
+	line-height: 24px;
+	background: ;
 	
 }
 
+.post-body img {
+	width: 80%;
+}
 
 
 }
 
-.post-title:hover {
+/** big ends **/
+
+.post-link {
+	text-decoration: none;
+	color: #363660;;
+}
+
+.post-link:hover {
 	color: #EF6C00;
 
 }
 
+.blog-action {
+	text-align: left;
+	padding: 10px 0px 10px 0px;
+}
+
+.blog-action-color {
+	color: #EF6C00 !important;
+	text-decoration: none;
+	
+}
+
+.post-data {
+	color: #333;
+	font-size: 15px;
+	margin-top: ;
+
+}
+
+.post-body a {
+	text-decoration: none !important;
+	color: #2F7BBF;
+
+}
 
 @media screen and (max-width: 700px) {
 	.blog_wrapper {

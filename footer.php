@@ -13,7 +13,6 @@
 
 <div class="footer_top">
 Note: all web development services are delivered within 14 working days. if there be a delay in service delivery, contact our support team via this email address <a class="email" href="mailto:support@reloxians.com">support@reloxians.com <i class="fa fa-external-link"> </i></a> for assistance
-
 </div>
 
 <div class="footer_main"><!-- main - container -->
@@ -114,12 +113,17 @@ Note: all web development services are delivered within 14 working days. if ther
 </td>
 
 <td class="responsive" valign="top" width="22%">
-<h3 class="foot_name">Newsletter</h3>
+
+
+<!--logo-->
+<a href="/"><img class="foot-logo" src="/logo.png" width="80%"/></a>
+<br>
+
 
 <!-- newsletter -->
 <form action="../newsletter/" method="POST">
 
-<input class="newsletter" name="email" type="email" placeholder="Johnny@example.com" required="required" />
+<input class="newsletter" name="email" type="email" placeholder="Johnny@newsletter.com" required="required" />
 
 <button name="submit" class="newsletter-btn" type="submit">Sign up!</button>
 </form>

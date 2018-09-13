@@ -112,6 +112,22 @@ function chop_string($str, $len) {
 }
 
 
+
+if (!function_exists('chop_string_blog')) {
+function chop_string_blog($str, $len) {
+    if (strlen($str) < $len)
+        return $str;
+
+    $str = substr($str,0,$len);
+    if ($spc_pos = strrpos($str," "))
+            $str = substr($str,0,$spc_pos);
+
+    return $str . '....';
+}   
+}
+
+
+
 if (!function_exists('chop_string_null')) {
 function chop_string_null($str, $len) {
     if (strlen($str) < $len)
@@ -163,6 +179,21 @@ function chop_int($str, $len) {
 			} 
 			return $randomString;
 		}
+	
+	function slug($string){ 
+			$slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $string); 
+			
+			$slug = strtolower($slug);
+			return $slug; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

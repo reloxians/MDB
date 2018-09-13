@@ -1,0 +1,11 @@
+
+
+
+
+
+RewriteEngine On 
+RewriteBase /blog/ 
+
+RewriteCond %{REQUEST_FILENAME} !-d [NC] 
+RewriteCond %{REQUEST_FILENAME} !-f [NC] 
+RewriteRule ^(.*)$ post.php?slug=$1 [QSA,L]

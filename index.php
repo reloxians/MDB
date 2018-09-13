@@ -72,50 +72,46 @@ Our <b>automatic book delivery system</b> ensures that your book is delivered vi
 		$count_total = $count_php + $count_css + $count_ajax + $count_bootstrap + $count_sql + $count_html + $count_javascript + $count_asp + $count_jquery ;
 		
 		
-		/** days time calculation **/
-		//vars
-		$today = date("Y-m-d");
-		$yesterday = date("Y-m-d", strtotime("-1 days"));
-		$two_days_ago = date("Y-m-d", strtotime("-2 days"));
-		$three_days_ago = date("Y-m-d", strtotime("-3 days"));
-		$four_days_ago = date("Y-m-d", strtotime("-4 days"));
-		$five_days_ago = date("Y-m-d", strtotime("-5 days"));
-		$six_days_ago = date("Y-m-d", strtotime("-6 days"));
-		$seven_days_ago = date("Y-m-d", strtotime("-7 days"));
+		/** chat 2 **/
 		
-		//get entries
+		$chk = "select * from book_sales where category = 'ASP.NET' ";
+		$chk_cmd = mysqli_query($connect, $chk);
+		$count_asp_dl = mysqli_num_rows($chk_cmd);
+	
+		$chk0 = "select * from book_sales where category = 'PHP' ";
+		$chk_cmd0 = mysqli_query($connect, $chk0);
+		$count_php_dl = mysqli_num_rows($chk_cmd0);
+	
+		$chk1 = "select * from book_sales where category = 'CSS' ";
+		$chk_cmd1 = mysqli_query($connect, $chk1);
+		$count_css_dl = mysqli_num_rows($chk_cmd1);
 		
-		$ss = "SELECT * FROM book_sales WHERE date_format(created, '%Y-%m-%d') = '$today' ";
-		$cmmm = mysqli_query($connect, $ss);
-		$count_today = mysqli_num_rows($cmmm);
+		$chk2 = "select * from book_sales where category = 'JavaScript' ";
+		$chk_cmd2 = mysqli_query($connect, $chk2);
+		$count_javascript_dl = mysqli_num_rows($chk_cmd2);
+	
+		$chk3 = "select * from book_sales where category = 'JQuery' ";
+		$chk_cmd3 = mysqli_query($connect, $chk3);
+		$count_jquery_dl = mysqli_num_rows($chk_cmd3);
 		
-		$ss = "SELECT * FROM book_sales WHERE date_format(created, '%Y-%m-%d') = '$yesterday' ";
-		$cmmm = mysqli_query($connect, $ss);
-		$count_yesterday = mysqli_num_rows($cmmm);
+		$chk3 = "select * from book_sales where category = 'SQL' ";
+		$chk_cmd3 = mysqli_query($connect, $chk3);
+		$count_sql_dl = mysqli_num_rows($chk_cmd3);
 		
-		$ss = "SELECT * FROM book_sales WHERE date_format(created, '%Y-%m-%d') = '$two_days_ago' ";
-		$cmmm = mysqli_query($connect, $ss);
-		$count_two_days_ago = mysqli_num_rows($cmmm);
+		$chk3 = "select * from book_sales where category = 'HTML' ";
+		$chk_cmd3 = mysqli_query($connect, $chk3);
+		$count_html_dl = mysqli_num_rows($chk_cmd3);
 		
-		$ss = "SELECT * FROM book_sales WHERE date_format(created, '%Y-%m-%d') = '$three_days_ago' ";
-		$cmmm = mysqli_query($connect, $ss);
-		$count_three_days_ago = mysqli_num_rows($cmmm);
+		$chk3 = "select * from book_sales where category = 'BootStrap' ";
+		$chk_cmd3 = mysqli_query($connect, $chk3);
+		$count_bootstrap_dl = mysqli_num_rows($chk_cmd3);
 		
-		$ss = "SELECT * FROM book_sales WHERE date_format(created, '%Y-%m-%d') = '$four_day_ago' ";
-		$cmmm = mysqli_query($connect, $ss);
-		$count_four_days_ago = mysqli_num_rows($cmmm);
+		$chk3 = "select * from book_sales where category = 'Ajax' ";
+		$chk_cmd3 = mysqli_query($connect, $chk3);
+		$count_ajax_dl = mysqli_num_rows($chk_cmd3);
 		
-		$ss = "SELECT * FROM book_sales WHERE date_format(created, '%Y-%m-%d') = '$five_days_ago' ";
-		$cmmm = mysqli_query($connect, $ss);
-		$count_five_days_ago = mysqli_num_rows($cmmm);
 		
-		$ss = "SELECT * FROM book_sales WHERE date_format(created, '%Y-%m-%d') = '$six_days_ago' ";
-		$cmmm = mysqli_query($connect, $ss);
-		$count_six_days_ago = mysqli_num_rows($cmmm);
-		
-		$ss = "SELECT * FROM book_sales WHERE date_format(created, '%Y-%m-%d') = '$seven_days_ago' ";
-		$cmmm = mysqli_query($connect, $ss);
-		$count_seven_days_ago = mysqli_num_rows($cmmm);
+		$count_total_dl = $count_php_dl + $count_css_dl + $count_ajax_dl + $count_bootstrap_dl + $count_sql_dl + $count_html_dl + $count_javascript_dl + $count_asp_dl + $count_jquery_dl ;
 		
 		
 	 ?>
@@ -207,10 +203,10 @@ Our <b>automatic book delivery system</b> ensures that your book is delivered vi
 		var myLineChart = new Chart(ctx, { 
 			type: 'line', 
 			data: {
-							labels: ["Today", "Yesterday", "2Days", "3Days", "4Days", "5Days", "6Days", "7Days"],
+							labels: ["ASP.NET", "PHP", "CSS", "JavaScript", "JQuery", "MySQL", "HTML", "BootStrap", "Ajax", "Total"],
 							datasets: [{
-								label: 'Rate Of Downlaods Per Day',
-								data: [<? echo $count_today ?>, <? echo $count_yesterday ?>, <? echo $count_two_days_ago ?>, <? echo $count_three_days_ago ?>, <? echo $count_four_days_ago ?>, <? echo $count_five_days_ago ?>, <? echo $count_six_days_ago ?>, <? echo $count_seven_days_ago ?>], 
+								label: 'Rate Of Downlaods',
+								data: [<? echo $count_asp_dl ?>, <? echo $count_php_dl ?>, <? echo $count_css_dl ?>, <? echo $count_javascript_dl ?>, <? echo $count_jquery_dl ?>, <? echo $count_sql_dl ?>, <? echo $count_html_dl ?>, <? echo $count_bootstrap_dl ?>, <? echo $count_ajax_dl ?>, <? echo $count_total_dl ?>], 
 								
 								
 								backgroundColor: [

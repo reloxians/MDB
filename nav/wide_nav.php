@@ -1,21 +1,21 @@
 <?php
 session_start();
+
 $user = $_SESSION['username'];
 ?>
 
 <div id="nav_java">
 <div class="wide_nav_wrapper">
+
 <ul class="wide_nav_ul">
-	<li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li>
+	<li><a id="home" href="/"><img style="margin-bottom: -8px; margin-left: -20px;" src="/logo.png" width="130px" /></a></li>
 	<li><a href="#"><i class="fa fa-android"></i>  Apps</a></li>
 	<li><a href="/services/websites.php"><i class="fa fa-html5"></i>  Websites</a></li>
 	<li><a href="/library/"><i class="fa fa-code"></i>  E-books</a></li>
 	<li><a href="/services/"><i class="fa fa-cart-plus"></i>  Services</a></li>
 	
-	
 
 <!-- part 1 ends -->	
-
 	
 	<?php if($_SESSION['username']){ 
 	
@@ -54,7 +54,6 @@ $user = $_SESSION['username'];
 		
 	
 </ul>
-
 
 </div>
 </div>

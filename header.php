@@ -1,4 +1,5 @@
 <!Doctype html>
+<? session_start(); ?>
 <head> 
 		
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -9,6 +10,14 @@
     <title itemprop="name">RS - Developers™ | Global Web & App Development Services</title>
        
     <link rel="icon" href="/media/images/favicon.ico" sizes="20x20" type="image/png">
+    
+    <? $current = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
+    
+    <meta property="og:url" content="<? echo $current ?>" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:title" content="RS - Developers™ | Global Web & App Development Services" /> 
+    <meta property="og:description" content="We render Web Development Services at an affordable rate" /> 
+    <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
        
        <!-- JQuery -->
        
@@ -34,6 +43,10 @@
     <!-- CDN -->
     
     
+  <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+  
+  <script src="/assets/tn.js"></script>
+      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
@@ -42,7 +55,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://js.paystack.co/v1/paystack.js?<? date("Y-m-d h:i:sa");?>"></script>
     
-     <link rel="stylesheet" href="/media/css/style.css?<? date("Y-m-d h:i:sa");?>"  type="text/css" />
+     <link rel="stylesheet" href="/media/css/style.css?<? echo date("Y-m-d h:i:sa");?>"  type="text/css" />
    
    		<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
    		

@@ -12,6 +12,8 @@
 	
 	<li <?php if($link == 'developers') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../admin/developers/">Developers</a></li> 
 		
+	<li <?php if($link == 'blog') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="../../admin/blog/">Blog</a></li> 
+		
 	<li <?php if($link == 'function') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="#">Function</a></li> 
 	 
 	</ul>

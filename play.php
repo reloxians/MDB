@@ -88,3 +88,14 @@ A password reset request was made on your account recently, if you did not make 
 </table>
 ' ;
 
+
+echo $_SERVER['HOST'];
+
+echo $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+
+
+
+
+
+

@@ -93,7 +93,7 @@ Get a website that suites your businesses & other organisations
 </div>
 
 <br>
-<span class="parallax_tabs_b">
+<span class="white_green_btn">
 <a href="/services/websites.php"><span class="grey">
 Learn More  <i class="fa fa-angle-double-right"></i></span>
 </a>

@@ -83,11 +83,11 @@ $(document).ready(function() {
 <table width="100%" cellpadding="0">
 <tr bgcolor="">
 <td width="2%">
-<i class="fa fa-circle-o-notch"></i>
+<i class="fa fa-question-circle"></i>
 </td>
 
 <td width="98%">
-<span class=""><marquee> Our Developers are working on implementing an online lecture platform for students, through which lectures can be delivered remotely & conveniently </marquee></span>
+<span class=""> Our Developers are working on implementing an online lecture platform for students, through which lectures can be delivered remotely & conveniently <i class="fa fa-angle-double-right"></i></span>
 </td>
 
 </tr>
