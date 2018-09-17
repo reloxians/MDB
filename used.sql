@@ -422,6 +422,24 @@ CREATE TABLE `blog` (
   PRIMARY KEY  (`id`)
   ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1480 ;
   
+  
+  
+
+///////////////////////////////////////////////////////////////
+
+DROP TABLE IF EXISTS `prices`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `prices` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `item_name`varchar(255) NOT NULL,
+  `price` int(255) NOT NULL default 0,
+  `created` timestamp NOT NULL default '0000-00-00 00:00:00',
+  
+  
+  PRIMARY KEY  (`id`)
+  ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1480 ;
+  
  
  
  

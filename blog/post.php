@@ -98,7 +98,7 @@
 <table width="100%" cellpadding="5">
 <tr bgcolor="">
 
-<td valign="top" align="left" width="25%">
+<td class="responsive" valign="top" align="left" width="25%">
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
 	 class="twitter-share-button" 
 	 data-show-count="false">Tweet</a>
@@ -108,12 +108,12 @@
 </td>
 
 
-<td valign="top" align="left" width="25%">
+<td class="responsive" valign="top" align="left" width="25%">
 <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 <script type="IN/Share"></script>
 </td>
 
-<td valign="top" align="left" width="25%">
+<td class="responsive" valign="top" align="left" width="25%">
 
 <!-- Load Facebook SDK for JavaScript --> 
 <div id="fb-root"></div> 
@@ -140,26 +140,78 @@ data-show-faces="true">
 </table>
 <!-- action -->
 <br>
+<br>
+<!-- disqus -->
+<?
+include '../assets/disqus/main-comment.php';
 
-<!--
-<div class="blog-action" >
-<a href="#" class="blog-action-color">Read more <i class="fa fa-angle-double-right"></i></a>
-</div>
--->
 
+?>
 
 		
 		
 		</div><!-- l -->
 		</td>
 		
-		<td align="center" class="responsive" valign="top" width="30%">
-<div class="blog-side">
-sidebar
+<td align="" class="responsive" valign="top" width="30%">
+<div class="blog-side"><!-- m -->
+
+<div class="side-con">
+<div class="side-con-title">
+Resources
 </div>
-	  </td>		
-		</tr>
-		</table>
+
+<ul class="side-con ul">
+<li class=""><a href="/company/about"><div class="side-con-li">About<i style="float: right;" class="fa fa-caret-right"></i></div></a></li>
+
+<li class=""><a href="/jobs/"><div class="side-con-li">Jobs<i style="float: right;" class="fa fa-caret-right"></i></div></a></li>
+
+<li class=""><a href="/library/"><div class="side-con-li">Library<i style="float: right;" class="fa fa-caret-right"></i></div></a></li>
+
+<li class=""><a href="/docs/faq"><div class="side-con-li">FAQ<i style="float: right;" class="fa fa-caret-right"></i></div></a></li>
+
+<li class=""><a href="/docs/survey"><div class="side-con-li">Quick Survey<i style="float: right;" class="fa fa-caret-right"></i></div></a></li>
+</ul>
+</div>
+<br>
+
+<div class="side-con">
+<div class="side-con-title">
+NG callers
+</div>
+
+<div class="side-con-text">
++ (234) 9071 682 556
+</div>
+
+<div class="side-con-title">
+US callers
+</div>
+
+
+<div class="side-con-text">
++1 (512) 957-7750
+
+</div>
+
+<div class="side-con-text context">
+RS - Developers is a company that renders Web and App development services worldwide. initially, RSD was launched in 2017 by a few full stack developers with the aim of rendering these services globally. 
+</div>
+
+<div class="side-con-text context">
+RSD is currently managing over 500+ websites with a star strength of over 100+ developers.
+</div>
+
+
+
+</div>
+</br>
+
+
+</div><!-- m -->
+</td>		
+</tr>
+</table>
 		
 		
 		

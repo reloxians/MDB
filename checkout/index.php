@@ -14,9 +14,16 @@
 		
 		//vars
 		$item = $_POST['item'];
-		$price = $_POST['price'];
+		$price_raw = $_POST['price'];
 		$billing = $_POST['billing'];
 		$type = $_POST['type'];
+		
+		//verify price
+		$match = "select * from prices where item_name = '$item' ";
+		$cmd = mysqli_query($connect, $match);
+		$ins = mysqli_fetch_assoc($cmd);
+		$price = $ins['price'];
+		
 	
 	//ref
 		$rand = grs();

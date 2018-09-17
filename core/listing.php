@@ -36,7 +36,7 @@ Get a WordPress blog up and running within few minutes with clean & elegant desi
 
 <br>
 <span class="white_pink_btn">
-<a href="/services/wordpress.php"><span class="grey">
+<a href="/company/pricing/websites/wordpress"><span class="grey">
 Learn More  <i class="fa fa-angle-double-right"></i></span>
 </a>
 </span>
@@ -65,7 +65,7 @@ Get an Android app for your website to facilitate growth and expansion of your b
 
 <br>
 <span class="white_green_btn">
-<a href="/services/android.php"><span class="grey">
+<a href="#"><span class="grey">
 Learn More  <i class="fa fa-angle-double-right"></i></span>
 </a>
 </span>
@@ -94,7 +94,7 @@ Get a website that suites your businesses & other organisations
 
 <br>
 <span class="white_green_btn">
-<a href="/services/websites.php"><span class="grey">
+<a href="/company/pricing/"><span class="grey">
 Learn More  <i class="fa fa-angle-double-right"></i></span>
 </a>
 </span>

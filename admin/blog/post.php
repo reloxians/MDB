@@ -21,7 +21,7 @@
 		
 		if($cmd) {
 		
-			echo 'done';
+			header("Location: /admin/blog/");
 		
 		}
 	

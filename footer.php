@@ -79,10 +79,10 @@ Note: all web development services are delivered within 14 working days. if ther
 <h3 class="foot_name">Services </h3>
 
 <ul class="foot_links">
-	<li><a href="/services/android">Android App Dev.</a></li>
-	<li><a href="/services/wordpress">WordPress Blog Dev.</a></li>
-	<li><a href="/services/websites">Dynamic Websites</a></li>
-	<li><a href="/services/websites">E-Commerce Websites</a></li>
+	<li><a href="#">Android App Dev.</a></li>
+	<li><a href="/company/pricing/websites/wordpress">WordPress Blog Dev.</a></li>
+	<li><a href="company/pricing/">Dynamic Websites</a></li>
+	<li><a href="/company/pricing/websites/e-commerce">E-Commerce Websites</a></li>
 	<li><a href="#">Web Dev. Training</a></li>
 	<li><a href="#">App Dev. Training</a></li>
 

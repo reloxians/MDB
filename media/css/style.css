@@ -1059,7 +1059,7 @@ body {
 }
 
 .faq_wrapper {
-	background: #FFF;
+	background: #;
 	padding: 5px;
 }
 
@@ -2362,10 +2362,10 @@ input[type=email].newsletter::-webkit-input-placeholder{
 }
 
 .blog-side {
-	background: #eee;
+	background: #;
 	width: 80%;
 	min-height: 750px; 
-	margin: ;	
+	padding: 5px;	
 
 }
 
@@ -2391,6 +2391,15 @@ input[type=email].newsletter::-webkit-input-placeholder{
 .post-body img {
 	width: 80%;
 }
+
+
+.side-con {
+	background: #F3F3F3;
+	padding: 5px;
+	width: 100%;
+
+}
+
 
 
 }
@@ -2425,14 +2434,67 @@ input[type=email].newsletter::-webkit-input-placeholder{
 
 }
 
+
+.side-con-title {
+	color: grey;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: ;
+	margin: 10px;
+
+}
+
+.side-con-text {
+	color: grey;
+	font-size: 13px;
+	text-align: left;
+	margin: 10px;
+}
+
+.context {
+	line-height: 20px;
+	margin-top: 20px;
+}
+
+.side-con > ul {
+	padding-left: 0px !important;
+
+}
+
+.side-con > ul li {
+	list-style-type: none;
+	margin: 10px;
+	
+}
+
+.side-con > ul li a {
+	text-decoration: none;
+	color: #2F7BBF;
+	font-size: 14px;
+
+}
+
+.side-con-li:hover {
+	background: #2F7BBF;
+	padding: 5px;
+	border-radius: 2px;
+	color: white !important;
+	margin: -5px;
+}
+
+
 .post-body a {
 	text-decoration: none !important;
 	color: #2F7BBF;
 
 }
 
+/** small starts **/
+
 @media screen and (max-width: 700px) {
-	.blog_wrapper {
+
+.blog_wrapper {
 	background: ;
 	width: 100%;
 	min-height: 750px; 
@@ -2441,17 +2503,44 @@ input[type=email].newsletter::-webkit-input-placeholder{
 }
 
 .blog-side {
-	background: #ccc;
+	background: ;
 	width: 100%;
 	min-height: 750px; 
-	margin: ;	
+	padding: px;	
 
 }
 
 .post-title {
-	font-size: 22px;
+	font-size: 28px;
+	text-align: left !important;
+	font-family: 'open sans';
+	font-weight: ;
+	color: #363660;
 
-}	
+}
+
+.post-body {
+	font-size: 1.0em;
+	color: #363660;
+	text-align: left !important;
+	margin-top: 8px !important;
+	line-height: 24px;
+	background: ;
+	
+}
+
+.post-body img {
+	width: 80%;
+}
+
+
+.side-con {
+	background: #F3F3F3;
+	padding: 3px;
+	width: 100%;
+
+}
+
 
 }
 

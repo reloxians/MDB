@@ -1,14 +1,12 @@
 <?php
-	include '../header.php' ;
 	$link = 'About';
+	include '../header.php' ;
 	echo '<br>';
 	echo '<br>';
 	echo '<br>';
 	include '../nav/company_nav.php';
 ?>
-
 <div class="page_wrapper_sub">
-
 <div class="info-about center">
 About RS - Developers
 </div>
@@ -17,9 +15,7 @@ About RS - Developers
 RS - Developers is a company that renders Web and App development services worldwide. initially, RSD was launched in 2017 by a few full stack developers with the aim of rendering these services globally. RSD is currently managing over 500+ websites with a star strength of over 100+ developers. 
 </div>
 
-
 <!-- inner view -->
-
 <table width="100%" cellpadding="10">
 <tr bgcolor="">
 <td width="16%">	
@@ -57,7 +53,6 @@ RS - Developers is a company that renders Web and App development services world
 </tr>
 </table>
 
-<br>
 <div class="info-about center">
 Others things we do
 </div>
@@ -161,14 +156,15 @@ Working Hours
 09 AM - 5:00 PM Central Africa Time
 </td>
 </tr>
-
 </table>
+
 </center>
 </div>
 <br>
+<br>
+
 
 
 </div><!-- M -->
-
 <?php
 	include '../footer.php';

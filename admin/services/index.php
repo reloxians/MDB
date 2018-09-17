@@ -65,23 +65,23 @@
 	</td>
 	
 	<td class="white-chart-cards responsive" width="30%">
-	<a class="card_act" href="applicant"><!-- card act -->
+	<a class="card_act" href="prices"><!-- card act -->
 	<table width="100%" cellpadding="5"><!-- inner -->
 	<tr bgcolor="">
 	<td width="30%">
 	<div class="pink-plastic">
-	<i class="fa fa-code"></i>
+	<i class="fa fa-euro"></i>
 	</div>
 	</td><!-- icon -->
 	
 	<td align="right" valign="" width="70%">
 	<span class="card_info">
-	Job Applicants
+	Price Modification
 	</span>
 	
 	<div class="card_info_val">
 	<?
-	$se = "select * from job_applicant";
+	$se = "select * from prices";
 	$ru = mysqli_query($connect, $se);
 	$cn = mysqli_num_rows($ru);
 	

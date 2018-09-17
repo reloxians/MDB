@@ -10,7 +10,10 @@
 <div id="">
 <div class="wide_nav_wrapper small_nav_hidden transparent-bg">
 <ul class="wide_nav_ul">
-	<li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li>
+<!--	<li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li> -->
+	
+	<li><a id="home" href="/"><img style="margin-bottom: -8px; margin-left: -20px;" src="/logo.png" width="130px" /></a></li>
+	
 	<li><a class="small_hide" href="#"><i class="fa fa-android"></i>  Apps</a></li>
 	<li><a class="small_hide" href="/services/android.php"><i class="fa fa-html5"></i>  Websites</a></li>
 	<li><a class="small_hide" href="#"><i class="fa fa-code"></i>  E-books</a></li>
@@ -169,7 +172,8 @@ MENU
 
 <div class="wide_nav_wrapper wide_nav_hidden transparent-bg">
 <ul class="wide_nav_ul">
-	<li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li>
+	<!-- <li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li> -->
+	<li><a id="home" href="/"><img style="margin-bottom: -8px; margin-left: -20px;" src="/logo.png" width="130px" /></a></li>
 	
 	<!--
 	
@@ -214,7 +218,7 @@ MENU
 		
 		
 		
-		<li class="wide_nav_right"><a href="../../notify/"><i class="fa fa-envelope"></i><span class="">  Inbox</span></a></li>
+<!--		<li class="wide_nav_right"><a href="../../notify/"><i class="fa fa-envelope"></i><span class="">  Inbox</span></a></li> -->
 		
 		
 	

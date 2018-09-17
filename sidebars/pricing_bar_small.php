@@ -2,7 +2,7 @@
 
 <ul class="sidebar_links_small">
 	
-	<li class="<? if($active == 'services') { echo 'sidebar_links_active'; } ?>"><a href="/pricing/">Pricing Overview</a></li>
+	<li class="<? if($active == 'services') { echo 'sidebar_links_active'; } ?>"><a href="/company/pricing/">Pricing Overview</a></li>
 	
 	<!--
 	
@@ -13,15 +13,18 @@
 	
 <!--	<ul class="sidebar_links_child_small"> -->
 
-		<li class="<? if($child == 'e-commerce') { echo 'sidebar_links_active_child'; } ?>"><a href="/pricing/websites/e-commerce.php">E-commerce Websites</a></li>
+		<li class="<? if($child == 'e-commerce') { echo 'sidebar_links_active_child'; } ?>"><a href="/company/pricing/websites/e-commerce.php">E-commerce Websites</a></li>
 	
-	<li class="<? if($child == 'school') { echo 'sidebar_links_active_child'; } ?>"><a href="/pricing/websites/corporate.php">Corporate Websites</a></li>
+	<li class="<? if($child == 'school') { echo 'sidebar_links_active_child'; } ?>"><a href="/company/pricing/websites/corporate.php">Corporate Websites</a></li>
 	
-	<li class="<? if($child == 'church') { echo 'sidebar_links_active_child'; } ?>"><a href="/pricing/websites/church.php">Church Websites</a></li>
+	<li class="<? if($child == 'church') { echo 'sidebar_links_active_child'; } ?>"><a href="/company/pricing/websites/church.php">Church Websites</a></li>
 	
-	<li class="<? if($child == 'personal') { echo 'sidebar_links_active_child'; } ?>"><a href="/pricing/websites/business.php">Business Websites</a></li>
+	<li class="<? if($child == 'personal') { echo 'sidebar_links_active_child'; } ?>"><a href="/company/pricing/websites/business.php">Business Websites</a></li>
 	
-	<li class="<? if($child == 'qanda') { echo 'sidebar_links_active_child'; } ?>"><a href="/pricing/websites/qanda.php">Q&A Websites</a></li>
+	<li class="<? if($child == 'qanda') { echo 'sidebar_links_active_child'; } ?>"><a href="/company/pricing/websites/qanda.php">Q&A Websites</a></li>
+	
+	<li class="<? if($child == 'wordpress') { echo 'sidebar_links_active_child'; } ?>"><a href="/company/pricing/websites/wordpress.php">WordPress Blogs</a></li>
+	
 	
 <!--	</ul> -->	
 

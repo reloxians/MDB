@@ -46,6 +46,8 @@
   <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
   
   <script src="/assets/tn.js"></script>
+  
+  <link rel="stylesheet" href="/assets/disqus/asserts/disqus.css?<? echo date("Y-m-d h:i:sa");?>" />
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
@@ -57,6 +59,8 @@
     
      <link rel="stylesheet" href="/media/css/style.css?<? echo date("Y-m-d h:i:sa");?>"  type="text/css" />
    
+   		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" 							rel="stylesheet">
+   		
    		<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
    		
    		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">

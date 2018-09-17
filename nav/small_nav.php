@@ -6,7 +6,10 @@ $user = $_SESSION['username'];
 <div id="nav_java_small">
 <div class="wide_nav_wrapper">
 <ul class="wide_nav_ul">
-	<li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li>
+<!--	<li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li> -->
+
+<li><a id="home" href="/"><img style="margin-bottom: -8px; margin-left: -20px;" src="/logo.png" width="130px" /></a></li>
+
 	<li><a class="small_hide" href="#"><i class="fa fa-android"></i>  Apps</a></li>
 	<li><a class="small_hide" href="/services/android.php"><i class="fa fa-desktop"></i>  Websites</a></li>
 	<li><a class="small_hide" href="#"><i class="fa fa-code"></i>  E-books</a></li>
@@ -84,27 +87,13 @@ MENU
 <table cellpadding="5" width="100%">
 <tr>
 <td width="20%">
-<div class="small_nav_icon_android">
-<i class="fa fa-android"></i>
+<div class="small_nav_icon_gallery">
+<i class="fa fa-cart-plus"></i>
 </div>
 </td>
 
 <td width="80%">
-<a class="small_nav_icon_android_txt" href="#">Android</a>
-</td>
-</tr>
-</table>
-
-<table cellpadding="5" width="100%">
-<tr>
-<td width="20%">
-<div class="small_nav_icon_website">
-<i class="fa fa-html5"></i>
-</div>
-</td>
-
-<td width="80%">
-<a class="small_nav_icon_website_txt" href="/services/websites.php">Website</a>
+<a class="small_nav_icon_gallery_txt" href="/company/pricing/">Pricing</a>
 </td>
 </tr>
 </table>	
@@ -128,21 +117,6 @@ MENU
 </td>
 </tr>
 </table>
-
-<table cellpadding="5" width="100%">
-<tr>
-<td width="20%">
-<div class="small_nav_icon_gallery">
-<i class="fa fa-cart-plus"></i>
-</div>
-</td>
-
-<td width="80%">
-<a class="small_nav_icon_gallery_txt" href="/services/">Services</a>
-</td>
-</tr>
-</table>	
-
 
 
 </td>

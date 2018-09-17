@@ -34,7 +34,7 @@ $(document).ready(function() {
 	?>
 	
 	<span class="parallax_tabs_a">
-<a id="order" href="/services/"><i class="fa fa-cart-plus"></i>   ORDER A SERVICE</a>
+<a id="order" href="/company/pricing/"><i class="fa fa-cart-plus"></i>   ORDER A SERVICE</a>
 </span>
 	
 	<?
