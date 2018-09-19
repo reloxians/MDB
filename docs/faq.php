@@ -1,6 +1,7 @@
 <?php
+	$theme_class = 'red';
 	session_start();
-	include '../header.php' ;
+	include '../header_no_nav.php' ;
 	include '../parallax.php' ;
 	
 	if(isset($_SESSION['username'])) {

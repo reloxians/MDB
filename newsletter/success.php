@@ -1,6 +1,7 @@
 <?php
 	if(isset($_POST['success']) && $_POST['success'] != null ) {
-	include '../header.php';
+	$theme_class = 'green';
+	include '../header_no_nav.php';
 	include '../parallax.php';
 	$User = $_SESSION['username'];
 ?>

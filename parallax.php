@@ -1,6 +1,32 @@
-<div class="page_wrapper"><!-- page wrapper starts -->
-<div class="parallax">
+<?
+if($theme_class == 'blue' ) {
+$theme_name = 'page_wrapper_blue';
+$theme_btn = 'parallax_tabs_a';
 
+} elseif($theme_class == 'green' ) {
+	$theme_name = 'page_wrapper_green';
+	$theme_btn = 'btn_for_green';
+	
+} elseif($theme_class = 'red' ) {
+	$theme_name = 'page_wrapper_red';
+	$theme_btn = 'btn_for_green';
+}
+
+
+
+
+?>
+
+
+
+<div class="<? echo $theme_name ?>"><!-- page wrapper starts -->
+<div class="parallax">
+<div class="page_wrapper_unskew"><!-- SVG -->
+<?
+include 'navigations_plain.php';
+?>
+<br>
+<br>
 <div class="parallax_font">
  Get A Responsive Website Today!
 </div>
@@ -42,7 +68,7 @@ $(document).ready(function() {
 
 ?>
 
-<span class="parallax_tabs_a">
+<span class="<? echo $theme_btn ?>">
 <a href="/docs/signup.php"><i class="fa fa-plus-circle"></i>   CREATE ACCOUNT</a>
 </span>
 
@@ -76,8 +102,6 @@ $(document).ready(function() {
 </div>
 
 
-</div>
-
 <div class="info_wrapper">
 <div class="info">
 <table width="100%" cellpadding="0">
@@ -92,8 +116,10 @@ $(document).ready(function() {
 
 </tr>
 </table>
-
 </div>
 </div>
 
+</div><!-- unskew -->
+</div><!-- parallax -->
 </div><!-- page wrapper ends -->
+

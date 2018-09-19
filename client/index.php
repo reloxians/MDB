@@ -17,7 +17,7 @@
 	require '../security/auth_check.php' ;
 	
 	include '../header.php' ;
-	include '../parallax.php' ;
+	echo '<div style="margin-top: 50px;" />';
 	
 	if($_SESSION['username']) {
 		include '../nav/profile_nav.php' ;		

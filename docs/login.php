@@ -1,4 +1,5 @@
-<?php 
+<?php
+			$theme_class = 'green'; 
 			session_start();
 			
 			if($_SESSION['username'] || $_SESSION['email']) {
@@ -7,7 +8,7 @@
 $link = 'login' ;
 $Next = $_POST['next'];
 
-			 include '../header.php' ;
+			 include '../header_no_nav.php' ;
 			 include '../parallax.php' ;
 			 include '../nav/signup_login_nav.php' ;
 			

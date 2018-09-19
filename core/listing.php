@@ -112,7 +112,7 @@ Learn More  <i class="fa fa-angle-double-right"></i></span>
 
 
 <div style="background: transparent;" class="pre_block">
-<div style="color: #566383;" class="pre_block_header">
+<div style="color: #566383; font-size: 12px;" class="pre_block_header">
 Things You Can Learn From Us
 </div>
 <br>

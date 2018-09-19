@@ -1,7 +1,8 @@
 <?php
+	
 	session_start();
 	include '../header.php' ;
-	include '../parallax.php' ;
+	echo '<div style="margin-top: 50px;" />';
 	include '../security/auth_check.php' ;
 	
 	$me = $_SESSION['username'];

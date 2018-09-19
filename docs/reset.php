@@ -4,11 +4,11 @@
 			if($_SESSION['username'] || $_SESSION['email']) {
 				header("Location: ../client/");
 			}
-$link = 'reset' ;
-$Next = $_POST['next'];
+			$link = 'reset' ;
+			$Next = $_POST['next'];
 
 			 include '../header.php' ;
-			 include '../parallax.php' ;
+			 echo '<div style="margin-top: 50px;" />';
 			 include '../nav/signup_login_nav.php' ;
 			
 			?>

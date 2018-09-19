@@ -2,7 +2,7 @@
 $link = 'signup' ;
 			 include '../security/anti_session.php' ;
 			 include '../header.php' ;
-			 include '../parallax.php' ;
+			 echo '<div style="margin-top: 50px;" />';
 			 include '../nav/signup_login_nav.php' ;
 			
 			?>

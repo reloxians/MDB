@@ -73,24 +73,24 @@ Working Hours
 <div class="info-about-sub center">
 
 <center>
-<table width="80%" cellpadding="10"><!-- m -->
+<table width="90%" cellpadding="10"><!-- m -->
 <tr bgcolor="">
-<td valign="top" align="left" width="20%">
+<td valign="top" align="left" width="30%">
 <span class="email">*</span> Mondays
 </td>
 
-<td valign="top" align="right" width="80%">
+<td valign="top" align="right" width="70%">
 <span class="email">09</span> AM - 5:00 PM Central Africa Time
 </td>
 </tr><!-- s -->
 
 
 <tr bgcolor="">
-<td valign="top" align="left" width="20%">
+<td valign="top" align="left" width="30%">
 <span class="email">*</span> Tuesdays
 </td>
 
-<td valign="top" align="right" width="80%">
+<td valign="top" align="right" width="70%">
 <span class="email">09</span> AM - 5:00 PM Central Africa Time
 </td>
 </tr>
@@ -98,11 +98,11 @@ Working Hours
 
 
 <tr bgcolor="">
-<td valign="top" align="left" width="20%">
+<td valign="top" align="left" width="30%">
 <span class="email">*</span> Wednesdays
 </td>
 
-<td valign="top" align="right" width="80%">
+<td valign="top" align="right" width="70%">
 <span class="email">09</span> AM - 5:00 PM Central Africa Time
 </td>
 </tr>
@@ -111,11 +111,11 @@ Working Hours
 
 
 <tr bgcolor="">
-<td valign="top" align="left" width="20%">
+<td valign="top" align="left" width="30%">
 <span class="email">*</span> Thursdays
 </td>
 
-<td valign="top" align="right" width="80%">
+<td valign="top" align="right" width="70%">
 <span class="email">09</span> AM - 5:00 PM Central Africa Time
 </td>
 </tr>
@@ -124,11 +124,11 @@ Working Hours
 
 
 <tr bgcolor="">
-<td valign="top" align="left" width="20%">
+<td valign="top" align="left" width="30%">
 <span class="email">*</span> Fridays
 </td>
 
-<td valign="top" align="right" width="80%">
+<td valign="top" align="right" width="70%">
 <span class="email">09</span> AM - 5:00 PM Central Africa Time
 </td>
 </tr>
@@ -136,11 +136,11 @@ Working Hours
 
 
 <tr bgcolor="">
-<td valign="top" align="left" width="20%">
+<td valign="top" align="left" width="30%">
 * Saturdays (optional)
 </td>
 
-<td valign="top" align="right" width="80%">
+<td valign="top" align="right" width="70%">
 09 AM - 5:00 PM Central Africa Time
 </td>
 </tr>
@@ -148,11 +148,11 @@ Working Hours
 
 
 <tr bgcolor="">
-<td valign="top" align="left" width="20%">
+<td valign="top" align="left" width="30%">
 * Sundays (optional)
 </td>
 
-<td valign="top" align="right" width="80%">
+<td valign="top" align="right" width="70%">
 09 AM - 5:00 PM Central Africa Time
 </td>
 </tr>

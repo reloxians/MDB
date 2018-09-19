@@ -1,7 +1,11 @@
 <?php
 //Main INDEX
+$themes = array('blue', 'green', 'red');
+$i = rand(0, count($themes)-1);
+$theme_class = "$themes[$i]";
 	
-	include 'header.php';
+	
+	include 'header_no_nav.php';
 	include 'parallax.php';
 	include 'database/database.php' ;
 	

@@ -137,4 +137,3 @@ var everythingLoaded = setInterval(function() {
 
 
 <?php include 'function/functions.php' ?>
-<?php include 'navigations.php' ?>

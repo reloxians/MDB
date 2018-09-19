@@ -4,7 +4,7 @@ $user = $_SESSION['username'];
 ?>
 
 <div id="nav_java_small">
-<div class="wide_nav_wrapper">
+<div class="wide_nav_wrapper no-bg">
 <ul class="wide_nav_ul">
 <!--	<li><a id="home" href="/"><i class="fa fa-home"></i>  Reloxians</a></li> -->
 

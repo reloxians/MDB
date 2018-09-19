@@ -1,6 +1,8 @@
 <?php 
+	$link = 'Refund';
 	include '../header.php' ;
-	include '../parallax.php' ;
+	echo '<div style="margin-top: 50px;" />';
+	include '../nav/legal_nav.php' ;
 	
 	?>
 <div class="page_wrapper_sub">

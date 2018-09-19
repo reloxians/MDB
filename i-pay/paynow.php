@@ -17,7 +17,7 @@
 	
 		
 	include '../header.php' ;
-	include '../parallax.php' ;
+	echo '<div style="margin-top: 50px;" />';
 	
 	if($_SESSION['username']) {
 		include '../nav/profile_nav.php' ;		
@@ -53,7 +53,7 @@
 
 <center>
 
-<div class="form_class">
+<div class="form_clas">
 <form id="controller" action="confirm" method="POST">
 
 <select name="product" required="required">
