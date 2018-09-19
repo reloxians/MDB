@@ -15,6 +15,7 @@ $user = $_SESSION['username'];
 <!--	<li><a href="/services/websites.php"><i class="fa fa-html5"></i>  Websites</a></li> -->
 	<li><a href="/library/"><i class="fa fa-code"></i>  E-books</a></li>
 	<li><a href="/company/pricing"><i class="fa fa-dollar"></i>  Pricing</a></li>
+	<li><a href="/company/request"><i class="fa fa-share"></i>  Request</a></li>
 	
 
 <!-- part 1 ends -->	

@@ -1,15 +1,18 @@
 <?
 if($theme_class == 'blue' ) {
-$theme_name = 'page_wrapper_blue';
-$theme_btn = 'parallax_tabs_a';
+	$theme_name = 'page_wrapper_blue';
+	$theme_btn = 'parallax_tabs_a';
+	$info_class = 'new_blue';
 
 } elseif($theme_class == 'green' ) {
 	$theme_name = 'page_wrapper_green';
 	$theme_btn = 'btn_for_green';
+	$info_class = 'new_green';
 	
 } elseif($theme_class = 'red' ) {
 	$theme_name = 'page_wrapper_red';
 	$theme_btn = 'btn_for_green';
+	$info_class = 'new_blue';
 }
 
 
@@ -27,12 +30,40 @@ include 'navigations_plain.php';
 ?>
 <br>
 <br>
+
+<a href="#">
+<div class="info_wrapper">
+<div class="info">
+<table width="100%" cellpadding="5">
+<tr bgcolor="">
+<td width="5%">
+<span class="<? echo $info_class ?>">
+New
+</span>
+</td>
+
+<td align="left" width="85%">
+<span class="">Introducing open order platform </span>
+</a>
+</td>
+
+<td width="10%">
+<span class=""><i class="fa fa-angle-double-right"></i></span>
+</td>
+
+</tr>
+</table>
+</div>
+</div>
+</a>
+
+
 <div class="parallax_font">
  Get A Responsive Website Today!
 </div>
 
 <div class="parallax_desc">
- The Reloxians help you take your business to the next level by making your online presence known to the world within few minutes
+ The Reloxians can help you take your business to the next level by making your online presence known to the world within few minutes
 
 </div>
 
@@ -85,15 +116,8 @@ $(document).ready(function() {
 
 
 <td class="responsive" align="" width="20%">
-<div class="parallax_tabs">
-<a href="#"><i class="fa fa-twitter"></i>   Twitter Connect</a>
-</div>
-</td>
 
-<td class="responsive" align="" width="20%">
-<div class="parallax_tabs">
-<a href="https://facebook.com/reloxians"><i class="fa fa-facebook"></i>   Facebook Connect</a>
-</div>
+
 </td>
 
 
@@ -102,24 +126,118 @@ $(document).ready(function() {
 </div>
 
 
-<div class="info_wrapper">
-<div class="info">
-<table width="100%" cellpadding="0">
-<tr bgcolor="">
-<td width="2%">
-<i class="fa fa-question-circle"></i>
-</td>
 
-<td width="98%">
-<span class=""> Our Developers are working on implementing an online lecture platform for students, through which lectures can be delivered remotely & conveniently <i class="fa fa-angle-double-right"></i></span>
-</td>
-
-</tr>
-</table>
-</div>
-</div>
 
 </div><!-- unskew -->
 </div><!-- parallax -->
 </div><!-- page wrapper ends -->
+
+<div class="work-flow">
+<div class="work-flow-main">
+RS - Developers workflow
+</div>
+
+
+<table width="100%" cellpadding="5">
+<tr bgcolor="">
+<td valign="top" align="center" width="10%">
+<div class="quest_wrapper">
+<i class="fa fa-pencil"></i><!-- 1 -->
+</div>
+</td>
+<td valign="top" width="90%">
+<span class="work-flow-sub">Place an order, telling us what you want</span><!-- 1 -->
+
+</td>
+</tr>
+
+
+
+
+<tr bgcolor="">
+<td valign="top" align="center" width="10%">
+<div class="quest_wrapper">
+<i class="fa fa-user"></i><!-- 2 -->
+</div>
+</td>
+<td valign="top" width="90%">
+<span class="work-flow-sub">Get an immediate reaponse from our team</span><!-- 2 -->
+
+</td>
+</tr>
+
+
+
+<tr bgcolor="">
+<td valign="top" align="center" width="10%">
+<div class="quest_wrapper">
+<i class="fa fa-user-plus"></i><!-- 3 -->
+</div>
+</td>
+<td valign="top" width="90%">
+<span class="work-flow-sub">Signup with us for proper communication </span><!-- 3 -->
+
+</td>
+</tr>
+
+
+
+<tr bgcolor="">
+<td valign="top" align="center" width="10%">
+<div class="quest_wrapper">
+<i class="fa fa-dollar"></i><!-- 3 -->
+</div>
+</td>
+<td valign="top" width="90%">
+<span class="work-flow-sub">Purchase a plan that suits your request</span><!-- 3 -->
+
+</td>
+</tr>
+
+
+
+<tr bgcolor="">
+<td valign="top" align="center" width="10%">
+<div class="quest_wrapper">
+<i class="fa fa-plus"></i><!-- 3 -->
+</div>
+</td>
+<td valign="top" width="90%">
+<span class="work-flow-sub">We start working immediately </span><!-- 3 -->
+
+</td>
+</tr>
+
+
+
+<tr bgcolor="">
+<td valign="top" align="center" width="10%">
+<div class="quest_wrapper">
+<i class="fa fa-reply"></i><!-- 3 -->
+</div>
+</td>
+<td valign="top" width="90%">
+<span class="work-flow-sub">submitted for reviews & corrections </span><!-- 3 -->
+
+</td>
+</tr>
+
+
+
+<tr bgcolor="">
+<td valign="top" align="center" width="10%">
+<div class="quest_wrapper">
+<i class="fa fa-check"></i><!-- 3 -->
+</div>
+</td>
+<td valign="top" width="90%">
+<span class="work-flow-sub">Delivered after corrections & completion </span><!-- 3 -->
+
+</td>
+</tr>
+
+
+</table>
+
+</div>
 

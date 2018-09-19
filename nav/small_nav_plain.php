@@ -93,9 +93,25 @@ MENU
 </tr>
 </table>	
 
+
+<table cellpadding="5" width="100%">
+<tr>
+<td width="20%">
+<div class="small_nav_icon_android">
+<i class="fa fa-share"></i>
+</div>
 </td>
 
-<td width="50%">
+<td width="80%">
+<a class="small_nav_icon_android_txt" href="/company/request/">Request</a>
+</td>
+</tr>
+</table>
+
+
+</td>
+
+<td valign="top" width="50%">
 
 
 
