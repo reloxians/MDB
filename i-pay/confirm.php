@@ -22,7 +22,7 @@
 	
 		
 	include '../header.php' ;
-	include '../parallax.php' ;
+	echo '<div style="margin-top: 50px;"></div>';
 	
 	if($_SESSION['username']) {
 		include '../nav/profile_nav.php' ;		
@@ -141,7 +141,7 @@
 <!-- controller class -->
 
 
-<div class="form_class">
+<div class="">
 <center>
 
 <form id="controller">

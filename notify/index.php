@@ -25,7 +25,7 @@
 	
 	<div class="near_sidebar">
 	<center>
-	<img class="disabled" src="/media/images/blank.svg" width="45%"/>
+	<img class="disabled" src="/media/images/Blank.svg" width="45%"/>
 	
 	<div style="width: 60%;" class="pre_block_plain">
 	<span class="email">RS - Developers</span> have provided a section for you to be updated with informations internally.

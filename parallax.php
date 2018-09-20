@@ -3,16 +3,19 @@ if($theme_class == 'blue' ) {
 	$theme_name = 'page_wrapper_blue';
 	$theme_btn = 'parallax_tabs_a';
 	$info_class = 'new_blue';
+	$theme_shade = 'blue';
 
 } elseif($theme_class == 'green' ) {
 	$theme_name = 'page_wrapper_green';
 	$theme_btn = 'btn_for_green';
 	$info_class = 'new_green';
+	$theme_shade = 'green';
 	
 } elseif($theme_class = 'red' ) {
 	$theme_name = 'page_wrapper_red';
 	$theme_btn = 'btn_for_green';
 	$info_class = 'new_blue';
+	$theme_shade = 'red';
 }
 
 
@@ -31,7 +34,7 @@ include 'navigations_plain.php';
 <br>
 <br>
 
-<a href="#">
+<a href="/company/request/">
 <div class="info_wrapper">
 <div class="info">
 <table width="100%" cellpadding="5">
@@ -126,9 +129,11 @@ $(document).ready(function() {
 </div>
 
 
-
-
 </div><!-- unskew -->
+
+<div class="child-shades-a-<? echo $theme_shade ?>"></div>
+<div class="child-shades-b-<? echo $theme_shade ?>"></div>
+
 </div><!-- parallax -->
 </div><!-- page wrapper ends -->
 

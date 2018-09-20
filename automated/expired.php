@@ -1,9 +1,15 @@
 <?php
 	//mail notification sysyem for due renewal
 	//Reloxians Alvin Excel
+	
+    $hostname = "localhost";
+    $user = "h19778c_reloxians";
+    $password = "Hyperbrilliancy@01";
+    $database = "h19778c_Reloxians";
+    $prefix = "";
+    $connect = mysqli_connect($hostname, $user, $password, $database);
 
-
-	include '../database/database.php' ;
+	//include '../database/database.php' ;
 	
 	//
 	

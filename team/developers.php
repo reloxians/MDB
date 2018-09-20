@@ -40,7 +40,7 @@ Reloxians Alvin Iruoghene is a full stack developer from Nigeria. he is the main
 <td align="right" valign="" width="15%">
 <!-- imgs -->
 
-<img src="/media/images/devs/alvin-excel.jpeg" class="disabled" width="80%" />
+<img src="/media/images/devs/Excel.jpeg" class="disabled" width="80%" />
 
 </td>
 
@@ -317,7 +317,7 @@ Charles Tim is the Chief Technology Officer of RSD, responsible for software dev
 <td align="right" valign="" width="15%">
 <!-- imgs -->
 
-<img src="/media/images/devs/charles-tim.jpeg" class="disabled" width="80%" />
+<img src="/media/images/devs/Charles-Tim.jpeg" class="disabled" width="80%" />
 
 </td>
 

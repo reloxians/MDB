@@ -22,3 +22,7 @@ RewriteRule ^(.*?)/?$ $1.php [NC,L]
 
 
 </IfModule>
+
+
+#Adjust default time zone 
+SetEnv TZ Africa/Lagos

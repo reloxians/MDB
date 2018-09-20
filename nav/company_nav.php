@@ -4,7 +4,7 @@
 		
 	<li <?php if($link == 'Pricing') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="/company/pricing">Pricing</a></li> 
 		
-<li <?php if($link == 'Pre') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="/company/request">Request</a></li> 
+<li <?php if($link == 'request') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="/company/request">Request</a></li> 
 		
 	<li <?php if($link == 'Developer') {echo 'class="current"';} else {echo 'class="inactive"'; }?>><a href="/developer/">Developer</a></li> 
 	

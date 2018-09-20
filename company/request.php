@@ -1,16 +1,16 @@
 <?php 
-$link = 'pre' ;
+$link = 'request' ;
 			 include '../security/anti_session.php' ;
 			 include '../header.php' ;
 			 echo '<div style="margin-top: 50px;" />';
-			 include '../nav/signup_login_nav.php' ;
+			 include '../nav/company_nav.php' ;
 			
 			?>
 			
 	<div class="page_wrapper_sub">
 	
 			<div class="page_intro">
-			Create your Reloxians account. It is free and only takes a minute.
+			Service request form. it's free and only takes a minute.
 			
 			</div>
 			
@@ -26,104 +26,31 @@ $link = 'pre' ;
 			
 			<center>
 			
-			<form action="signup.inc.php" method="POST">
-			<input name="username" type="text" placeholder="Username" required="required" />
+			<form action="request.inc" method="POST">
+			<input name="firstname" type="text" placeholder="Firstname" required="required" />	
+			<input name="lastname" type="text" placeholder="Lastname" required="required" />
 			
-			<?php 
-				$main_link = 	$_SERVER['REQUEST_URI'];
-				$username_error_link = '/docs/signup?usernameError';
+			<?
+			if(isset($_POST['error-names'])) {
+			?>
 			
-			if($main_link == $username_error_link) {
+			<div class="infomat-error">System detected invalid name combinations, review and try again</div>
 			
-					?>
-					
-					<div class="forbidden_class_wrapper">			
-			<div class="forbidden_class">
-<i class="fa fa-warning"></i> The username you entered has been used, please fix this error before proceeding with the signup process
-			</div>
-					</div>
-		
-				
-		<?		
+			<?
 			}
 			?>
 			
-			
-			<input name="firstname" type="text" placeholder="Firstname" required="required" />	
-			<br>
-			<input name="lastname" type="text" placeholder="Lastname" required="required" />	
-			<br>
-				
-				<div class="forbidden_class_wrapper">		
-					
-			<div class="infomat" style="width: 95%">
-<i class="fa fa-warning"></i> This should be a valid email address as it is going to be verified before completing the signup process
-</div>
-				</div>
-
 			
 			<input name="email" type="email" placeholder="Email address" required="required" />
-			
-			<?php 
-				$main_link = 	$_SERVER['REQUEST_URI'];
-				$email_error_link = '/docs/signup?emailError';
-			
-			if($main_link == $email_error_link) {
-			
-					?>
-					
-					<div class="forbidden_class_wrapper">			
-			<div class="forbidden_class">
-<i class="fa fa-warning"></i> The email you entered has been used, please fix this error before proceeding with the signup process
-			</div>
-					</div>
 		
-				
-		<?		
-			}
-			?>
-			
-			<input name="password" type="password" placeholder="*********** 8 characters minimum" required="required" pattern=".{8,15}" />
-			<br>
-			<input name="password_verify" type="password" placeholder="*********** confirm password" required="required" pattern=".{8,15}" />
+	
 			
 			
-			<div class="forbidden_class_wrapper">
-			<div class="infomat" style="width: 95%; text-align: left;">
-			<ul>
-			<li>May contain letter and numbers</li>
-			<li>Must contain at least 1 number and 1 letter</li>
-			<li>Must be 8-12 characters</li>
-			</div>
-			</div>
-				
-			
-			
-			
-			<?php 
-				$main_link = 	$_SERVER['REQUEST_URI'];
-				$other_link = '/docs/signup?passwordError';
-			
-			if($main_link == $other_link) {
-			
-					?>
-					
-					<div class="forbidden_class_wrapper">			
-			<div class="forbidden_class">
-<i class="fa fa-warning"></i> The passwords you entered didnt match, please fix this error before proceeding with the signup process
-			</div>
-					</div>
 		
-				
-		<?		
-			}
-			?>
 			
 			
+			<input name="phone" type="number" placeholder="+(234) 5678 9101" required="required" />			
 			
-			
-			<input name="phone" type="number" placeholder="+23456789101" required="required" />			
-			<br>
 			<select name="country" required="required">	
 <option value="">Sellect your country</option>		
 <option value="Afganistan">Afghanistan</option>
@@ -375,10 +302,31 @@ $link = 'pre' ;
 <option value="Zimbabwe">Zimbabwe</option>
 
 			</select>
-			
 			<br>
 			
-			<input type="submit" value="Sign up" name="submit" />
+			<select name="service" required="required">
+			<option value="">Select a service type</option>
+			<option value="Web Development">Web Development</option>
+			<option value="App Development">App Development</option>
+			</select>
+			
+			<select name="logo-choice" required="required">
+			<option value="">Do you have a logo / brand?</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+			</select>
+			
+			
+			<select name="logo-design-choice" required="required">
+			<option value="">Should we create one for you?</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+			</select>
+			
+			
+			<textarea name="description" rows="10" placeholder="Give a description of what you want" required="required"></textarea>
+			
+			<input type="submit" value="Submit Request" name="submit" />
 			</form>
 		
 			</div>			
@@ -387,7 +335,7 @@ $link = 'pre' ;
 			<center>
 			
 			<div class="agreement">
-			By clicking "Sign up", you acknowledge that you have read our updated <a class="email" href="tos.php"> terms of service</a>, <a class="email" href="disclaimer.php">Disclaimer</a> and that your continued use of the website is subject to these policies.
+			By clicking "Sign up", you acknowledge that you have read our updated <a class="email" href="/docs/tos.php"> terms of service</a>, <a class="email" href="/docs/disclaimer.php">Disclaimer</a> and that your continued use of the website is subject to these policies.
 			
 			
 			

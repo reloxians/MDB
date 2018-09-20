@@ -1,9 +1,7 @@
 <?php
 	$link = 'About';
 	include '../header.php' ;
-	echo '<br>';
-	echo '<br>';
-	echo '<br>';
+	echo '<div style="margin-top: 50px" />';
 	include '../nav/company_nav.php';
 ?>
 <div class="page_wrapper_sub">
